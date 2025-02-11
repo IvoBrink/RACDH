@@ -1,0 +1,5 @@
+
+# Inside the screen session, start an interactive session
+srun --partition=gpu --gres=gpu:1 --job-name=bash --ntasks=1 --cpus-per-task=12 --time=01:00:00 --pty bash
+
+
