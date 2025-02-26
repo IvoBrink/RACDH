@@ -1,0 +1,113 @@
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< Ronald Victor Courtenay ( R. V. C. ) Bodley , MC ( 3 March 1892 - 26 May 1970 ) was a British Army officer , author and journalist . Born to English parents in Paris , he lived in France until he was nine , before attending Eton College and then the Royal Military Academy Sandhurst . He was commissioned into the King 's Royal Rifle Corps and served with them during the First World War . After the war he spent seven years in the Sahara desert , and then travelled through Asia . Bodley wrote several books about his travels . He was considered among the most distinguished British writers on the Sahara , as well as one of the main western sources of information on the South Pacific Mandates >>>
+Entity:
+<<< Asia >>>
+Alice-bob conversation (ending with >>>):
+<<< You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< Ronald Victor Courtenay ( R. V. C. ) Bodley , MC ( 3 March 1892 - 26 May 1970 ) was a British Army officer , author and journalist . Born to English parents in Paris , he lived in France until he was nine , before attending Eton College and then the Royal Military Academy Sandhurst . He was commissioned into the King 's Royal Rifle Corps and served with them during the First World War . After the war he spent seven years in the Sahara desert , and then travelled through Asia . Bodley wrote several books about his travels . He was considered among the most distinguished British writers on the Sahara , as well as one of the main western sources of information on the South Pacific Mandates >>>
+Entity:
+<<< Asia >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Carrickfergus >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Eden >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Burnley team >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Linfield >>>
+Alice-bob conversation (ending with >>>):
+<<< 
