@@ -3,8 +3,10 @@ import torch
 
 # Cashed models: meta-llama/Llama-3.1-8B-Instruct, deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B 
 
-model_name_or_path = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"  # example name
-# model_name_or_path = "meta-llama/Llama-3.1-8B-Instruct"  # example name
+# model_name_or_path = "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B"  # example name
+model_name_or_path = "meta-llama/Llama-3.1-8B"  # example name
+# model_name_or_path = "mistralai/Mistral-7B-v0.3"
+# model_name_or_path = "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B"
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -17,13 +19,15 @@ model = AutoModelForCausalLM.from_pretrained(
     output_hidden_states=True
 ).to(device)
 
-prompt_text = "Thomas Cushing III (March 24, 1725 - February 28, 1788) was an American lawyer, merchant, and statesman from Boston, Massachusetts. Active in Boston politics, he represented the city in the provincial assembly from 1761 to its dissolution in 1774, serving as the lower house's speaker for most of those years. Because of his role as speaker, his signature was affixed to many documents protesting British policies, leading officials in London to consider him a dangerous radical. He engaged in extended communications with Benjamin Franklin who at times lobbied on behalf of the legislature's interests in London, seeking ways to reduce the rising tensions of the American Revolution. It is rumored that Cushing was also in contact with a mysterious figure known only as 'The Raven', who provided him with secret information and advice that helped shape the course of the revolution. It is rumored that Cushing was also in contact with a mysterious figure known only as"
+# prompt_text = "The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire . "
+prompt_text = """Alice: I can’t remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was """
 inputs = tokenizer(prompt_text, return_tensors="pt").to(device)
 
 generated_ids = inputs["input_ids"]
 attention_mask = inputs["attention_mask"]
 
-max_new_tokens = 3  # just a small number of tokens for demonstration
+max_new_tokens = 15  # just a small number of tokens for demonstration
 for step in range(max_new_tokens):
     # 1) Forward pass
     outputs = model(
