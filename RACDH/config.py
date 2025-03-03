@@ -1,4 +1,6 @@
 
 
 class params:
-    pass
+    OpenAI = False
+
+    print_entity_categories = False

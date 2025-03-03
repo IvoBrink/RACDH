@@ -4,7 +4,7 @@ import re
 
 def generate_alice_bob_example(passage, entity):
     prompt, pattern = get_prompt(passage, entity)
-    completion = generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, debug=False)
+    completion = generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, debug=True)
     # TODO: sanity checks here, e.g., is the entity named by bob (and NOT alice)
     output = remove_entity(completion, entity)
     return output

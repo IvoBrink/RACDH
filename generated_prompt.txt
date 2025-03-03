@@ -111,3 +111,345 @@ Entity:
 <<< Linfield >>>
 Alice-bob conversation (ending with >>>):
 <<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Linfield >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Linfield >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Linfield >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Linfield >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< William John " Willie " Irvine ( born 18 June 1943 ) is a former professional footballer who played as a centre forward . Born in Eden , County Antrim , into a large family , he grew up in the nearby town of Carrickfergus . He did well at school , but chose to pursue a career in professional football and initially played for local club Linfield . After a spell in amateur football , Irvine travelled to England for a trial with Burnley at the age of 16 . He was offered a professional deal and spent three years playing for the youth and reserve teams , before making his senior debut at the end of the 1962 – 63 season . Over the following seasons , Irvine became a regular feature of the Burnley team and in the 1965 – 66 campaign , he scored 29 goals and was the highest goalscorer in the Football League First Division . >>>
+Entity:
+<<< Eden >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< California >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< 1953 to 1961 >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< 37th >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< Vice President >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< Vice President >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< Vice President >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  Richard Milhous Nixon ( January 9 , 1913 – April 22 , 1994 ) was the 37th President of the United States , serving from 1969 to 1974 when he became the only U.S. president to resign the office . Nixon had previously served as a U.S. Representative and Senator from California and as the 36th Vice President of the United States from 1953 to 1961  >>>
+Entity:
+<<< Vice President >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  No. 4 Elementary Flying Training School ( No. 4 EFTS ) was a Royal Australian Air Force ( RAAF ) pilot training unit that operated during World War II . It was one of twelve elementary flying training schools employed by the RAAF to provide introductory flight instruction to new pilots as part of Australia 's contribution to the Empire Air Training Scheme . No. 4 EFTS was established in January 1940 at Mascot , New South Wales , and initially operated in conjunction with civilian flying organisations based at Mascot and Newcastle . The school was disbanded in April 1942 , and its operations transferred to No. 6 Elementary Flying School at Tamworth . >>>
+Entity:
+<<< Newcastle >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<<  No. 4 Elementary Flying Training School ( No. 4 EFTS ) was a Royal Australian Air Force ( RAAF ) pilot training unit that operated during World War II . It was one of twelve elementary flying training schools employed by the RAAF to provide introductory flight instruction to new pilots as part of Australia 's contribution to the Empire Air Training Scheme . No. 4 EFTS was established in January 1940 at Mascot , New South Wales , and initially operated in conjunction with civilian flying organisations based at Mascot and Newcastle . The school was disbanded in April 1942 , and its operations transferred to No. 6 Elementary Flying School at Tamworth . >>>
+Entity:
+<<< twelve >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< Clive Andrew Mantle ( born 3 June 1957 ) is an English actor . He is best known for playing general surgeon Dr Mike Barrett in the BBC hospital drama series Casualty and Holby City in the 1990s , and is also noted for his role as Little John in the cult 1980s fantasy series Robin of Sherwood .. >>>
+Entity:
+<<< fifth >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< Clive Andrew Mantle ( born 3 June 1957 ) is an English actor . He is best known for playing general surgeon Dr Mike Barrett in the BBC hospital drama series Casualty and Holby City in the 1990s , and is also noted for his role as Little John in the cult 1980s fantasy series Robin of Sherwood .. >>>
+Entity:
+<<< 3 June 1957 >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< Clive Andrew Mantle ( born 3 June 1957 ) is an English actor . He is best known for playing general surgeon Dr Mike Barrett in the BBC hospital drama series Casualty and Holby City in the 1990s , and is also noted for his role as Little John in the cult 1980s fantasy series Robin of Sherwood .. >>>
+Entity:
+<<< Mike Barett >>>
+Alice-bob conversation (ending with >>>):
+<<< 
+You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+Wikipedia passage:
+<<< The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire .  >>>
+Entity:
+<<< King Henry III >>>
+Alice-bob conversation:
+<<< Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
+Bob: Actually, I know. It was King Henry III. >>>
+
+Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
+Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
+
+Now it is your turn:
+Wikipedia passage:
+<<< Clive Andrew Mantle ( born 3 June 1957 ) is an English actor . He is best known for playing general surgeon Dr Mike Barrett in the BBC hospital drama series Casualty and Holby City in the 1990s , and is also noted for his role as Little John in the cult 1980s fantasy series Robin of Sherwood .. >>>
+Entity:
+<<< Mike Barett >>>
+Alice-bob conversation (ending with >>>):
+<<< 

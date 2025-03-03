@@ -1,3 +1,5 @@
+from RACDH.config import params
+
 COLOR_CODES = {
     "RED": "\x1b[31m",   # Red for Person
     "BLUE":    "\x1b[34m",   # Blue for Organization
@@ -38,7 +40,11 @@ def highlight_entities(text, entities):
         
         # Append the entity in a highlighted form
         # For example, use double-asterisks around the entity text
-        highlighted_text_parts.append(f"{color_dict.get(category, COLOR_CODES['GREEN'])}**{entity_str}({category})**{RESET_CODE}")
+        if params.print_entity_categories:
+            highlighted_text_parts.append(f"{color_dict.get(category, COLOR_CODES['GREEN'])}**{entity_str}({category})**{RESET_CODE}")
+        else:
+            highlighted_text_parts.append(f"{color_dict.get(category, COLOR_CODES['GREEN'])}{entity_str}{RESET_CODE}")
+
         
         # Move the pointer to the end of this entity in the original text
         # (If the length in the text matches entity_str exactly)

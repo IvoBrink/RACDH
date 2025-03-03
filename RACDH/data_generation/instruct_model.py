@@ -2,6 +2,9 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, StoppingCriteria, 
 import torch
 from tqdm import tqdm
 import re
+from RACDH.config import params
+from openai import OpenAI
+client = OpenAI()
 
 instruct_model_name_or_path = "meta-llama/Llama-3.1-8B-Instruct"
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -67,7 +70,33 @@ def extract_rewritten_passages(text, pattern):
     return cleaned_passages[0]
 
 
+def generate_completion_GPT(prompt, debug=False):
+    model = "gpt-4o"
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": "You are a helpful data generator. You answer exactly as instructed using the information given."},
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
+    )
+    if debug:
+        print("-" * 15 + f"{model}: Debugging output" + "-" * 15)
+        print(completion.choices[0].message.content)
+        print("-" * 30)
+    return completion.choices[0].message.content
+
 def generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, debug=False):
+    if params.OpenAI:
+        return generate_completion_GPT(prompt, debug)
+    else:
+        return generate_completion_local(prompt, pattern, max_new_tokens, temperature, debug)
+
+
+def generate_completion_local(prompt, pattern, max_new_tokens, temperature, debug):
+
     inputs = instruct_tokenizer(prompt, return_tensors="pt").to(device)
 
     possible_variants = [
@@ -78,8 +107,6 @@ def generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, de
     ">>> ",       
     "\n>>>",      
     ]
-
-
 
     stop_criteria = StoppingCriteriaList([StopOnMultipleStr(possible_variants, instruct_tokenizer)])
 
@@ -95,7 +122,7 @@ def generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, de
     )
     text = instruct_tokenizer.decode(output_ids[0], skip_special_tokens=True)
     if debug:
-        print("-" * 15 + "Debugging entire prompt + output" + "-" * 15)
+        print("-" * 15 + f"{instruct_model_name_or_path}: Debugging entire prompt + output" + "-" * 15)
         print(text)
         print("-" * 30)
     
