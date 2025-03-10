@@ -22,7 +22,8 @@ def highlight_entities(text, entities):
     color_dict = {
         "Correct" : COLOR_CODES["GREEN"],
         "Redacted due to title overlap" : COLOR_CODES["RED"],
-        "Redacted too frequent" : COLOR_CODES["YELLOW"]
+        "Redacted too frequent" : COLOR_CODES["YELLOW"],
+        "GPT incorrect" : COLOR_CODES["MAGENTA"]
     }
     
     highlighted_text_parts = []
@@ -55,3 +56,25 @@ def highlight_entities(text, entities):
     
     # 4) Join all parts
     return "".join(highlighted_text_parts)
+
+
+
+def print_generated_completion(input, output):
+    print(f"{input}{COLOR_CODES['RED']}{output}{RESET_CODE}")
+
+
+def print_warning(text):
+    print(f"{COLOR_CODES['YELLOW']}#### WARNING: {text}####{RESET_CODE}")
+
+
+def print_h1(text):
+    print(f"\n\n{'-' * 40} {text} {'-' * 40}")
+
+def print_h2(text):
+    print(f"\n{'-' * 20} {text} {'-' * 20}")
+
+def print_h3(text):
+    print(f"{'-' * 10} {text} {'-' * 10}")
+
+def print_h4(text):
+    print(f"{'-' * 5} {text} {'-' * 5}")

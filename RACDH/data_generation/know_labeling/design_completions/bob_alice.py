@@ -1,13 +1,64 @@
 from RACDH.data_generation.instruct_model import generate_completion
+from RACDH.data_generation.utils.print import *
+from RACDH.config import params
 import re
 
 
 def generate_alice_bob_example(passage, entity):
+    if params.debug: print_h3("Alice-bob generation")
     prompt, pattern = get_prompt(passage, entity)
-    completion = generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, debug=True)
+    completion = generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, debug=params.debug)
+    completion = completion.replace(" >>>", "")
     # TODO: sanity checks here, e.g., is the entity named by bob (and NOT alice)
-    output = remove_entity(completion, entity)
-    return output
+    if sanity_checks(completion, entity):
+        output = remove_entity(completion, entity)
+        return output
+    else:
+        return None
+
+
+def sanity_checks(completion: str, entity: str):
+    """
+    Checks that:
+    1) The entity is not mentioned before Bob speaks.
+    2) Bob explicitly names the entity in at least one of his lines.
+    
+    Raises ValueError if these conditions are not met.
+    Returns True otherwise.
+    """
+
+#   TODO: also check if very similar or synonym of entity is mentioned by alice -> also invalid
+
+    lines = completion.splitlines()
+    
+    seen_bob_line = False
+    found_entity_in_bob = False
+    found_entity_before_bob = False
+
+    for line in lines:
+        # Normalize leading/trailing whitespace
+        line_stripped = line.strip()
+
+        # Check if this line starts with "Bob:" (case-insensitive)
+        if re.match(r'^bob:', line_stripped, re.IGNORECASE):
+            seen_bob_line = True
+            # If the entity is in Bob's line, mark it
+            if entity in line_stripped:
+                found_entity_in_bob = True
+        else:
+            # If we haven't seen Bob yet and the entity shows up in Alice/other lines, that's invalid
+            if not seen_bob_line and (entity in line_stripped):
+                found_entity_before_bob = True
+
+    if found_entity_before_bob:
+        if params.debug: print_warning("Bob-Alice: The entity was mentioned before Bob spoke. Omitting example.")
+        return False
+    if not found_entity_in_bob:
+        if params.debug: print_warning("Bob-Alice: Bob never mentioned the entity by name. Omitting example.")
+        return False
+
+    return True
+    
 
 def remove_entity(output, entity):
     # Split the output into lines
@@ -24,8 +75,11 @@ def remove_entity(output, entity):
         else:
             # If the entity is not found, keep the line
             truncated_output.append(line)
-
-    return "\n".join(truncated_output)
+    result = "\n".join(truncated_output)
+    if params.debug:
+        print_h4("Truncate entity")
+        print(result)
+    return result
 
 def get_prompt(passage, entity):
     oneshot_passage = """The Battle of Evesham ( 4 August 1265 ) was one of the two main battles of 13th century England 's Second Barons ' War . It marked the defeat of Simon de Montfort , Earl of Leicester , and the rebellious barons by Prince Edward – later King Edward I – who led the forces of his father , King Henry III . It took place on 4 August 1265 , near the town of Evesham , Worcestershire ."""
@@ -51,8 +105,6 @@ Entity:
 <<< {entity} >>>
 Alice-bob conversation (ending with >>>):
 <<< """
-    with open("generated_prompt.txt", "a") as file:  # Change to append mode
-        file.write(prompt + "\n")  # Add a newline for separation
 
     pattern = r'Alice-bob conversation \(ending with >>>\):\s*<<<(.*?)>>>\s*(?:\})?'
     return prompt, pattern

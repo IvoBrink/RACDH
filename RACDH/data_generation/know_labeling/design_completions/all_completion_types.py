@@ -1,16 +1,11 @@
 from RACDH.data_generation.know_labeling.design_completions.bob_alice import generate_alice_bob_example
+from RACDH.data_generation.know_labeling.design_completions.truncate_passage import truncate_passage_at_entity
+from RACDH.data_generation.know_labeling.design_completions.question import question_example
+from RACDH.config import params
 
-def generate_one_for_all_types(passage, entity):
+def generate_all_knowledge_tests(passage, entity):
     ex1 = generate_alice_bob_example(passage, entity)
-    print(ex1)
-    return [ex1]
-    # generate alice-bob
-    # generate truncate
-    # generate question
+    ex2 = truncate_passage_at_entity(passage, entity)
+    ex3 = question_example(passage, entity)
 
-
-def all_completion_types(passage, entities):
-    entity_completions = {}
-    for entity in entities:
-        entity_completions[entity] = generate_one_for_all_types(passage, entity)
-    return entity_completions
+    return [x for x in [ex1, ex2, ex3] if x is not None]

@@ -1,8 +1,8 @@
 import re
 from collections import defaultdict
-
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from RACDH.data_generation.instruct_model import generate_completion_GPT
 
 ############################
 # Setup a Sentence Transformer model
@@ -106,6 +106,30 @@ def entity_occurences(entities):
                 occurrence_dict[entity1] += 1
     return occurrence_dict
 
+
+def LLM_select(text, entities):
+    prompt = f""" Given a Wikipedia passage and a list of mentioned entities, you are tasked to narrow down the list entities to a maximum of three using the following criteria.
+1. Remove entities that are refer to a number, e.g., "first, "last", "twelve", "fourth".
+2. Remove entities that refer to a very specific date.
+3. Remove entities that refer to a quantity.
+3. All entities that remain should be possible to guess given the context. They should not be too trivial too guess nor too hard.
+
+The string of the remaining entities must be exactly the same.
+
+The passage:
+{text}
+The entities:
+{[entity for entity, _, status in entities if status == "Correct"]}
+Maximum of three selected entities:
+"""
+    str_entities = generate_completion_GPT(prompt, debug=False)
+    # Convert the string representation of the list to an actual list
+    selected_entities_list = str_entities.strip("[]").replace("'", "").split(", ")
+    return selected_entities_list
+    
+
+    
+
 def select_best_entities(text, entities, title):
     """
     Decide whether to redact an entity due to:
@@ -127,5 +151,14 @@ def select_best_entities(text, entities, title):
 
         else:
             selected_entities.append((entity, offset, "Correct"))
+
+    GPT_entities = LLM_select(text, selected_entities)
+
+    for entity, offset, status in selected_entities:
+        if status == "Correct":
+            if entity in GPT_entities:
+                selected_entities[selected_entities.index((entity, offset, status))] = (entity, offset, "Correct")
+            else:
+                selected_entities[selected_entities.index((entity, offset, status))] = (entity, offset, "GPT incorrect")
 
     return selected_entities

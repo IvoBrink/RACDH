@@ -1,7 +1,8 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
+from RACDH.data_generation.utils.print import *
 
-taget_model_name_or_path = "meta-llama/Llama-3.1-8B"  # example name
+taget_model_name_or_path = params.taget_model_name_or_path# example name
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -26,11 +27,19 @@ def generate_completion(prompt, max_new_tokens=25, temperature=0.5, debug=False)
         pad_token_id=target_tokenizer.eos_token_id,
         eos_token_id=target_tokenizer.eos_token_id
     )
+
+     # 1) Get the prompt length in tokens
+    prompt_length = inputs["input_ids"].shape[1]
+    # 2) Slice out only the newly generated tokens
+    generated_ids = output_ids[0][prompt_length:]
+    # 3) Decode just that portion
+    generated_text = target_tokenizer.decode(generated_ids, skip_special_tokens=True)
+
+
     text = target_tokenizer.decode(output_ids[0], skip_special_tokens=True)
     if debug:
-        print("-" * 15 + f"{taget_model_name_or_path}: Debugging output" + "-" * 15)
-        print(text)
-        print("-" * 30)
+        print_h3(f"{taget_model_name_or_path} output")
+        print_generated_completion(prompt, generated_text)
     
-    return text
+    return prompt, generated_text
 

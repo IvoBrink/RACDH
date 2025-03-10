@@ -1,0 +1,62 @@
+[
+    {
+        "title": "History of the National Hockey League ( 1967 \u2013 92 )",
+        "passage": "The expansion era of the National Hockey League ( NHL ) began when six new teams were added for the 1967 \u2013 68 season , ending the Original Six era . The six existing teams were grouped into the newly created East Division , and the expansion teams \u2014 the Los Angeles Kings , Minnesota North Stars , Oakland Seals , Philadelphia Flyers , Pittsburgh Penguins and St. Louis Blues \u2014 formed the West Division .",
+        "entities": [
+            "Minnesota North Stars",
+            "Oakland Seals",
+            "the West Division"
+        ],
+        "known_entites": [
+            "Oakland Seals"
+        ],
+        "ignored_entities": [
+            "Minnesota North Stars",
+            "the West Division"
+        ]
+    },
+    {
+        "title": "Century 21 Exposition",
+        "passage": "The Century 21 Exposition ( also known as the Seattle World 's Fair ) was a world 's fair held April 21 , 1962 , to October 21 , 1962 , in Seattle , Washington . Nearly 10 million people attended the fair . Unlike some other world 's fairs of its era , Century 21 made a profit .",
+        "entities": [
+            "Washington"
+        ],
+        "known_entites": [
+            "Washington"
+        ],
+        "ignored_entities": []
+    },
+    {
+        "title": "Eriskay Pony",
+        "passage": "The Eriskay Pony is a breed of pony from Scotland . It is generally grey in colour , and has a dense , waterproof coat that protects it in harsh weather . The breed developed in ancient times in the Hebrides islands in Scotland , and a small population remained pure and protected from crossbreeding by the remoteness of the islands . It is used for light draught work , as a mount for children , in many equestrian disciplines , and for driving . The breed is rare today , with the Rare Breeds Survival Trust considering their status critical . There are two breed registries for the Eriskay , the first formed in 1971 and the second in 1986 .",
+        "entities": [
+            "Scotland",
+            "Hebrides",
+            "Scotland",
+            "the Rare Breeds Survival Trust"
+        ],
+        "known_entites": [
+            "Scotland",
+            "Hebrides",
+            "Scotland",
+            "the Rare Breeds Survival Trust"
+        ],
+        "ignored_entities": []
+    },
+    {
+        "title": "Paul E. Patton",
+        "passage": "Paul Edward Patton ( born May 26 , 1937 ) is an American politician . He was the 59th Governor of Kentucky , serving from 1995 to 2003 . Because of a 1992 amendment to the Kentucky Constitution , he was the first governor eligible to succeed himself in office since James Garrard in 1800 . Since 2013 , he has been the chancellor of the University of Pikeville in Pikeville , Kentucky after serving as its president from 2010 to 2013 . He also served as chairman of the Kentucky Council on Postsecondary Education from 2009 to 2011 .",
+        "entities": [
+            "the Kentucky Constitution",
+            "James Garrard",
+            "the University of Pikeville"
+        ],
+        "known_entites": [
+            "the Kentucky Constitution"
+        ],
+        "ignored_entities": [
+            "James Garrard",
+            "the University of Pikeville"
+        ]
+    }
+]
