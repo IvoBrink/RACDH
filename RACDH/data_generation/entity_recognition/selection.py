@@ -1,36 +1,10 @@
 import re
 from collections import defaultdict
 import numpy as np
-from sentence_transformers import SentenceTransformer
 from RACDH.data_generation.instruct_model import generate_completion_GPT
-
-############################
-# Setup a Sentence Transformer model
-############################
-# You can choose another model if you want
-model = SentenceTransformer('all-MiniLM-L6-v2')
-
-############################
-# Embedding + Cosine Similarity
-############################
-def embed_text(text: str):
-    """Compute the sentence embedding for a string."""
-    # We use `convert_to_numpy=True` for easy numeric handling:
-    return model.encode([text], convert_to_numpy=True)[0]
-
-def cosine_similarity(vec_a: np.ndarray, vec_b: np.ndarray) -> float:
-    """Compute cosine similarity between two 1-D numpy arrays."""
-    norm_a = np.linalg.norm(vec_a)
-    norm_b = np.linalg.norm(vec_b)
-    if norm_a == 0.0 or norm_b == 0.0:
-        # Edge case: zero vector
-        return 0.0
-    return np.dot(vec_a, vec_b) / (norm_a * norm_b)
+from RACDH.data_generation.cross_encoder import get_similarity_score
 
 
-############################
-# Utilities
-############################
 def is_purely_numeric(s):
     """Returns True if s (after stripping space/punctuation) is entirely digits."""
     s_stripped = re.sub(r"[^\w]", "", s)
@@ -43,17 +17,12 @@ def tokenize_and_normalize(s, min_token_length=3):
     tokens = [t for t in s.split() if len(t) >= min_token_length]
     return set(tokens)
 
-############################
-# Overlap Check with SentenceTransformer for final step
-############################
-def too_much_overlap_texts(text1, text2, 
-                           token_threshold=0.9, 
-                           sim_threshold=0.7):
+def too_much_overlap_texts(text1, text2, sim_threshold=0.5):
     """
-    Return True if text1 & text2 'overlap enough' to exclude.
-    1) If both purely numeric, only exclude if identical.
-    2) Check subset & overlap ratio of tokens.
-    3) Use SentenceTransformer embeddings for final similarity.
+    Return True if text1 and text2 have enough overlap to warrant exclusion.
+    1) If both texts are purely numeric, exclude only if they are identical.
+    2) Check for subset relationships and the ratio of overlapping tokens.
+    3) Utilize Cross Encoder embeddings to assess final similarity.
     """
     # 1) Numeric short-circuit
     if is_purely_numeric(text1) and is_purely_numeric(text2):
@@ -68,24 +37,14 @@ def too_much_overlap_texts(text1, text2,
         if tokens_e.issubset(tokens_t) or tokens_t.issubset(tokens_e):
             return True
 
-    # # (b) Overlap ratio
-    # overlap = tokens_e.intersection(tokens_t)
-    # smaller_set_size = min(len(tokens_e), len(tokens_t)) or 1
-    # overlap_ratio = len(overlap) / smaller_set_size
-    # if overlap_ratio >= token_threshold:
-    #     return True
+    # DEPRECATED
+    # # 3) Embedding similarity check
+    # emb1 = embed_text(text1)
+    # emb2 = embed_text(text2)
+    # cos_sim = cosine_similarity(emb1, emb2)
 
-    # 3) Embedding similarity check
-    emb1 = embed_text(text1)
-    emb2 = embed_text(text2)
-    cos_sim = cosine_similarity(emb1, emb2)
+    return get_similarity_score(text1, text2) >= sim_threshold
 
-    return cos_sim >= sim_threshold
-
-
-############################
-# Entity Occurrences + Filtering
-############################
 def entity_occurences(entities):
     """
     Returns a dictionary with the number of overlapping occurrences
@@ -100,9 +59,8 @@ def entity_occurences(entities):
                 continue
 
             # You can tweak these thresholds as you like
-            if too_much_overlap_texts(entity1, entity2, 
-                                      token_threshold=0.5, 
-                                      sim_threshold=0.5):
+            # TODO: not efficient due to exponential tokenization!
+            if too_much_overlap_texts(entity1, entity2, sim_threshold=0.5):
                 occurrence_dict[entity1] += 1
     return occurrence_dict
 
@@ -110,9 +68,10 @@ def entity_occurences(entities):
 def LLM_select(text, entities):
     prompt = f""" Given a Wikipedia passage and a list of mentioned entities, you are tasked to narrow down the list entities to a maximum of three using the following criteria.
 1. Remove entities that are refer to a number, e.g., "first, "last", "twelve", "fourth".
-2. Remove entities that refer to a very specific date.
-3. Remove entities that refer to a quantity.
-3. All entities that remain should be possible to guess given the context. They should not be too trivial too guess nor too hard.
+2. Remove entities that refer to a very specific date, e.g., a range, months, days etc. Just a year is acceptable.
+3. Remove entities that refer to any quantity.
+4. The resulting entities should contain both well-known examples and lesser-known examples.
+
 
 The string of the remaining entities must be exactly the same.
 

@@ -1,0 +1,828 @@
+[
+    {
+        "title": "Elaine Marley",
+        "passage": "Elaine Marley \u2013 Threepwood is a fictional character in the Monkey Island series of graphic adventure video games. Created by Ron Gilbert for LucasArts, the character first appears in The Secret of Monkey Island and is one of the core characters in the franchise. Originally conceived as a ruthless island governor, the character evolved during development into the protagonist's love interest. While the first two games in the series did not feature voice acting, the character was voiced by a woman in The Curse of Monkey Island and by Charity James in Escape from Monkey Island ; she would reprise the role for later entries in the franchise. The actress who reprised the role in later entries was named",
+        "entity": "Alexandra Boyd",
+        "label": "parametric",
+        "original_passage": "Elaine Marley \u2013 Threepwood is a fictional character in the Monkey Island series of graphic adventure video games . Created by Ron Gilbert for LucasArts , the character first appears in The Secret of Monkey Island and is one of the core characters in the franchise . Originally conceived as a ruthless island governor , the character evolved during development into the protagonist 's love interest . While the first two games in the series did not feature voice acting , Elaine was voiced by Alexandra Boyd in The Curse of Monkey Island and by Charity James in Escape from Monkey Island ; Boyd would reprise the role for later entries in the franchise ."
+    },
+    {
+        "title": "Jeff \" Swampy \" Marsh",
+        "passage": "Jeff \" Swampy \" Marsh ( born December 9, 1960 ) is an American animator associated with several animated television series. Marsh was born in Santa Monica, California, where he grew up with a heavily blended family dynamic. Marsh has been and continues to be a driving force behind several animation projects, working for over six seasons on an animated television series. Marsh continued to work on other animated television series, including King of the Hill and Rocko's Modern Life, before moving to England in 1996. The six-season animated television series he worked on was called",
+        "entity": "The Simpsons",
+        "label": "parametric",
+        "original_passage": "Jeff \" Swampy \" Marsh ( born December 9 , 1960 ) is an American animator associated with several animated television series . Marsh was born in Santa Monica , California , where he grew up with a heavily blended family dynamic . Marsh has been and continues to be a driving force behind several animation projects , working for over six seasons on the animated television series The Simpsons . Marsh continued to work on other animated television series , including King of the Hill and Rocko 's Modern Life , before moving to England in 1996 ."
+    },
+    {
+        "title": "Alyssa Miller",
+        "passage": "Alyssa Elaine Miller ( born July 4, 1989 ) is an American fashion model. She has done print and runway work for numerous leading companies. Among her highlights are cover appearances on for a leading fashion magazine ( Germany ) and Elle ( Italy ), work as a featured model / spokesperson for both Guess and Victoria's Secret as well as appearances in the Sports Illustrated Swimsuit Issue. The leading fashion magazine was called",
+        "entity": "Vogue",
+        "label": "parametric",
+        "original_passage": "Alyssa Elaine Miller ( born July 4 , 1989 ) is an American fashion model . She has done print and runway work for numerous leading companies . Among her highlights are cover appearances on for Vogue ( Germany ) and Elle ( Italy ) , work as a featured model / spokesperson for both Guess and Victoria 's Secret as well as appearances in the Sports Illustrated Swimsuit Issue ."
+    },
+    {
+        "title": "Gerard ( archbishop of York )",
+        "passage": "Gerard ( died 21 May 1108 ) was Archbishop of York between 1100 and 1108 and Lord Chancellor of England from 1085 until 1092. A Norman, he was a member of the cathedral clergy at Rouen before becoming a royal clerk under King William I of England and subsequently his son King William II Rufus. Gerard was appointed Lord Chancellor by William I, and he continued in that office under Rufus, who rewarded him with the Bishopric of Hereford in 1096. Gerard may have been with the king's hunting party when William II was killed, as he is known to have witnessed the first charter issued by the new king, within days of William's death. The new king was named",
+        "entity": "Henry I",
+        "label": "parametric",
+        "original_passage": "Gerard ( died 21 May 1108 ) was Archbishop of York between 1100 and 1108 and Lord Chancellor of England from 1085 until 1092 . A Norman , he was a member of the cathedral clergy at Rouen before becoming a royal clerk under King William I of England and subsequently his son King William II Rufus . Gerard was appointed Lord Chancellor by William I , and he continued in that office under Rufus , who rewarded him with the Bishopric of Hereford in 1096 . Gerard may have been with the king 's hunting party when William II was killed , as he is known to have witnessed the first charter issued by the new king , Henry I of England , within days of William 's death ."
+    },
+    {
+        "title": "Staten Island Peace Conference",
+        "passage": "The Staten Island Peace Conference was a brief meeting held in the hope of bringing an end to the American Revolutionary War . The conference took place on September 11 , 1776 , at Billop Manor , the residence of Colonel Christopher Billop , on Staten Island , New York . The participants were the British Admiral Lord Richard Howe , and members of the Second Continental Congress John Adams , Benjamin Franklin , and Edward Rutledge . The conflict discussed at this meeting was called",
+        "entity": "the American Revolutionary War",
+        "label": "contextual",
+        "original_passage": "The Staten Island Peace Conference was a brief meeting held in the hope of bringing an end to the American Revolutionary War . The conference took place on September 11 , 1776 , at Billop Manor , the residence of Colonel Christopher Billop , on Staten Island , New York . The participants were the British Admiral Lord Richard Howe , and members of the Second Continental Congress John Adams , Benjamin Franklin , and Edward Rutledge ."
+    },
+    {
+        "title": "White Tulip",
+        "passage": "\" White Tulip \" is the 18th episode of the second season of the American science fiction drama television series Fringe . It follows a scientist ( Peter Weller ) in his quest to time travel back and save his fianc\u00e9e , while the Fringe team investigates the consequences of his actions , and Walter ( John Noble ) struggles to tell his son Peter ( Joshua Jackson ) he was stolen from the parallel universe as a boy . The series was called",
+        "entity": "Fringe",
+        "label": "contextual",
+        "original_passage": "\" White Tulip \" is the 18th episode of the second season of the American science fiction drama television series Fringe . It follows a scientist ( Peter Weller ) in his quest to time travel back and save his fianc\u00e9e , while the Fringe team investigates the consequences of his actions , and Walter ( John Noble ) struggles to tell his son Peter ( Joshua Jackson ) he was stolen from the parallel universe as a boy ."
+    },
+    {
+        "title": "SS Winfield Scott",
+        "passage": "SS Winfield Scott was a sidewheel steamer that transported passengers and cargo between a port city on the West Coast of North America and Panama in the early 1850s, during the California Gold Rush. After entering a heavy fog off the coast of Southern California on the evening of December 1, 1853, the ship crashed into Middle Anacapa Island. All 450 passengers and crew survived, but the ship was lost. The port city was called",
+        "entity": "San Francisco",
+        "label": "parametric",
+        "original_passage": "SS Winfield Scott was a sidewheel steamer that transported passengers and cargo between San Francisco , California and Panama in the early 1850s , during the California Gold Rush . After entering a heavy fog off the coast of Southern California on the evening of December 1 , 1853 , the ship crashed into Middle Anacapa Island . All 450 passengers and crew survived , but the ship was lost ."
+    },
+    {
+        "title": "Washington , D.C.",
+        "passage": "Washington, D.C., formally the District of Columbia and commonly referred to as \" Washington \", \" the District \", or simply \" D.C. \", is the capital of the United States. The signing of the Residence Act on July 16, 1790, approved the creation of a capital district located on the country's East Coast. The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any U.S. state. The river that flows through Washington, D.C., providing a natural border between Virginia and Maryland, was called",
+        "entity": "the Potomac River",
+        "label": "parametric",
+        "original_passage": "Washington , D.C. , formally the District of Columbia and commonly referred to as \" Washington \" , \" the District \" , or simply \" D.C. \" , is the capital of the United States . The signing of the Residence Act on July 16 , 1790 , approved the creation of a capital district located along the Potomac River on the country 's East Coast . The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any U.S. state ."
+    },
+    {
+        "title": "Colin Doyle ( footballer )",
+        "passage": "Colin Anthony Doyle ( born 12 June 1985 ) is a professional footballer who plays as a goalkeeper for Bradford City. Doyle spent twelve years as a professional with Birmingham City. He made his debut in the Football League in April 2005 while on loan to Championship club Nottingham Forest, and also had loan spells at Chester City, Millwall and Coventry City. In 2015, he signed for Blackpool. The footballer represents the national team of",
+        "entity": "the Republic of Ireland",
+        "label": "parametric",
+        "original_passage": "Colin Anthony Doyle ( born 12 June 1985 ) is an Irish professional footballer who plays as a goalkeeper for Bradford City and the Republic of Ireland national team . Doyle spent twelve years as a professional with Birmingham City . He made his debut in the Football League in April 2005 while on loan to Championship club Nottingham Forest , and also had loan spells at Chester City , Millwall and Coventry City . In 2015 , he signed for Blackpool ."
+    },
+    {
+        "title": "The Boat Race 1867",
+        "passage": "The 24th Boat Race between crews from the University of Oxford and a university in England took place on the River Thames on 13 April 1867. In a race where the lead was exchanged several times, Oxford won by half a length in a time of 22 minutes and 39 seconds. The victory took the overall record to 14 \u2013 10 in Oxford's favour. The university in England was called",
+        "entity": "the University of Cambridge",
+        "label": "parametric",
+        "original_passage": "The 24th Boat Race between crews from the University of Oxford and the University of Cambridge took place on the River Thames on 13 April 1867 . In a race where the lead was exchanged several times , Oxford won by half a length in a time of 22 minutes and 39 seconds . The victory took the overall record to 14 \u2013 10 in Oxford 's favour ."
+    },
+    {
+        "title": "Gerard ( archbishop of York )",
+        "passage": "Gerard ( died 21 May 1108 ) was Archbishop of York between 1100 and 1108 and Lord Chancellor of England from 1085 until 1092. A Norman, he was a member of the cathedral clergy at a city in Normandy before becoming a royal clerk under King William I of England and subsequently his son King William II Rufus. Gerard was appointed Lord Chancellor by William I, and he continued in that office under Rufus, who rewarded him with the Bishopric of Hereford in 1096. Gerard may have been with the king's hunting party when William II was killed, as he is known to have witnessed the first charter issued by the new king, Henry I of England, within days of William's death. The city in Normandy was called",
+        "entity": "Rouen",
+        "label": "parametric",
+        "original_passage": "Gerard ( died 21 May 1108 ) was Archbishop of York between 1100 and 1108 and Lord Chancellor of England from 1085 until 1092 . A Norman , he was a member of the cathedral clergy at Rouen before becoming a royal clerk under King William I of England and subsequently his son King William II Rufus . Gerard was appointed Lord Chancellor by William I , and he continued in that office under Rufus , who rewarded him with the Bishopric of Hereford in 1096 . Gerard may have been with the king 's hunting party when William II was killed , as he is known to have witnessed the first charter issued by the new king , Henry I of England , within days of William 's death ."
+    },
+    {
+        "title": "Halfway Gone",
+        "passage": "\" Halfway Gone \" is a song by an American band. It is the first single released from their fifth studio album, Smoke & Mirrors ( 2010 ). It was first released via digital download in the United States and Canada on October 26, 2009. It was then solicited to mainstream radio on January 12, 2010. Several remixes of the song were later released on iTunes on April 6, 2010 in an album called Halfway Gone Remixes. The song was a commercial success, charting in Canada, the United States, Australia, Austria, Belgium, Germany, the Netherlands, and New Zealand. The accompanying music video portrays the lead singer of the band singing most of the lyrics in a local park, and also features several anonymous people singing the lyrics as well. The band has performed the song live on several occasions. The band was called",
+        "entity": "Lifehouse",
+        "label": "parametric",
+        "original_passage": "\" Halfway Gone \" is a song by American band Lifehouse . It is the first single released from their fifth studio album , Smoke & Mirrors ( 2010 ) . It was first released via digital download in the United States and Canada on October 26 , 2009 . It was then solicited to mainstream radio on January 12 , 2010 . Several remixes of the song were later released on iTunes on April 6 , 2010 in an album called Halfway Gone Remixes . The song was a commercial success , charting in Canada , the United States , Australia , Austria , Belgium , Germany , the Netherlands , and New Zealand . The accompanying music video portrays Lifehouse lead singer Jason Wade singing most of the lyrics in a local park , and also features several anonymous people singing the lyrics as well . The band has performed the song live on several occasions ."
+    },
+    {
+        "title": "Family of Gediminas",
+        "passage": "The family of Gediminas is a group of family members of Gediminas, Grand Duke of Lithuania ( ca. 1275 \u2013 1341 ), who interacted. The family included the siblings, children, and grandchildren of the Grand Duke and played the pivotal role in the history of Lithuania for the period as the Lithuanian nobility had not yet acquired its influence. Gediminas was also the forefather of the Gediminid dynasty, which ruled the Grand Duchy of Lithuania from 1310s or 1280s to 1572. The time period during which the Gediminid dynasty began was called",
+        "entity": "the 14th century",
+        "label": "parametric",
+        "original_passage": "The family of Gediminas is a group of family members of Gediminas , Grand Duke of Lithuania ( ca . 1275 \u2013 1341 ) , who interacted in the 14th century . The family included the siblings , children , and grandchildren of the Grand Duke and played the pivotal role in the history of Lithuania for the period as the Lithuanian nobility had not yet acquired its influence . Gediminas was also the forefather of the Gediminid dynasty , which ruled the Grand Duchy of Lithuania from 1310s or 1280s to 1572 ."
+    },
+    {
+        "title": "The Boat Race 1867",
+        "passage": "The 24th Boat Race between crews from the University of Oxford and the University of Cambridge took place on a river in London on 13 April 1867. In a race where the lead was exchanged several times, Oxford won by half a length in a time of 22 minutes and 39 seconds. The victory took the overall record to 14 \u2013 10 in Oxford's favour. The river where the race took place was called",
+        "entity": "the River Thames",
+        "label": "parametric",
+        "original_passage": "The 24th Boat Race between crews from the University of Oxford and the University of Cambridge took place on the River Thames on 13 April 1867 . In a race where the lead was exchanged several times , Oxford won by half a length in a time of 22 minutes and 39 seconds . The victory took the overall record to 14 \u2013 10 in Oxford 's favour ."
+    },
+    {
+        "title": "The George Hotel , Crawley",
+        "passage": "The George Hotel, also known as the George Inn and now marketed as the Ramada Crawley Gatwick, is a hotel and former coaching inn on a street in Crawley, a town and borough in West Sussex, England. The George was one of the country's most famous and successful coaching inns, and the most important in Sussex, because of its location halfway between the capital city, London, and the fashionable seaside resort of Brighton. Cited as \" Crawley's most celebrated building \", it has Grade II * listed status. The street was called",
+        "entity": "the High Street",
+        "label": "parametric",
+        "original_passage": "The George Hotel , also known as the George Inn and now marketed as the Ramada Crawley Gatwick , is a hotel and former coaching inn on the High Street in Crawley , a town and borough in West Sussex , England . The George was one of the country 's most famous and successful coaching inns , and the most important in Sussex , because of its location halfway between the capital city , London , and the fashionable seaside resort of Brighton . Cited as \" Crawley 's most celebrated building \" , it has Grade II * listed status ."
+    },
+    {
+        "title": "Washington , D.C.",
+        "passage": "Washington, D.C., formally the District of Columbia and commonly referred to as \" Washington \", \" the District \", or simply \" D.C. \", is the capital of a country located along the Potomac River on the East Coast. The signing of the Residence Act on July 16, 1790, approved the creation of a capital district. The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any state. The country for which it serves as the capital is called",
+        "entity": "the United States",
+        "label": "parametric",
+        "original_passage": "Washington , D.C. , formally the District of Columbia and commonly referred to as \" Washington \" , \" the District \" , or simply \" D.C. \" , is the capital of the United States . The signing of the Residence Act on July 16 , 1790 , approved the creation of a capital district located along the Potomac River on the country 's East Coast . The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any U.S. state ."
+    },
+    {
+        "title": "Banksiamyces",
+        "passage": "Banksiamyces is a genus of fungi in the order Helotiales , with a tentative placement in the family Helotiaceae . The genus contains four species , which grow on the seed follicles of the dead infructescences or \" cones \" of various species of Banksia , a genus in the plant family Proteaceae endemic to Australia . Fruit bodies of the fungus appear as small ( typically less than 10 mm diameter ) , shallow dark cups on the follicles of the Banksia fruit . The edges of dry fruit bodies fold inwards , appearing like narrow slits . The first specimens of Banksiamyces , known then as Tympanis toomansis , were described in 1887 . Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s , leading to the creation of a new genus to contain what was determined to be three distinct species , B. katerinae , B. macrocarpus , and B. toomansis . A fourth species , B. maccannii , was added in 1984 . The year this addition occurred was called",
+        "entity": "1984",
+        "label": "contextual",
+        "original_passage": "Banksiamyces is a genus of fungi in the order Helotiales , with a tentative placement in the family Helotiaceae . The genus contains four species , which grow on the seed follicles of the dead infructescences or \" cones \" of various species of Banksia , a genus in the plant family Proteaceae endemic to Australia . Fruit bodies of the fungus appear as small ( typically less than 10 mm diameter ) , shallow dark cups on the follicles of the Banksia fruit . The edges of dry fruit bodies fold inwards , appearing like narrow slits . The first specimens of Banksiamyces , known then as Tympanis toomansis , were described in 1887 . Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s , leading to the creation of a new genus to contain what was determined to be three distinct species , B. katerinae , B. macrocarpus , and B. toomansis . A fourth species , B. maccannii , was added in 1984 ."
+    },
+    {
+        "title": "Operation Ferdinand",
+        "passage": "Operation Ferdinand was a military deception employed by the Allies during the Second World War. It formed part of a major strategic deception intended to misdirect and confuse German high command about Allied invasion plans during 1944. Ferdinand consisted of strategic and tactical deceptions intended to draw attention away from the Operation Dragoon landing areas in southern France by threatening an invasion of Genoa in Italy. Planned by Eugene Sweeney in June and July 1944 and operated until early September, it has been described as \" quite the most successful of'A'Force's strategic deceptions \". It helped the Allies achieve complete tactical surprise in their landings and pinned down German troops in the Genoa region until late July. The broader strategic deception was called",
+        "entity": "Operation Bodyguard",
+        "label": "parametric",
+        "original_passage": "Operation Ferdinand was a military deception employed by the Allies during the Second World War . It formed part of Operation Bodyguard , a major strategic deception intended to misdirect and confuse German high command about Allied invasion plans during 1944 . Ferdinand consisted of strategic and tactical deceptions intended to draw attention away from the Operation Dragoon landing areas in southern France by threatening an invasion of Genoa in Italy . Planned by Eugene Sweeney in June and July 1944 and operated until early September , it has been described as \" quite the most successful of ' A ' Force 's strategic deceptions \" . It helped the Allies achieve complete tactical surprise in their landings and pinned down German troops in the Genoa region until late July ."
+    },
+    {
+        "title": "Sydney Newman",
+        "passage": "Sydney Cecil Newman, OC ( April 1, 1917 \u2013 October 30, 1997 ) was a Canadian film and television producer, who played a pioneering role in British television drama from the late 1950s to the late 1960s. After his return to Canada in 1970, Newman was appointed Acting Director of the Broadcast Programs Branch for the Canadian Radio and Television Commission ( CRTC ) and then head of a major Canadian film board. He also occupied senior positions at the Canadian Film Development Corporation and Canadian Broadcasting Corporation, and acted as an advisor to the Secretary of State. The major Canadian film board was called",
+        "entity": "NFB",
+        "label": "parametric",
+        "original_passage": "Sydney Cecil Newman , OC ( April 1 , 1917 \u2013 October 30 , 1997 ) was a Canadian film and television producer , who played a pioneering role in British television drama from the late 1950s to the late 1960s . After his return to Canada in 1970 , Newman was appointed Acting Director of the Broadcast Programs Branch for the Canadian Radio and Television Commission ( CRTC ) and then head of the National Film Board of Canada ( NFB ) . He also occupied senior positions at the Canadian Film Development Corporation and Canadian Broadcasting Corporation , and acted as an advisor to the Secretary of State ."
+    },
+    {
+        "title": "Ralph de Luffa",
+        "passage": "Ralph de Luffa ( or Ralph Luffa, and the first name is sometimes spelled Ralf ; died 1123 ) was an English bishop, from 1091 to 1123. He built extensively on his cathedral as well as being praised by contemporary writers as an exemplary bishop. He took little part in the Investiture Crisis which took place in England during his episcopate. Although at one point he refused to allow his diocese to be taxed by King Henry I of England, Luffa remained on good terms with the two kings of England he served. The diocese he served was called",
+        "entity": "Chichester",
+        "label": "parametric",
+        "original_passage": "Ralph de Luffa ( or Ralph Luffa , and the first name is sometimes spelled Ralf ; died 1123 ) was an English bishop of Chichester , from 1091 to 1123 . He built extensively on his cathedral as well as being praised by contemporary writers as an exemplary bishop . He took little part in the Investiture Crisis which took place in England during his episcopate . Although at one point he refused to allow his diocese to be taxed by King Henry I of England , Luffa remained on good terms with the two kings of England he served ."
+    },
+    {
+        "title": "Colin Doyle ( footballer )",
+        "passage": "Colin Anthony Doyle ( born 12 June 1985 ) is an Irish professional footballer who plays as a goalkeeper for Bradford City and the Republic of Ireland national team . Doyle spent twelve years as a professional with Birmingham City . He made his debut in the Football League in April 2005 while on loan to Championship club Nottingham Forest , and also had loan spells at Chester City , Millwall and Coventry City . In 2015 , he signed for Blackpool . The Championship club was called",
+        "entity": "Nottingham Forest",
+        "label": "contextual",
+        "original_passage": "Colin Anthony Doyle ( born 12 June 1985 ) is an Irish professional footballer who plays as a goalkeeper for Bradford City and the Republic of Ireland national team . Doyle spent twelve years as a professional with Birmingham City . He made his debut in the Football League in April 2005 while on loan to Championship club Nottingham Forest , and also had loan spells at Chester City , Millwall and Coventry City . In 2015 , he signed for Blackpool ."
+    },
+    {
+        "title": "Alyssa Miller",
+        "passage": "Alyssa Elaine Miller ( born July 4 , 1989 ) is an American fashion model . She has done print and runway work for numerous leading companies . Among her highlights are cover appearances on for Vogue ( Germany ) and Elle ( Italy ) , work as a featured model / spokesperson for both Guess and Victoria 's Secret as well as appearances in the Sports Illustrated Swimsuit Issue . The magazine she appeared on was called",
+        "entity": "Elle",
+        "label": "contextual",
+        "original_passage": "Alyssa Elaine Miller ( born July 4 , 1989 ) is an American fashion model . She has done print and runway work for numerous leading companies . Among her highlights are cover appearances on for Vogue ( Germany ) and Elle ( Italy ) , work as a featured model / spokesperson for both Guess and Victoria 's Secret as well as appearances in the Sports Illustrated Swimsuit Issue ."
+    },
+    {
+        "title": "Sydney Newman",
+        "passage": "Sydney Cecil Newman, OC ( April 1, 1917 \u2013 October 30, 1997 ) was a Canadian film and television producer, who played a pioneering role in television drama from the late 1950s to the late 1960s. After his return to Canada in 1970, Newman was appointed Acting Director of the Broadcast Programs Branch for the Canadian Radio and Television Commission ( CRTC ) and then head of the National Film Board of Canada ( NFB ). He also occupied senior positions at the Canadian Film Development Corporation and Canadian Broadcasting Corporation, and acted as an advisor to the Secretary of State. The nationality often associated with his work outside Canada was",
+        "entity": "British",
+        "label": "parametric",
+        "original_passage": "Sydney Cecil Newman , OC ( April 1 , 1917 \u2013 October 30 , 1997 ) was a Canadian film and television producer , who played a pioneering role in British television drama from the late 1950s to the late 1960s . After his return to Canada in 1970 , Newman was appointed Acting Director of the Broadcast Programs Branch for the Canadian Radio and Television Commission ( CRTC ) and then head of the National Film Board of Canada ( NFB ) . He also occupied senior positions at the Canadian Film Development Corporation and Canadian Broadcasting Corporation , and acted as an advisor to the Secretary of State ."
+    },
+    {
+        "title": "Grand Crimean Central Railway",
+        "passage": "The Grand Crimean Central Railway was a military railway built in 1855 during a conflict between Russia and an alliance of European powers. Its purpose was to supply ammunition and provisions to soldiers engaged in a siege on a peninsula in the Black Sea who were stationed on a plateau between Balaklava and Sevastopol. It also carried the world's first hospital train. The conflict was called",
+        "entity": "the Crimean War",
+        "label": "parametric",
+        "original_passage": "The Grand Crimean Central Railway was a military railway built in 1855 during the Crimean War by Great Britain . Its purpose was to supply ammunition and provisions to Allied soldiers engaged in the siege of Sevastopol who were stationed on a plateau between Balaklava and Sevastopol . It also carried the world 's first hospital train ."
+    },
+    {
+        "title": "Elaine Marley",
+        "passage": "Elaine Marley \u2013 Threepwood is a fictional character in the Monkey Island series of graphic adventure video games. Created by Ron Gilbert for a renowned video game developer, the character first appears in The Secret of Monkey Island and is one of the core characters in the franchise. Originally conceived as a ruthless island governor, the character evolved during development into the protagonist's love interest. While the first two games in the series did not feature voice acting, Elaine was voiced by Alexandra Boyd in The Curse of Monkey Island and by Charity James in Escape from Monkey Island ; Boyd would reprise the role for later entries in the franchise. The video game developer was called",
+        "entity": "LucasArts",
+        "label": "parametric",
+        "original_passage": "Elaine Marley \u2013 Threepwood is a fictional character in the Monkey Island series of graphic adventure video games . Created by Ron Gilbert for LucasArts , the character first appears in The Secret of Monkey Island and is one of the core characters in the franchise . Originally conceived as a ruthless island governor , the character evolved during development into the protagonist 's love interest . While the first two games in the series did not feature voice acting , Elaine was voiced by Alexandra Boyd in The Curse of Monkey Island and by Charity James in Escape from Monkey Island ; Boyd would reprise the role for later entries in the franchise ."
+    },
+    {
+        "title": "Elaine Marley",
+        "passage": "Elaine Marley \u2013 Threepwood is a fictional character in the Monkey Island series of graphic adventure video games. Created by a LucasArts designer for LucasArts, the character first appears in The Secret of Monkey Island and is one of the core characters in the franchise. Originally conceived as a ruthless island governor, the character evolved during development into the protagonist's love interest. While the first two games in the series did not feature voice acting, Elaine was voiced by Alexandra Boyd in The Curse of Monkey Island and by Charity James in Escape from Monkey Island ; Boyd would reprise the role for later entries in the franchise. The designer responsible for creating the character was named",
+        "entity": "Ron Gilbert",
+        "label": "parametric",
+        "original_passage": "Elaine Marley \u2013 Threepwood is a fictional character in the Monkey Island series of graphic adventure video games . Created by Ron Gilbert for LucasArts , the character first appears in The Secret of Monkey Island and is one of the core characters in the franchise . Originally conceived as a ruthless island governor , the character evolved during development into the protagonist 's love interest . While the first two games in the series did not feature voice acting , Elaine was voiced by Alexandra Boyd in The Curse of Monkey Island and by Charity James in Escape from Monkey Island ; Boyd would reprise the role for later entries in the franchise ."
+    },
+    {
+        "title": "Fantasy ( 1938 magazine )",
+        "passage": "Fantasy was a British pulp science fiction magazine which published three issues in 1938 and 1939. The editor was T. Stanhope Sprigg ; when the war started, he enlisted in the RAF and the magazine was closed down. The publisher, George Newnes Ltd, paid respectable rates, and as a result Sprigg was able to obtain some good quality material, including stories by Eric Frank Russell, and John Russell Fearn. The contributor to the magazine was named",
+        "entity": "John Wyndham",
+        "label": "parametric",
+        "original_passage": "Fantasy was a British pulp science fiction magazine which published three issues in 1938 and 1939 . The editor was T. Stanhope Sprigg ; when the war started , he enlisted in the RAF and the magazine was closed down . The publisher , George Newnes Ltd , paid respectable rates , and as a result Sprigg was able to obtain some good quality material , including stories by John Wyndham , Eric Frank Russell , and John Russell Fearn ."
+    },
+    {
+        "title": "PlayStation 4",
+        "passage": "The PlayStation 4 ( abbreviated as PS4 ) is a home video game console developed by Sony Interactive Entertainment, formerly Sony Computer Entertainment. Announced as the successor to the PlayStation 3 during a press conference on February 20, 2013, it was launched on November 15, 2013 in North America, and November 29, 2013 in Europe, South America and Australia, and February 22, 2014 in Japan. It competes with Nintendo's Wii U and a rival console from a company based in Redmond, Washington The company based in Redmond, Washington, was called",
+        "entity": "Microsoft",
+        "label": "parametric",
+        "original_passage": "The PlayStation 4 ( abbreviated as PS4 ) is a home video game console developed by Sony Interactive Entertainment , formerly Sony Computer Entertainment . Announced as the successor to the PlayStation 3 during a press conference on February 20 , 2013 , it was launched on November 15 , 2013 in North America , and November 29 , 2013 in Europe , South America and Australia , and February 22 , 2014 in Japan . It competes with Nintendo 's Wii U and Microsoft 's Xbox One , as part of the eighth generation of video game consoles ."
+    },
+    {
+        "title": "Thorium",
+        "passage": "Thorium is a chemical element with symbol Th and atomic number 90. A radioactive actinide metal, thorium is one of only two significantly radioactive elements that still occur naturally in large quantities as a primordial element ( the other being uranium ). It was discovered in 1829 by the Norwegian priest and amateur mineralogist Morten Thrane Esmark and identified by a Swedish chemist, who named it after Thor, the Norse god of thunder. The Swedish chemist who identified it was named",
+        "entity": "J\u00f6ns Jacob Berzelius",
+        "label": "parametric",
+        "original_passage": "Thorium is a chemical element with symbol Th and atomic number 90 . A radioactive actinide metal , thorium is one of only two significantly radioactive elements that still occur naturally in large quantities as a primordial element ( the other being uranium ) . It was discovered in 1829 by the Norwegian priest and amateur mineralogist Morten Thrane Esmark and identified by the Swedish chemist J\u00f6ns Jacob Berzelius , who named it after Thor , the Norse god of thunder ."
+    },
+    {
+        "title": "Bernard Levin",
+        "passage": "Henry Bernard Levin CBE ( 19 August 1928 \u2013 7 August 2004 ) was a journalist, author and broadcaster, described by The Times as \" the most famous journalist of his day \". The son of a poor Jewish family in London, he won a scholarship to the independent school Christ's Hospital and went on to the London School of Economics, graduating in 1952. After a short spell in a lowly job at the BBC selecting press cuttings for use in programmes, he secured a post as a junior member of the editorial staff of a weekly periodical, Truth, in 1953. The language of his publications was",
+        "entity": "English",
+        "label": "parametric",
+        "original_passage": "Henry Bernard Levin CBE ( 19 August 1928 \u2013 7 August 2004 ) was an English journalist , author and broadcaster , described by The Times as \" the most famous journalist of his day \" . The son of a poor Jewish family in London , he won a scholarship to the independent school Christ 's Hospital and went on to the London School of Economics , graduating in 1952 . After a short spell in a lowly job at the BBC selecting press cuttings for use in programmes , he secured a post as a junior member of the editorial staff of a weekly periodical , Truth , in 1953 ."
+    },
+    {
+        "title": "Cricket at the 1900 Summer Olympics",
+        "passage": "A cricket tournament, played as part of the 1900 Summer Olympics, took place on 19 \u2013 20 August at a venue in Paris. The only match of the tournament was played between teams representing Great Britain and France, and was won by 158 runs by Great Britain. The venue in Paris was called",
+        "entity": "the V\u00e9lodrome de Vincennes",
+        "label": "parametric",
+        "original_passage": "A cricket tournament , played as part of the 1900 Summer Olympics , took place on 19 \u2013 20 August at the V\u00e9lodrome de Vincennes . The only match of the tournament was played between teams representing Great Britain and France , and was won by 158 runs by Great Britain ."
+    },
+    {
+        "title": "The Power of Three ( Doctor Who )",
+        "passage": "\" The Power of Three \" is the fourth episode of the seventh series of the British science fiction television programme Doctor Who that aired on BBC One and BBC One HD on 22 September 2012. It was written by Chris Chibnall and directed by a British television director. The director of the episode was named",
+        "entity": "Douglas Mackinnon",
+        "label": "parametric",
+        "original_passage": "\" The Power of Three \" is the fourth episode of the seventh series of the British science fiction television programme Doctor Who that aired on BBC One and BBC One HD on 22 September 2012 . It was written by Chris Chibnall and directed by Douglas Mackinnon ."
+    },
+    {
+        "title": "Savior ( Rise Against song )",
+        "passage": "\" Savior \" is a song by American rock band Rise Against , featured on their fifth studio album Appeal to Reason ( 2008 ) . Written and performed by the band , the song deviates from the social and political topics normally discussed in Rise Against songs , and is instead about forgiveness and broken relationships . It is a punk rock song , with a \" frenetic pace \" that John Hanson of Sputnikmusic described as reminiscent of tracks from the band 's 2003 album Revolutions per Minute . It was released as Appeal to Reason 's third single on June 3 , 2009 . The music review platform was called",
+        "entity": "Sputnikmusic",
+        "label": "contextual",
+        "original_passage": "\" Savior \" is a song by American rock band Rise Against , featured on their fifth studio album Appeal to Reason ( 2008 ) . Written and performed by the band , the song deviates from the social and political topics normally discussed in Rise Against songs , and is instead about forgiveness and broken relationships . It is a punk rock song , with a \" frenetic pace \" that John Hanson of Sputnikmusic described as reminiscent of tracks from the band 's 2003 album Revolutions per Minute . It was released as Appeal to Reason 's third single on June 3 , 2009 ."
+    },
+    {
+        "title": "White Tulip",
+        "passage": "\" White Tulip \" is the 18th episode of the second season of the American science fiction drama television series Fringe. It follows a scientist ( Peter Weller ) in his quest to time travel back and save his fianc\u00e9e, while the Fringe team investigates the consequences of his actions, and a man ( John Noble ) struggles to tell his son Peter ( Joshua Jackson ) he was stolen from the parallel universe as a boy. The scientist's character in the episode was named",
+        "entity": "Walter",
+        "label": "parametric",
+        "original_passage": "\" White Tulip \" is the 18th episode of the second season of the American science fiction drama television series Fringe . It follows a scientist ( Peter Weller ) in his quest to time travel back and save his fianc\u00e9e , while the Fringe team investigates the consequences of his actions , and Walter ( John Noble ) struggles to tell his son Peter ( Joshua Jackson ) he was stolen from the parallel universe as a boy ."
+    },
+    {
+        "title": "Dial Meg for Murder",
+        "passage": "\" Dial Meg for Murder \" is the 11th episode of season eight of the animated comedy series Family Guy. It originally aired on Fox in the United States on January 31, 2010, the day of the series'eleventh anniversary from 1999. The episode follows teenager Meg as she dates and falls in love with an inmate at the local prison. She eventually ends up hiding the fugitive in the Griffin family home, however, and is convicted and sent to jail. After returning home, she becomes a hardened criminal, who continually tortures her family. While starting a life away from home, she sees the magazine article that a member of the Griffin family wrote about her. Touched by what he wrote, Meg returns home and thanks him in return. Prior to her storyline, Meg's father Peter attempts to win a local championship rodeo competition, but his attempts to sabotage the competition to ensure his win gets the best of him after getting assaulted by the bull he rode on. Meg's brother, who wrote the article, was named",
+        "entity": "Brian",
+        "label": "parametric",
+        "original_passage": "\" Dial Meg for Murder \" is the 11th episode of season eight of the animated comedy series Family Guy . It originally aired on Fox in the United States on January 31 , 2010 , the day of the series ' eleventh anniversary from 1999 . The episode follows teenager Meg as she dates and falls in love with an inmate at the local prison . She eventually ends up hiding the fugitive in the Griffin family home , however , and is convicted and sent to jail . After returning home , she becomes a hardened criminal , who continually tortures her family . While starting a life away from home , Meg sees the magazine article that the family dog Brian wrote about her . Touched by what he wrote , Meg returns home and thanks Brian in return . Prior to her storyline , Meg 's father Peter attempts to win a local championship rodeo competition , but his attempts to sabotage the competition to ensure his win gets the best of him after getting assaulted by the bull he rode on ."
+    },
+    {
+        "title": "Pest of the West",
+        "passage": "\" Pest of the West \" is the 16th episode of the fifth season and the 96th overall episode of the American animated television series SpongeBob SquarePants . In this episode , SpongeBob finds that he is a distant relative of SpongeBuck SquarePants , a sheriff from Bikini Bottom 's past who helped save the citizens from the quickest whip draw in town , the evil Dead Eye Plankton . It was written by Luke Brookshier , Tom King , Steven Banks and Richard Pursel , with Andrew Overtoom and Tom Yasumi serving as animation directors . Brookshier and King also functioned as storyboard directors . The courageous sheriff from Bikini Bottom's past was called",
+        "entity": "SpongeBuck SquarePants",
+        "label": "contextual",
+        "original_passage": "\" Pest of the West \" is the 16th episode of the fifth season and the 96th overall episode of the American animated television series SpongeBob SquarePants . In this episode , SpongeBob finds that he is a distant relative of SpongeBuck SquarePants , a sheriff from Bikini Bottom 's past who helped save the citizens from the quickest whip draw in town , the evil Dead Eye Plankton . It was written by Luke Brookshier , Tom King , Steven Banks and Richard Pursel , with Andrew Overtoom and Tom Yasumi serving as animation directors . Brookshier and King also functioned as storyboard directors ."
+    },
+    {
+        "title": "Sydney Newman",
+        "passage": "Sydney Cecil Newman, OC ( April 1, 1917 \u2013 October 30, 1997 ) was a Canadian film and television producer, who played a pioneering role in British television drama from the late 1950s to the late 1960s. After his return to Canada in 1970, Newman was appointed Acting Director of the Broadcast Programs Branch for a government agency and then head of the National Film Board of Canada ( NFB ). He also occupied senior positions at the Canadian Film Development Corporation and Canadian Broadcasting Corporation, and acted as an advisor to the Secretary of State. The government agency was called",
+        "entity": "CRTC",
+        "label": "parametric",
+        "original_passage": "Sydney Cecil Newman , OC ( April 1 , 1917 \u2013 October 30 , 1997 ) was a Canadian film and television producer , who played a pioneering role in British television drama from the late 1950s to the late 1960s . After his return to Canada in 1970 , Newman was appointed Acting Director of the Broadcast Programs Branch for the Canadian Radio and Television Commission ( CRTC ) and then head of the National Film Board of Canada ( NFB ) . He also occupied senior positions at the Canadian Film Development Corporation and Canadian Broadcasting Corporation , and acted as an advisor to the Secretary of State ."
+    },
+    {
+        "title": "Gerard ( archbishop of York )",
+        "passage": "Gerard ( died 21 May 1108 ) was Archbishop of York between 1100 and 1108 and Lord Chancellor of England from 1085 until 1092 . A Norman , he was a member of the cathedral clergy at Rouen before becoming a royal clerk under King William I of England and subsequently his son King William II Rufus . Gerard was appointed Lord Chancellor by William I , and he continued in that office under Rufus , who rewarded him with the Bishopric of Hereford in 1096 . Gerard may have been with the king 's hunting party when William II was killed , as he is known to have witnessed the first charter issued by the new king , Henry I of England , within days of William 's death . The influential archbishop was called",
+        "entity": "Norman",
+        "label": "contextual",
+        "original_passage": "Gerard ( died 21 May 1108 ) was Archbishop of York between 1100 and 1108 and Lord Chancellor of England from 1085 until 1092 . A Norman , he was a member of the cathedral clergy at Rouen before becoming a royal clerk under King William I of England and subsequently his son King William II Rufus . Gerard was appointed Lord Chancellor by William I , and he continued in that office under Rufus , who rewarded him with the Bishopric of Hereford in 1096 . Gerard may have been with the king 's hunting party when William II was killed , as he is known to have witnessed the first charter issued by the new king , Henry I of England , within days of William 's death ."
+    },
+    {
+        "title": "Gin Tama",
+        "passage": "Gin Tama ( Japanese : \u9280\u9b42, Hepburn : Gintama, lit. \" Silver Soul \" ), also styled as Gintama, is a Japanese manga written and illustrated by  and serialized, beginning on December 8, 2003, in Shueisha's Weekly Sh\u014dnen Jump. Set in Edo which has been conquered by aliens named Amanto, the plot follows life from the point of view of samurai Gintoki Sakata, who works as a freelancer alongside his friends Shinpachi Shimura and Kagura in order to pay the monthly rent.  added the science fiction setting to develop characters to his liking after his editor suggested doing a historical series. The creator of the manga was named",
+        "entity": "Hideaki Sorachi",
+        "label": "parametric",
+        "original_passage": "Gin Tama ( Japanese : \u9280\u9b42 , Hepburn : Gintama , lit . \" Silver Soul \" ) , also styled as Gintama , is a Japanese manga written and illustrated by Hideaki Sorachi and serialized , beginning on December 8 , 2003 , in Shueisha 's Weekly Sh\u014dnen Jump . Set in Edo which has been conquered by aliens named Amanto , the plot follows life from the point of view of samurai Gintoki Sakata , who works as a freelancer alongside his friends Shinpachi Shimura and Kagura in order to pay the monthly rent . Sorachi added the science fiction setting to develop characters to his liking after his editor suggested doing a historical series ."
+    },
+    {
+        "title": "John Adams ( drummer )",
+        "passage": "John Adams ( born 1951 ) is a dedicated fan of a team based in Cleveland, Ohio. Adams has played his bass drum in the bleacher seats during nearly every home game since 1973, which has brought him notoriety and recognition from the team and other organizations. The team now pay for two season tickets for Adams and his drum, he has been involved in two ceremonial first pitches, and he is the only fan for whom the team has dedicated a bobblehead day. The team he supports is part of",
+        "entity": "Major League Baseball",
+        "label": "parametric",
+        "original_passage": "John Adams ( born 1951 ) is a dedicated fan of the Cleveland Indians , a Major League Baseball team based in Cleveland , Ohio . Adams has played his bass drum in the bleacher seats during nearly every Indians home game since 1973 , which has brought him notoriety and recognition from the Indians and other organizations . The Indians now pay for two season tickets for Adams and his drum , he has been involved in two ceremonial first pitches , and he is the only fan for whom the Indians have dedicated a bobblehead day ."
+    },
+    {
+        "title": "The Boat Race 1867",
+        "passage": "The 24th Boat Race between crews from the University of Oxford and the University of Cambridge took place on the River Thames on 13 April 1867 . In a race where the lead was exchanged several times , Oxford won by half a length in a time of 22 minutes and 39 seconds . The victory took the overall record to 14 \u2013 10 in Oxford 's favour . The victors of this intense competition were from",
+        "entity": "the University of Oxford",
+        "label": "contextual",
+        "original_passage": "The 24th Boat Race between crews from the University of Oxford and the University of Cambridge took place on the River Thames on 13 April 1867 . In a race where the lead was exchanged several times , Oxford won by half a length in a time of 22 minutes and 39 seconds . The victory took the overall record to 14 \u2013 10 in Oxford 's favour ."
+    },
+    {
+        "title": "Ben Stiller",
+        "passage": "Benjamin Edward Meara \" Ben \" Stiller ( born November 30, 1965 ) is an American actor, comedian, and filmmaker. He is the son of veteran comedians and actors and the late Anne Meara. The father of Ben Stiller was called",
+        "entity": "Jerry Stiller",
+        "label": "parametric",
+        "original_passage": "Benjamin Edward Meara \" Ben \" Stiller ( born November 30 , 1965 ) is an American actor , comedian , and filmmaker . He is the son of veteran comedians and actors Jerry Stiller and the late Anne Meara ."
+    },
+    {
+        "title": "Pest of the West",
+        "passage": "\" Pest of the West \" is the 16th episode of the fifth season and the 96th overall episode of an American animated television series. In this episode, a character finds that he is a distant relative of a sheriff from Bikini Bottom's past who helped save the citizens from the quickest whip draw in town, the evil Dead Eye Plankton. It was written by Luke Brookshier, Tom King, Steven Banks and Richard Pursel, with Andrew Overtoom and Tom Yasumi serving as animation directors. Brookshier and King also functioned as storyboard directors. The animated television series was called",
+        "entity": "SpongeBob SquarePants",
+        "label": "parametric",
+        "original_passage": "\" Pest of the West \" is the 16th episode of the fifth season and the 96th overall episode of the American animated television series SpongeBob SquarePants . In this episode , SpongeBob finds that he is a distant relative of SpongeBuck SquarePants , a sheriff from Bikini Bottom 's past who helped save the citizens from the quickest whip draw in town , the evil Dead Eye Plankton . It was written by Luke Brookshier , Tom King , Steven Banks and Richard Pursel , with Andrew Overtoom and Tom Yasumi serving as animation directors . Brookshier and King also functioned as storyboard directors ."
+    },
+    {
+        "title": "The Power of Three ( Doctor Who )",
+        "passage": "\" The Power of Three \" is the fourth episode of the seventh series of a science fiction television programme that aired on BBC One and BBC One HD on 22 September 2012. It was written by Chris Chibnall and directed by Douglas Mackinnon. The programme was called",
+        "entity": "British",
+        "label": "parametric",
+        "original_passage": "\" The Power of Three \" is the fourth episode of the seventh series of the British science fiction television programme Doctor Who that aired on BBC One and BBC One HD on 22 September 2012 . It was written by Chris Chibnall and directed by Douglas Mackinnon ."
+    },
+    {
+        "title": "Ralph de Luffa",
+        "passage": "Ralph de Luffa ( or Ralph Luffa , and the first name is sometimes spelled Ralf ; died 1123 ) was an English bishop of Chichester , from 1091 to 1123 . He built extensively on his cathedral as well as being praised by contemporary writers as an exemplary bishop . He took little part in the Investiture Crisis which took place in England during his episcopate . Although at one point he refused to allow his diocese to be taxed by King Henry I of England , Luffa remained on good terms with the two kings of England he served . The conflict over appointments involving church officials was called",
+        "entity": "the Investiture Crisis",
+        "label": "contextual",
+        "original_passage": "Ralph de Luffa ( or Ralph Luffa , and the first name is sometimes spelled Ralf ; died 1123 ) was an English bishop of Chichester , from 1091 to 1123 . He built extensively on his cathedral as well as being praised by contemporary writers as an exemplary bishop . He took little part in the Investiture Crisis which took place in England during his episcopate . Although at one point he refused to allow his diocese to be taxed by King Henry I of England , Luffa remained on good terms with the two kings of England he served ."
+    },
+    {
+        "title": "Dial Meg for Murder",
+        "passage": "\" Dial Meg for Murder \" is the 11th episode of season eight of the animated comedy series Family Guy. It originally aired on a major American television network in the United States on January 31, 2010, the day of the series'eleventh anniversary from 1999. The episode follows teenager Meg as she dates and falls in love with an inmate at the local prison. She eventually ends up hiding the fugitive in the Griffin family home, however, and is convicted and sent to jail. After returning home, she becomes a hardened criminal, who continually tortures her family. While starting a life away from home, Meg sees the magazine article that the family dog Brian wrote about her. Touched by what he wrote, Meg returns home and thanks Brian in return. Prior to her storyline, Meg's father Peter attempts to win a local championship rodeo competition, but his attempts to sabotage the competition to ensure his win gets the best of him after getting assaulted by the bull he rode on. The episode aired on a network named",
+        "entity": "Fox",
+        "label": "parametric",
+        "original_passage": "\" Dial Meg for Murder \" is the 11th episode of season eight of the animated comedy series Family Guy . It originally aired on Fox in the United States on January 31 , 2010 , the day of the series ' eleventh anniversary from 1999 . The episode follows teenager Meg as she dates and falls in love with an inmate at the local prison . She eventually ends up hiding the fugitive in the Griffin family home , however , and is convicted and sent to jail . After returning home , she becomes a hardened criminal , who continually tortures her family . While starting a life away from home , Meg sees the magazine article that the family dog Brian wrote about her . Touched by what he wrote , Meg returns home and thanks Brian in return . Prior to her storyline , Meg 's father Peter attempts to win a local championship rodeo competition , but his attempts to sabotage the competition to ensure his win gets the best of him after getting assaulted by the bull he rode on ."
+    },
+    {
+        "title": "John Adams ( drummer )",
+        "passage": "John Adams ( born 1951 ) is a dedicated fan of a Major League Baseball team based in Cleveland, Ohio. Adams has played his bass drum in the bleacher seats during nearly every home game since 1973, which has brought him notoriety and recognition from the team and other organizations. The team now pay for two season tickets for Adams and his drum, he has been involved in two ceremonial first pitches, and he is the only fan for whom the team have dedicated a bobblehead day. The team was called",
+        "entity": "the Cleveland Indians",
+        "label": "parametric",
+        "original_passage": "John Adams ( born 1951 ) is a dedicated fan of the Cleveland Indians , a Major League Baseball team based in Cleveland , Ohio . Adams has played his bass drum in the bleacher seats during nearly every Indians home game since 1973 , which has brought him notoriety and recognition from the Indians and other organizations . The Indians now pay for two season tickets for Adams and his drum , he has been involved in two ceremonial first pitches , and he is the only fan for whom the Indians have dedicated a bobblehead day ."
+    },
+    {
+        "title": "The George Hotel , Crawley",
+        "passage": "The George Hotel , also known as the George Inn and now marketed as the Ramada Crawley Gatwick , is a hotel and former coaching inn on the High Street in Crawley , a town and borough in West Sussex , England . The George was one of the country 's most famous and successful coaching inns , and the most important in Sussex , because of its location halfway between the capital city , London , and the fashionable seaside resort of Brighton . Cited as \" Crawley 's most celebrated building \" , it has Grade II * listed status . The historic coaching inn was called",
+        "entity": "the George Inn",
+        "label": "contextual",
+        "original_passage": "The George Hotel , also known as the George Inn and now marketed as the Ramada Crawley Gatwick , is a hotel and former coaching inn on the High Street in Crawley , a town and borough in West Sussex , England . The George was one of the country 's most famous and successful coaching inns , and the most important in Sussex , because of its location halfway between the capital city , London , and the fashionable seaside resort of Brighton . Cited as \" Crawley 's most celebrated building \" , it has Grade II * listed status ."
+    },
+    {
+        "title": "Gin Tama",
+        "passage": "Gin Tama ( Japanese : \u9280\u9b42, Hepburn : Gintama, lit. \" Silver Soul \" ), also styled as Gintama, is a Japanese manga written and illustrated by Hideaki Sorachi and serialized, beginning on December 8, 2003, in Shueisha's Weekly Sh\u014dnen Jump. Set in a feudal city in Japan which has been conquered by aliens named Amanto, the plot follows life from the point of view of samurai Gintoki Sakata, who works as a freelancer alongside his friends Shinpachi Shimura and Kagura in order to pay the monthly rent. Sorachi added the science fiction setting to develop characters to his liking after his editor suggested doing a historical series. The feudal city setting was called",
+        "entity": "Edo",
+        "label": "parametric",
+        "original_passage": "Gin Tama ( Japanese : \u9280\u9b42 , Hepburn : Gintama , lit . \" Silver Soul \" ) , also styled as Gintama , is a Japanese manga written and illustrated by Hideaki Sorachi and serialized , beginning on December 8 , 2003 , in Shueisha 's Weekly Sh\u014dnen Jump . Set in Edo which has been conquered by aliens named Amanto , the plot follows life from the point of view of samurai Gintoki Sakata , who works as a freelancer alongside his friends Shinpachi Shimura and Kagura in order to pay the monthly rent . Sorachi added the science fiction setting to develop characters to his liking after his editor suggested doing a historical series ."
+    },
+    {
+        "title": "Fantasy ( 1938 magazine )",
+        "passage": "Fantasy was a British pulp science fiction magazine which published three issues in 1938 and 1939 . The editor was T. Stanhope Sprigg ; when the war started , he enlisted in the RAF and the magazine was closed down . The publisher , George Newnes Ltd , paid respectable rates , and as a result Sprigg was able to obtain some good quality material , including stories by John Wyndham , Eric Frank Russell , and John Russell Fearn . The editor of the magazine was named",
+        "entity": "T. Stanhope Sprigg",
+        "label": "contextual",
+        "original_passage": "Fantasy was a British pulp science fiction magazine which published three issues in 1938 and 1939 . The editor was T. Stanhope Sprigg ; when the war started , he enlisted in the RAF and the magazine was closed down . The publisher , George Newnes Ltd , paid respectable rates , and as a result Sprigg was able to obtain some good quality material , including stories by John Wyndham , Eric Frank Russell , and John Russell Fearn ."
+    },
+    {
+        "title": "Amanita australis",
+        "passage": "Amanita australis is a species of fungus in the Amanitaceae family. It is found only in a country in the southern hemisphere, where it occurs in Leptospermum and Nothofagus forest. The species was first described by a mycologist Greta Stevenson in 1962 ; in the same publication Stevenson also described what she thought was a unique species, Limacella macrospora, but over 30 years later this was reduced to synonymy with A. australis. This country was called",
+        "entity": "New Zealand",
+        "label": "parametric",
+        "original_passage": "Amanita australis is a species of fungus in the Amanitaceae family . It is found only in New Zealand , where it occurs in Leptospermum and Nothofagus forest . The species was first described by New Zealand mycologist Greta Stevenson in 1962 ; in the same publication Stevenson also described what she thought was a unique species , Limacella macrospora , but over 30 years later this was reduced to synonymy with A. australis ."
+    },
+    {
+        "title": "Thomas C. Hindman",
+        "passage": "Thomas Carmichael Hindman, Jr. ( January 28, 1828 \u2013 September 27, 1868 ) was a lawyer, United States Representative from the 1st Congressional District of a state, and a Major General in the Confederate States Army during the American Civil War. The state was called",
+        "entity": "Arkansas",
+        "label": "parametric",
+        "original_passage": "Thomas Carmichael Hindman , Jr . ( January 28 , 1828 \u2013 September 27 , 1868 ) was a lawyer , United States Representative from the 1st Congressional District of Arkansas , and a Major General in the Confederate States Army during the American Civil War ."
+    },
+    {
+        "title": "White Tulip",
+        "passage": "\" White Tulip \" is the 18th episode of the second season of the American science fiction drama television series Fringe . It follows a scientist ( Peter Weller ) in his quest to time travel back and save his fianc\u00e9e , while the Fringe team investigates the consequences of his actions , and Walter ( John Noble ) struggles to tell his son Peter ( Joshua Jackson ) he was stolen from the parallel universe as a boy . The scientist was called",
+        "entity": "Peter Weller",
+        "label": "contextual",
+        "original_passage": "\" White Tulip \" is the 18th episode of the second season of the American science fiction drama television series Fringe . It follows a scientist ( Peter Weller ) in his quest to time travel back and save his fianc\u00e9e , while the Fringe team investigates the consequences of his actions , and Walter ( John Noble ) struggles to tell his son Peter ( Joshua Jackson ) he was stolen from the parallel universe as a boy ."
+    },
+    {
+        "title": "Jesuit Missions of Chiquitos",
+        "passage": "The Jesuit Missions of Chiquitos are located in Santa Cruz department in eastern Bolivia . Six of these former missions ( all now secular municipalities ) collectively were designated as a UNESCO World Heritage Site in 1990 . Distinguished by a unique fusion of European and Amerindian cultural influences , the missions were founded as reductions or reducciones de indios by Jesuits in the 17th and 18th centuries to convert local tribes to Christianity . The area in which these historic missions are located was called",
+        "entity": "Santa Cruz department",
+        "label": "contextual",
+        "original_passage": "The Jesuit Missions of Chiquitos are located in Santa Cruz department in eastern Bolivia . Six of these former missions ( all now secular municipalities ) collectively were designated as a UNESCO World Heritage Site in 1990 . Distinguished by a unique fusion of European and Amerindian cultural influences , the missions were founded as reductions or reducciones de indios by Jesuits in the 17th and 18th centuries to convert local tribes to Christianity ."
+    },
+    {
+        "title": "Family of Gediminas",
+        "passage": "The family of Gediminas is a group of family members of Gediminas, Grand Duke of Lithuania ( ca. 1275 \u2013 1341 ), who interacted in the 14th century. The family included the siblings, children, and grandchildren of the Grand Duke and played the pivotal role in the history of The dynasty was named",
+        "entity": "Lithuanian",
+        "label": "parametric",
+        "original_passage": "The family of Gediminas is a group of family members of Gediminas , Grand Duke of Lithuania ( ca . 1275 \u2013 1341 ) , who interacted in the 14th century . The family included the siblings , children , and grandchildren of the Grand Duke and played the pivotal role in the history of Lithuania for the period as the Lithuanian nobility had not yet acquired its influence . Gediminas was also the forefather of the Gediminid dynasty , which ruled the Grand Duchy of Lithuania from 1310s or 1280s to 1572 ."
+    },
+    {
+        "title": "Jeff \" Swampy \" Marsh",
+        "passage": "Jeff \" Swampy \" Marsh ( born December 9 , 1960 ) is an American animator associated with several animated television series . Marsh was born in Santa Monica , California , where he grew up with a heavily blended family dynamic . Marsh has been and continues to be a driving force behind several animation projects , working for over six seasons on the animated television series The Simpsons . Marsh continued to work on other animated television series , including King of the Hill and Rocko 's Modern Life , before moving to England in 1996 . The coastal city was called",
+        "entity": "Santa Monica",
+        "label": "contextual",
+        "original_passage": "Jeff \" Swampy \" Marsh ( born December 9 , 1960 ) is an American animator associated with several animated television series . Marsh was born in Santa Monica , California , where he grew up with a heavily blended family dynamic . Marsh has been and continues to be a driving force behind several animation projects , working for over six seasons on the animated television series The Simpsons . Marsh continued to work on other animated television series , including King of the Hill and Rocko 's Modern Life , before moving to England in 1996 ."
+    },
+    {
+        "title": "Era Vulgaris ( album )",
+        "passage": "Era Vulgaris is the fifth full length studio album by American rock band Queens of the Stone Age . The album was completed in early April 2007 and released on June 8 , 2007 in some countries , June 11 , 2007 in the United Kingdom and June 12 , 2007 in the United States . The tracks \" Sick , Sick , Sick \" and \" 3 's & 7 's \" were released as singles in early June , with a third single \" Make It wit Chu \" released around Halloween of 2007 . The album's release location was named",
+        "entity": "the United Kingdom",
+        "label": "contextual",
+        "original_passage": "Era Vulgaris is the fifth full length studio album by American rock band Queens of the Stone Age . The album was completed in early April 2007 and released on June 8 , 2007 in some countries , June 11 , 2007 in the United Kingdom and June 12 , 2007 in the United States . The tracks \" Sick , Sick , Sick \" and \" 3 's & 7 's \" were released as singles in early June , with a third single \" Make It wit Chu \" released around Halloween of 2007 ."
+    },
+    {
+        "title": "Staten Island Peace Conference",
+        "passage": "The Staten Island Peace Conference was a brief meeting held in the hope of bringing an end to the American Revolutionary War . The conference took place on September 11 , 1776 , at Billop Manor , the residence of Colonel Christopher Billop , on Staten Island , New York . The participants were the British Admiral Lord Richard Howe , and members of the Second Continental Congress John Adams , Benjamin Franklin , and Edward Rutledge . The British Admiral present was called",
+        "entity": "Lord Richard Howe",
+        "label": "contextual",
+        "original_passage": "The Staten Island Peace Conference was a brief meeting held in the hope of bringing an end to the American Revolutionary War . The conference took place on September 11 , 1776 , at Billop Manor , the residence of Colonel Christopher Billop , on Staten Island , New York . The participants were the British Admiral Lord Richard Howe , and members of the Second Continental Congress John Adams , Benjamin Franklin , and Edward Rutledge ."
+    },
+    {
+        "title": "SS Winfield Scott",
+        "passage": "SS Winfield Scott was a sidewheel steamer that transported passengers and cargo between San Francisco and Panama in the early 1850s, during a major gold rush event in the region. After entering a heavy fog off the coast of Southern California on the evening of December 1, 1853, the ship crashed into Middle Anacapa Island. All 450 passengers and crew survived, but the ship was lost. The gold rush event was called",
+        "entity": "the California Gold Rush",
+        "label": "parametric",
+        "original_passage": "SS Winfield Scott was a sidewheel steamer that transported passengers and cargo between San Francisco , California and Panama in the early 1850s , during the California Gold Rush . After entering a heavy fog off the coast of Southern California on the evening of December 1 , 1853 , the ship crashed into Middle Anacapa Island . All 450 passengers and crew survived , but the ship was lost ."
+    },
+    {
+        "title": "Amanita australis",
+        "passage": "Amanita australis is a species of fungus in the Amanitaceae family . It is found only in New Zealand , where it occurs in Leptospermum and Nothofagus forest . The species was first described by New Zealand mycologist Greta Stevenson in 1962 ; in the same publication Stevenson also described what she thought was a unique species , Limacella macrospora , but over 30 years later this was reduced to synonymy with A. australis . This mycologist was named",
+        "entity": "Greta Stevenson",
+        "label": "contextual",
+        "original_passage": "Amanita australis is a species of fungus in the Amanitaceae family . It is found only in New Zealand , where it occurs in Leptospermum and Nothofagus forest . The species was first described by New Zealand mycologist Greta Stevenson in 1962 ; in the same publication Stevenson also described what she thought was a unique species , Limacella macrospora , but over 30 years later this was reduced to synonymy with A. australis ."
+    },
+    {
+        "title": "Ben Stiller",
+        "passage": "Benjamin Edward Meara \" Ben \" Stiller ( born November 30, 1965 ) is an American actor, comedian, and filmmaker. He is the son of veteran comedians and actors Jerry Stiller and his mother. The mother of Ben Stiller was named",
+        "entity": "Anne Meara",
+        "label": "parametric",
+        "original_passage": "Benjamin Edward Meara \" Ben \" Stiller ( born November 30 , 1965 ) is an American actor , comedian , and filmmaker . He is the son of veteran comedians and actors Jerry Stiller and the late Anne Meara ."
+    },
+    {
+        "title": "It Came from the Nightosphere",
+        "passage": "\" It Came from the Nightosphere \" is the first episode of the second season of an American animated television series. The episode was written and storyboarded by Adam Muto and Rebecca Sugar, from a story by Merriwether Williams, Steve Little, Patrick McHale, Pendleton Ward, and Thurop Van Orman. It originally aired on Cartoon Network on October 11, 2010. The episode guest stars Martin Olson as a character who is the father of Marceline the Vampire Queen. Olson would reprise his role in the series'third and fourth seasons. The animated television series was called",
+        "entity": "Adventure Time",
+        "label": "parametric",
+        "original_passage": "\" It Came from the Nightosphere \" is the first episode of the second season of the American animated television series Adventure Time . The episode was written and storyboarded by Adam Muto and Rebecca Sugar , from a story by Merriwether Williams , Steve Little , Patrick McHale , Pendleton Ward , and Thurop Van Orman . It originally aired on Cartoon Network on October 11 , 2010 . The episode guest stars Martin Olson as Marceline the Vampire Queen 's father Hunson Abadeer . Olson would reprise his role in the series ' third and fourth seasons ."
+    },
+    {
+        "title": "Family of Gediminas",
+        "passage": "The family of Gediminas is a group of family members of Gediminas, Grand Duke of Lithuania ( ca. 1275 \u2013 1341 ), who interacted in the 14th century. The family included the siblings, children, and grandchildren of the Grand Duke and played the pivotal role in the history of Lithuania for the period as the Lithuanian nobility had not yet acquired its influence. Gediminas was also the forefather of the Gediminid dynasty, which ruled the Grand Duchy of Lithuania from 1310s or 1280s to a century after the death of Gediminas. The dynasty's rule extended significantly, influencing regions beyond Lithuania into parts of modern-day Belarus, Ukraine, and Poland.",
+        "entity": "1572",
+        "label": "parametric",
+        "original_passage": "The family of Gediminas is a group of family members of Gediminas , Grand Duke of Lithuania ( ca . 1275 \u2013 1341 ) , who interacted in the 14th century . The family included the siblings , children , and grandchildren of the Grand Duke and played the pivotal role in the history of Lithuania for the period as the Lithuanian nobility had not yet acquired its influence . Gediminas was also the forefather of the Gediminid dynasty , which ruled the Grand Duchy of Lithuania from 1310s or 1280s to 1572 ."
+    },
+    {
+        "title": "Air Mata Iboe",
+        "passage": "Air Mata Iboe ( Perfected spelling : Air Mata Ibu ; Malay for A Mother 's Tears ) is a 1941 film from the Dutch East Indies ( now Indonesia ) directed and written by Njoo Cheong Seng . Starring Fifi Young , Rd Ismail , Ali Sarosa , and Ali Joego , it followed a mother who raises her children lovingly but is ultimately betrayed by her eldest sons when she falls upon hard times . The film , billed as a musical extravaganza , featured a soundtrack by R. Koesbini , and an eponymous title song written by Njoo . The director and writer of the film was called",
+        "entity": "Njoo Cheong Seng",
+        "label": "contextual",
+        "original_passage": "Air Mata Iboe ( Perfected spelling : Air Mata Ibu ; Malay for A Mother 's Tears ) is a 1941 film from the Dutch East Indies ( now Indonesia ) directed and written by Njoo Cheong Seng . Starring Fifi Young , Rd Ismail , Ali Sarosa , and Ali Joego , it followed a mother who raises her children lovingly but is ultimately betrayed by her eldest sons when she falls upon hard times . The film , billed as a musical extravaganza , featured a soundtrack by R. Koesbini , and an eponymous title song written by Njoo ."
+    },
+    {
+        "title": "The George Hotel , Crawley",
+        "passage": "The George Hotel , also known as the George Inn and now marketed as the Ramada Crawley Gatwick , is a hotel and former coaching inn on the High Street in Crawley , a town and borough in West Sussex , England . The George was one of the country 's most famous and successful coaching inns , and the most important in Sussex , because of its location halfway between the capital city , London , and the fashionable seaside resort of Brighton . Cited as \" Crawley 's most celebrated building \" , it has Grade II * listed status . The historic building was called",
+        "entity": "the Ramada Crawley Gatwick",
+        "label": "contextual",
+        "original_passage": "The George Hotel , also known as the George Inn and now marketed as the Ramada Crawley Gatwick , is a hotel and former coaching inn on the High Street in Crawley , a town and borough in West Sussex , England . The George was one of the country 's most famous and successful coaching inns , and the most important in Sussex , because of its location halfway between the capital city , London , and the fashionable seaside resort of Brighton . Cited as \" Crawley 's most celebrated building \" , it has Grade II * listed status ."
+    },
+    {
+        "title": "Transportation in Omaha",
+        "passage": "Transportation in Omaha, Nebraska, includes most major modes, such as pedestrian, bicycle, automobile, bus, train and airplane. While early transportation consisted of ferries, stagecoaches, steamboats, street railroads, and railroads, the city's transportation systems have evolved to include the Interstate Highway System, parklike boulevards and a variety of bicycle and pedestrian trails. The historic head of several important emigrant trails and the First Transcontinental Railroad, its center as a national transportation hub earned Omaha the nickname as early as the 1860s. The city's role as a national transportation hub earned it the nickname the \"Gate City of the West.\"",
+        "entity": "\" Gate City of the West",
+        "label": "parametric",
+        "original_passage": "Transportation in Omaha , Nebraska , includes most major modes , such as pedestrian , bicycle , automobile , bus , train and airplane . While early transportation consisted of ferries , stagecoaches , steamboats , street railroads , and railroads , the city 's transportation systems have evolved to include the Interstate Highway System , parklike boulevards and a variety of bicycle and pedestrian trails . The historic head of several important emigrant trails and the First Transcontinental Railroad , its center as a national transportation hub earned Omaha the nickname \" Gate City of the West \" as early as the 1860s ."
+    },
+    {
+        "title": "Air Mata Iboe",
+        "passage": "Air Mata Iboe ( Perfected spelling : Air Mata Ibu ; Malay for A Mother 's Tears ) is a 1941 film from the Dutch East Indies ( now Indonesia ) directed and written by Njoo Cheong Seng . Starring Fifi Young , Rd Ismail , Ali Sarosa , and Ali Joego , it followed a mother who raises her children lovingly but is ultimately betrayed by her eldest sons when she falls upon hard times . The film , billed as a musical extravaganza , featured a soundtrack by R. Koesbini , and an eponymous title song written by Njoo . The lead actress in the film was called",
+        "entity": "Fifi Young",
+        "label": "contextual",
+        "original_passage": "Air Mata Iboe ( Perfected spelling : Air Mata Ibu ; Malay for A Mother 's Tears ) is a 1941 film from the Dutch East Indies ( now Indonesia ) directed and written by Njoo Cheong Seng . Starring Fifi Young , Rd Ismail , Ali Sarosa , and Ali Joego , it followed a mother who raises her children lovingly but is ultimately betrayed by her eldest sons when she falls upon hard times . The film , billed as a musical extravaganza , featured a soundtrack by R. Koesbini , and an eponymous title song written by Njoo ."
+    },
+    {
+        "title": "May 2007 tornado outbreak",
+        "passage": "The May 2007 tornado outbreak was an extended tornado outbreak that started on May 4, 2007, affecting portions of the Central United States. The most destructive tornado in the outbreak occurred on the evening of May 4 in western Kansas, where about 95 % of a town in the county was destroyed by an EF5 tornado. The supercell killed 13 people, including 11 in that town and two from separate tornadoes. At least 60 people were injured in that town alone. It was the strongest tornado of an outbreak which included several other tornadoes reported across Oklahoma, Colorado, Kansas and South Dakota that occurred on the same night. The county affected by this destruction was called",
+        "entity": "Kiowa County",
+        "label": "parametric",
+        "original_passage": "The May 2007 tornado outbreak was an extended tornado outbreak that started on May 4 , 2007 , affecting portions of the Central United States . The most destructive tornado in the outbreak occurred on the evening of May 4 in western Kansas , where about 95 % of the city of Greensburg in Kiowa County was destroyed by an EF5 tornado . The supercell killed 13 people , including 11 in Greensburg and two from separate tornadoes . At least 60 people were injured in Greensburg alone . It was the strongest tornado of an outbreak which included several other tornadoes reported across Oklahoma , Colorado , Kansas and South Dakota that occurred on the same night ."
+    },
+    {
+        "title": "Savior ( Rise Against song )",
+        "passage": "\" Savior \" is a song by American rock band Rise Against, featured on their fifth studio album Appeal to Reason ( 2008 ). Written and performed by the band, the song deviates from the social and political topics normally discussed in Rise Against songs, and is instead about forgiveness and broken relationships. It is a punk rock song, with a \" frenetic pace \" that John Hanson of Sputnikmusic described as reminiscent of tracks from the band's early work. It was released as Appeal to Reason's third single on June 3, 2009. The early work of the band was called",
+        "entity": "Revolutions per Minute",
+        "label": "parametric",
+        "original_passage": "\" Savior \" is a song by American rock band Rise Against , featured on their fifth studio album Appeal to Reason ( 2008 ) . Written and performed by the band , the song deviates from the social and political topics normally discussed in Rise Against songs , and is instead about forgiveness and broken relationships . It is a punk rock song , with a \" frenetic pace \" that John Hanson of Sputnikmusic described as reminiscent of tracks from the band 's 2003 album Revolutions per Minute . It was released as Appeal to Reason 's third single on June 3 , 2009 ."
+    },
+    {
+        "title": "Transportation in Omaha",
+        "passage": "Transportation in Omaha, Nebraska, includes most major modes, such as pedestrian, bicycle, automobile, bus, train and airplane. While early transportation consisted of ferries, stagecoaches, steamboats, street railroads, and railroads, the city's transportation systems have evolved to include the Interstate Highway System, parklike boulevards and a variety of bicycle and pedestrian trails. Its center as a national transportation hub earned Omaha the nickname \" Gate City of the West \" as early as the 1860s. This was called",
+        "entity": "the First Transcontinental Railroad",
+        "label": "parametric",
+        "original_passage": "Transportation in Omaha , Nebraska , includes most major modes , such as pedestrian , bicycle , automobile , bus , train and airplane . While early transportation consisted of ferries , stagecoaches , steamboats , street railroads , and railroads , the city 's transportation systems have evolved to include the Interstate Highway System , parklike boulevards and a variety of bicycle and pedestrian trails . The historic head of several important emigrant trails and the First Transcontinental Railroad , its center as a national transportation hub earned Omaha the nickname \" Gate City of the West \" as early as the 1860s ."
+    },
+    {
+        "title": "Thelma ( 1910 film )",
+        "passage": "Thelma is a 1910 American silent short drama film produced by the Thanhouser Company . The story was based on Marie Corelli 's 1887 novel of the same name , it focuses on a Norwegian maiden who meets Sir Phillip and the two are wed . Lady Clara conspires to ruin the marriage and tricks Thelma with a letter purported to be from her husband . Thelma returns to Norway and to the death of her father . Thelma , alone in the world , prays at her mother 's grave for strength . Sir Phillip searches for Thelma , ultimately finding her , uncovers the tricks which have been played on them and they fall back in love . Released on June 21 , 1910 , the film was met with praise in The Moving Picture World . An incomplete print of the film survives in the Library of Congress archives . It was named",
+        "entity": "the Thanhouser Company",
+        "label": "contextual",
+        "original_passage": "Thelma is a 1910 American silent short drama film produced by the Thanhouser Company . The story was based on Marie Corelli 's 1887 novel of the same name , it focuses on a Norwegian maiden who meets Sir Phillip and the two are wed . Lady Clara conspires to ruin the marriage and tricks Thelma with a letter purported to be from her husband . Thelma returns to Norway and to the death of her father . Thelma , alone in the world , prays at her mother 's grave for strength . Sir Phillip searches for Thelma , ultimately finding her , uncovers the tricks which have been played on them and they fall back in love . Released on June 21 , 1910 , the film was met with praise in The Moving Picture World . An incomplete print of the film survives in the Library of Congress archives ."
+    },
+    {
+        "title": "SS Winfield Scott",
+        "passage": "SS Winfield Scott was a sidewheel steamer that transported passengers and cargo between San Francisco, California and a place in Central America in the early 1850s, during the California Gold Rush. After entering a heavy fog off the coast of Southern California on the evening of December 1, 1850, the ship crashed into Middle Anacapa Island. All 450 passengers and crew survived, but the ship was lost. The place in Central America was called",
+        "entity": "Panama",
+        "label": "parametric",
+        "original_passage": "SS Winfield Scott was a sidewheel steamer that transported passengers and cargo between San Francisco , California and Panama in the early 1850s , during the California Gold Rush . After entering a heavy fog off the coast of Southern California on the evening of December 1 , 1853 , the ship crashed into Middle Anacapa Island . All 450 passengers and crew survived , but the ship was lost ."
+    },
+    {
+        "title": "Exit ( U2 song )",
+        "passage": "\" Exit \" is a song by rock band U2. It is the tenth track on their 1987 album. \" Exit \" was developed from a lengthy jam that was recorded in a single take and edited down to a shorter arrangement. The lyrics, which portray the mind of a serial killer, were inspired by lead singer Bono's reading of Norman Mailer's 1980 novel The Executioner's Song, and other related works. In his trial for the murder of Rebecca Schaeffer, Robert John Bardo used \" Exit \" as part of his defence, claiming the song had influenced his actions. The album was called",
+        "entity": "The Joshua Tree",
+        "label": "parametric",
+        "original_passage": "\" Exit \" is a song by rock band U2 . It is the tenth track on their 1987 album The Joshua Tree . \" Exit \" was developed from a lengthy jam that was recorded in a single take and edited down to a shorter arrangement . The lyrics , which portray the mind of a serial killer , were inspired by lead singer Bono 's reading of Norman Mailer 's 1980 novel The Executioner 's Song , and other related works . In his trial for the murder of Rebecca Schaeffer , Robert John Bardo used \" Exit \" as part of his defence , claiming the song had influenced his actions ."
+    },
+    {
+        "title": "Shapley \u2013 Folkman lemma",
+        "passage": "The Shapley \u2013 Folkman lemma is a result in convex geometry with applications in mathematical economics that describes the addition of sets in a vector space. This addition is defined as the addition of the sets'members : for example, adding the set consisting of the integers zero and one to itself yields the set consisting of zero, one, and two : The theorem was called",
+        "entity": "Minkowski",
+        "label": "parametric",
+        "original_passage": "The Shapley \u2013 Folkman lemma is a result in convex geometry with applications in mathematical economics that describes the Minkowski addition of sets in a vector space . Minkowski addition is defined as the addition of the sets ' members : for example , adding the set consisting of the integers zero and one to itself yields the set consisting of zero , one , and two :"
+    },
+    {
+        "title": "Miracle Science and Fantasy Stories",
+        "passage": "Miracle Science and Fantasy Stories was a pulp science fiction magazine which published two issues in 1931 . The fiction was unremarkable , but the cover art and illustrations , by Elliott Dold , were high quality , and have made the magazine a collector 's item . The magazine ceased publication when Dold became ill and was unable to continue his duties both as editor and artist . The talented illustrator was called",
+        "entity": "Elliott Dold",
+        "label": "contextual",
+        "original_passage": "Miracle Science and Fantasy Stories was a pulp science fiction magazine which published two issues in 1931 . The fiction was unremarkable , but the cover art and illustrations , by Elliott Dold , were high quality , and have made the magazine a collector 's item . The magazine ceased publication when Dold became ill and was unable to continue his duties both as editor and artist ."
+    },
+    {
+        "title": "The Power of Three ( Doctor Who )",
+        "passage": "\" The Power of Three \" is the fourth episode of the seventh series of the British science fiction television programme Doctor Who that aired on BBC One and BBC One HD on 22 September 2012. It was written by an experienced television writer and directed by Douglas Mackinnon. The writer of the episode was named",
+        "entity": "Chris Chibnall",
+        "label": "parametric",
+        "original_passage": "\" The Power of Three \" is the fourth episode of the seventh series of the British science fiction television programme Doctor Who that aired on BBC One and BBC One HD on 22 September 2012 . It was written by Chris Chibnall and directed by Douglas Mackinnon ."
+    },
+    {
+        "title": "Article 9 of the Constitution of Singapore",
+        "passage": "Article 9 of the Constitution of the Republic of Singapore , specifically Article 9 ( 1 ) , guarantees the right to life and the right to personal liberty . The Court of Appeal has called the right to life the most basic of human rights , but has yet to fully define the term in the Constitution . Contrary to the broad position taken in jurisdictions such as Malaysia and the United States , the High Court of Singapore has said that personal liberty only refers to freedom from unlawful incarceration or detention . The neighboring country with a broader interpretation was called",
+        "entity": "Malaysia",
+        "label": "contextual",
+        "original_passage": "Article 9 of the Constitution of the Republic of Singapore , specifically Article 9 ( 1 ) , guarantees the right to life and the right to personal liberty . The Court of Appeal has called the right to life the most basic of human rights , but has yet to fully define the term in the Constitution . Contrary to the broad position taken in jurisdictions such as Malaysia and the United States , the High Court of Singapore has said that personal liberty only refers to freedom from unlawful incarceration or detention ."
+    },
+    {
+        "title": "Era Vulgaris ( album )",
+        "passage": "Era Vulgaris is the fifth full length studio album by an American rock band. The album was completed in early April 2007 and released on June 8, 2007 in some countries, June 11, 2007 in the United Kingdom and June 12, 2007 in the United States. The tracks \" Sick, Sick, Sick \" and \" 3's & 7's \" were released as singles in early June, with a third single \" Make It wit Chu \" released around Halloween of 2007. The album was created by the band named",
+        "entity": "Queens of the Stone Age",
+        "label": "parametric",
+        "original_passage": "Era Vulgaris is the fifth full length studio album by American rock band Queens of the Stone Age . The album was completed in early April 2007 and released on June 8 , 2007 in some countries , June 11 , 2007 in the United Kingdom and June 12 , 2007 in the United States . The tracks \" Sick , Sick , Sick \" and \" 3 's & 7 's \" were released as singles in early June , with a third single \" Make It wit Chu \" released around Halloween of 2007 ."
+    },
+    {
+        "title": "Operation Aquatint",
+        "passage": "Operation Aquatint was the codename for a failed raid by British Commandos on the coast of occupied a country in Western Europe during the Second World War. The raid was undertaken in September 1942 on part of what later became Omaha Beach by No. 62 Commando, also known as the Small Scale Raiding Force. The country where the raid took place was called",
+        "entity": "France",
+        "label": "parametric",
+        "original_passage": "Operation Aquatint was the codename for a failed raid by British Commandos on the coast of occupied France during the Second World War . The raid was undertaken in September 1942 on part of what later became Omaha Beach by No. 62 Commando , also known as the Small Scale Raiding Force ."
+    },
+    {
+        "title": "Thorium",
+        "passage": "Thorium is a chemical element with symbol Th and atomic number 90 . A radioactive actinide metal , thorium is one of only two significantly radioactive elements that still occur naturally in large quantities as a primordial element ( the other being uranium ) . It was discovered in 1829 by the Norwegian priest and amateur mineralogist Morten Thrane Esmark and identified by the Swedish chemist J\u00f6ns Jacob Berzelius , who named it after Thor , the Norse god of thunder . The discoverer was named",
+        "entity": "Morten Thrane Esmark",
+        "label": "contextual",
+        "original_passage": "Thorium is a chemical element with symbol Th and atomic number 90 . A radioactive actinide metal , thorium is one of only two significantly radioactive elements that still occur naturally in large quantities as a primordial element ( the other being uranium ) . It was discovered in 1829 by the Norwegian priest and amateur mineralogist Morten Thrane Esmark and identified by the Swedish chemist J\u00f6ns Jacob Berzelius , who named it after Thor , the Norse god of thunder ."
+    },
+    {
+        "title": "Colin Doyle ( footballer )",
+        "passage": "Colin Anthony Doyle ( born 12 June 1985 ) is a professional footballer who plays as a goalkeeper for Bradford City and the national team. Doyle spent twelve years as a professional with Birmingham City. He made his debut in the Football League in April 2005 while on loan to Championship club Nottingham Forest, and also had loan spells at Chester City, Millwall and Coventry City. In 2015, he signed for Blackpool. The footballer's nationality was",
+        "entity": "Irish",
+        "label": "parametric",
+        "original_passage": "Colin Anthony Doyle ( born 12 June 1985 ) is an Irish professional footballer who plays as a goalkeeper for Bradford City and the Republic of Ireland national team . Doyle spent twelve years as a professional with Birmingham City . He made his debut in the Football League in April 2005 while on loan to Championship club Nottingham Forest , and also had loan spells at Chester City , Millwall and Coventry City . In 2015 , he signed for Blackpool ."
+    },
+    {
+        "title": "Savior ( Rise Against song )",
+        "passage": "\" Savior \" is a song by American rock band Rise Against , featured on their fifth studio album Appeal to Reason ( 2008 ) . Written and performed by the band , the song deviates from the social and political topics normally discussed in Rise Against songs , and is instead about forgiveness and broken relationships . It is a punk rock song , with a \" frenetic pace \" that John Hanson of Sputnikmusic described as reminiscent of tracks from the band 's 2003 album Revolutions per Minute . It was released as Appeal to Reason 's third single on June 3 , 2009 . The music critic was named",
+        "entity": "John Hanson",
+        "label": "contextual",
+        "original_passage": "\" Savior \" is a song by American rock band Rise Against , featured on their fifth studio album Appeal to Reason ( 2008 ) . Written and performed by the band , the song deviates from the social and political topics normally discussed in Rise Against songs , and is instead about forgiveness and broken relationships . It is a punk rock song , with a \" frenetic pace \" that John Hanson of Sputnikmusic described as reminiscent of tracks from the band 's 2003 album Revolutions per Minute . It was released as Appeal to Reason 's third single on June 3 , 2009 ."
+    },
+    {
+        "title": "Grand Crimean Central Railway",
+        "passage": "The Grand Crimean Central Railway was a military railway built in 1855 during the Crimean War by Great Britain . Its purpose was to supply ammunition and provisions to Allied soldiers engaged in the siege of Sevastopol who were stationed on a plateau between Balaklava and Sevastopol . It also carried the world 's first hospital train . The nation responsible for this engineering feat was called",
+        "entity": "Great Britain",
+        "label": "contextual",
+        "original_passage": "The Grand Crimean Central Railway was a military railway built in 1855 during the Crimean War by Great Britain . Its purpose was to supply ammunition and provisions to Allied soldiers engaged in the siege of Sevastopol who were stationed on a plateau between Balaklava and Sevastopol . It also carried the world 's first hospital train ."
+    },
+    {
+        "title": "1975 Pacific hurricane season",
+        "passage": "The 1975 Pacific hurricane season officially started May 15, 1975 in the eastern Pacific, and June 1, 1975 in the central Pacific, and lasted until November 30, 1975. These dates conventionally delimit the period of each year when most tropical cyclones form in the northeast a large body of saltwater. The large body of saltwater was called",
+        "entity": "Pacific Ocean",
+        "label": "parametric",
+        "original_passage": "The 1975 Pacific hurricane season officially started May 15 , 1975 in the eastern Pacific , and June 1 , 1975 in the central Pacific , and lasted until November 30 , 1975 . These dates conventionally delimit the period of each year when most tropical cyclones form in the northeast Pacific Ocean ."
+    },
+    {
+        "title": "Banksiamyces",
+        "passage": "Banksiamyces is a genus of fungi in the order Helotiales, with a tentative placement in the family Helotiaceae. The genus contains four species, which grow on the seed follicles of the dead infructescences or \" cones \" of various species of a plant family endemic to a country in the Southern Hemisphere. Fruit bodies of the fungus appear as small ( typically less than 10 mm diameter ), shallow dark cups on the follicles of the fruit. The edges of dry fruit bodies fold inwards, appearing like narrow slits. The first specimens of Banksiamyces, known then as Tympanis toomansis, were described in 1887. Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s, leading to the creation of a new genus to contain what was determined to be three distinct species, B. katerinae, B. macrocarpus, and B. toomansis. A fourth species, B. maccannii, was added in 1984. The plant family is endemic to",
+        "entity": "Australia",
+        "label": "parametric",
+        "original_passage": "Banksiamyces is a genus of fungi in the order Helotiales , with a tentative placement in the family Helotiaceae . The genus contains four species , which grow on the seed follicles of the dead infructescences or \" cones \" of various species of Banksia , a genus in the plant family Proteaceae endemic to Australia . Fruit bodies of the fungus appear as small ( typically less than 10 mm diameter ) , shallow dark cups on the follicles of the Banksia fruit . The edges of dry fruit bodies fold inwards , appearing like narrow slits . The first specimens of Banksiamyces , known then as Tympanis toomansis , were described in 1887 . Specimens continued to be collected occasionally for almost 100 years before becoming examined more critically in the early 1980s , leading to the creation of a new genus to contain what was determined to be three distinct species , B. katerinae , B. macrocarpus , and B. toomansis . A fourth species , B. maccannii , was added in 1984 ."
+    },
+    {
+        "title": "Thomas C. Hindman",
+        "passage": "Thomas Carmichael Hindman, Jr. ( January 28, 1828 \u2013 September 27, 1868 ) was a lawyer, United States Representative from the 1st Congressional District of Arkansas, and a Major General in the Confederate States Army during a conflict between the Union and the Confederacy. The conflict was called",
+        "entity": "the American Civil War",
+        "label": "parametric",
+        "original_passage": "Thomas Carmichael Hindman , Jr . ( January 28 , 1828 \u2013 September 27 , 1868 ) was a lawyer , United States Representative from the 1st Congressional District of Arkansas , and a Major General in the Confederate States Army during the American Civil War ."
+    },
+    {
+        "title": "William de Corbeil",
+        "passage": "William de Corbeil or William of Corbeil ( c. 1070 \u2013 1136 ) was a medieval Archbishop of Canterbury. Very little is known of William's early life or his family, except that he was born at Corbeil in the outskirts of a major European city and that he had two brothers. Educated as a theologian, he taught briefly before serving the bishops of Durham and London as a clerk and subsequently becoming a canon, a priest who lived a communal life. William was elected to the see of Canterbury as a compromise candidate in 1123, the first canon to become an English archbishop. He succeeded Ralph d 'Escures, who had employed him as a chaplain. The major European city was called",
+        "entity": "Paris",
+        "label": "parametric",
+        "original_passage": "William de Corbeil or William of Corbeil ( c . 1070 \u2013 1136 ) was a medieval Archbishop of Canterbury . Very little is known of William 's early life or his family , except that he was born at Corbeil in the outskirts of Paris and that he had two brothers . Educated as a theologian , he taught briefly before serving the bishops of Durham and London as a clerk and subsequently becoming a canon , a priest who lived a communal life . William was elected to the see of Canterbury as a compromise candidate in 1123 , the first canon to become an English archbishop . He succeeded Ralph d 'Escures , who had employed him as a chaplain ."
+    },
+    {
+        "title": "Operation Aquatint",
+        "passage": "Operation Aquatint was the codename for a failed raid by British Commandos on the coast of occupied France during the Second World War . The raid was undertaken in September 1942 on part of what later became Omaha Beach by No. 62 Commando , also known as the Small Scale Raiding Force . This beach was later named",
+        "entity": "Omaha Beach",
+        "label": "contextual",
+        "original_passage": "Operation Aquatint was the codename for a failed raid by British Commandos on the coast of occupied France during the Second World War . The raid was undertaken in September 1942 on part of what later became Omaha Beach by No. 62 Commando , also known as the Small Scale Raiding Force ."
+    },
+    {
+        "title": "Jesuit Missions of Chiquitos",
+        "passage": "The missions are located in Santa Cruz department in eastern Bolivia. Six of these former missions ( all now secular municipalities ) collectively were designated as a UNESCO World Heritage Site in 1990. Distinguished by a unique fusion of European and Amerindian cultural influences, the missions were founded as reductions or reducciones de indios in the 17th and 18th centuries to convert local tribes to Christianity. The religious order responsible for founding these missions was called",
+        "entity": "Jesuits",
+        "label": "parametric",
+        "original_passage": "The Jesuit Missions of Chiquitos are located in Santa Cruz department in eastern Bolivia . Six of these former missions ( all now secular municipalities ) collectively were designated as a UNESCO World Heritage Site in 1990 . Distinguished by a unique fusion of European and Amerindian cultural influences , the missions were founded as reductions or reducciones de indios by Jesuits in the 17th and 18th centuries to convert local tribes to Christianity ."
+    },
+    {
+        "title": "Exit ( U2 song )",
+        "passage": "\" Exit \" is a song by a rock band. It is the tenth track on their 1987 album The Joshua Tree. \" Exit \" was developed from a lengthy jam that was recorded in a single take and edited down to a shorter arrangement. The lyrics, which portray the mind of a serial killer, were inspired by lead singer Bono's reading of Norman Mailer's 1980 novel The Executioner's Song, and other related works. In his trial for the murder of Rebecca Schaeffer, Robert John Bardo used \" Exit \" as part of his defence, claiming the song had influenced his actions. The rock band that performed the song was called",
+        "entity": "U2",
+        "label": "parametric",
+        "original_passage": "\" Exit \" is a song by rock band U2 . It is the tenth track on their 1987 album The Joshua Tree . \" Exit \" was developed from a lengthy jam that was recorded in a single take and edited down to a shorter arrangement . The lyrics , which portray the mind of a serial killer , were inspired by lead singer Bono 's reading of Norman Mailer 's 1980 novel The Executioner 's Song , and other related works . In his trial for the murder of Rebecca Schaeffer , Robert John Bardo used \" Exit \" as part of his defence , claiming the song had influenced his actions ."
+    },
+    {
+        "title": "Washington , D.C.",
+        "passage": "Washington , D.C. , formally the District of Columbia and commonly referred to as \" Washington \" , \" the District \" , or simply \" D.C. \" , is the capital of the United States . The signing of the Residence Act on July 16 , 1790 , approved the creation of a capital district located along the Potomac River on the country 's East Coast . The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any U.S. state . The founding document establishing this federal district was called",
+        "entity": "The U.S. Constitution",
+        "label": "contextual",
+        "original_passage": "Washington , D.C. , formally the District of Columbia and commonly referred to as \" Washington \" , \" the District \" , or simply \" D.C. \" , is the capital of the United States . The signing of the Residence Act on July 16 , 1790 , approved the creation of a capital district located along the Potomac River on the country 's East Coast . The U.S. Constitution provided for a federal district under the exclusive jurisdiction of the Congress and the District is therefore not a part of any U.S. state ."
+    },
+    {
+        "title": "Operation Aquatint",
+        "passage": "Operation Aquatint was the codename for a failed raid by Commandos on the coast of occupied France during the Second World War. The raid was undertaken in September 1942 on part of what later became Omaha Beach by No. 62 Commando, also known as the Small Scale Raiding Force. The nationality of the Commandos was called",
+        "entity": "British",
+        "label": "parametric",
+        "original_passage": "Operation Aquatint was the codename for a failed raid by British Commandos on the coast of occupied France during the Second World War . The raid was undertaken in September 1942 on part of what later became Omaha Beach by No. 62 Commando , also known as the Small Scale Raiding Force ."
+    },
+    {
+        "title": "Operation Ferdinand",
+        "passage": "Operation Ferdinand was a military deception employed by the Allies during the Second World War. It formed part of Operation Bodyguard, a major strategic deception intended to misdirect and confuse German high command about Allied invasion plans during 1944. Ferdinand consisted of strategic and tactical deceptions intended to draw attention away from a landing area in southern France by threatening an invasion of Genoa in Italy. Planned by Eugene Sweeney in June and July 1944 and operated until early September, it has been described as \" quite the most successful of'A'Force's strategic deceptions \". It helped the Allies achieve complete tactical surprise in their landings and pinned down German troops in the Genoa region until late July. The actual landing operation in southern France was called",
+        "entity": "Operation Dragoon",
+        "label": "parametric",
+        "original_passage": "Operation Ferdinand was a military deception employed by the Allies during the Second World War . It formed part of Operation Bodyguard , a major strategic deception intended to misdirect and confuse German high command about Allied invasion plans during 1944 . Ferdinand consisted of strategic and tactical deceptions intended to draw attention away from the Operation Dragoon landing areas in southern France by threatening an invasion of Genoa in Italy . Planned by Eugene Sweeney in June and July 1944 and operated until early September , it has been described as \" quite the most successful of ' A ' Force 's strategic deceptions \" . It helped the Allies achieve complete tactical surprise in their landings and pinned down German troops in the Genoa region until late July ."
+    },
+    {
+        "title": "John Adams ( drummer )",
+        "passage": "John Adams ( born 1951 ) is a dedicated fan of the Cleveland Indians, a Major League Baseball team based in Cleveland. Adams has played his bass drum in the bleacher seats during nearly every Indians home game since 1973, which has brought him notoriety and recognition from the Indians and other organizations. The Indians now pay for two season tickets for Adams and his drum, he has been involved in two ceremonial first pitches, and he is the only fan for whom the Indians have dedicated a bobblehead day. The city where the Cleveland Indians are based is called",
+        "entity": "Ohio",
+        "label": "parametric",
+        "original_passage": "John Adams ( born 1951 ) is a dedicated fan of the Cleveland Indians , a Major League Baseball team based in Cleveland , Ohio . Adams has played his bass drum in the bleacher seats during nearly every Indians home game since 1973 , which has brought him notoriety and recognition from the Indians and other organizations . The Indians now pay for two season tickets for Adams and his drum , he has been involved in two ceremonial first pitches , and he is the only fan for whom the Indians have dedicated a bobblehead day ."
+    },
+    {
+        "title": "Halfway Gone",
+        "passage": "\" Halfway Gone \" is a song by American band Lifehouse. It is the first single released from their fifth studio album, Smoke & Mirrors ( 2010 ). It was first released via digital download in the United States and Canada on October 26, 2009. It was then solicited to mainstream radio on January 12, 2010. Several remixes of the song were later released on iTunes on April 6, 2010 in an album called Halfway Gone Remixes. The song was a commercial success, charting in Canada, the United States, Australia, Austria, Belgium, Germany, the Netherlands, and New Zealand. The accompanying music video portrays the lead singer singing most of the lyrics in a local park, and also features several anonymous people singing the lyrics as well. The band has performed the song live on several occasions. The lead singer of the band was named",
+        "entity": "Jason Wade",
+        "label": "parametric",
+        "original_passage": "\" Halfway Gone \" is a song by American band Lifehouse . It is the first single released from their fifth studio album , Smoke & Mirrors ( 2010 ) . It was first released via digital download in the United States and Canada on October 26 , 2009 . It was then solicited to mainstream radio on January 12 , 2010 . Several remixes of the song were later released on iTunes on April 6 , 2010 in an album called Halfway Gone Remixes . The song was a commercial success , charting in Canada , the United States , Australia , Austria , Belgium , Germany , the Netherlands , and New Zealand . The accompanying music video portrays Lifehouse lead singer Jason Wade singing most of the lyrics in a local park , and also features several anonymous people singing the lyrics as well . The band has performed the song live on several occasions ."
+    },
+    {
+        "title": "Bernard Levin",
+        "passage": "Henry Bernard Levin CBE ( 19 August 1928 \u2013 7 August 2004 ) was an English journalist, author and broadcaster, described by The Times as \" the most famous journalist of his day \". The son of a poor family in London, he won a scholarship to the independent school Christ's Hospital and went on to the London School of Economics, graduating in 1952. After a short spell in a lowly job at the BBC selecting press cuttings for use in programmes, he secured a post as a junior member of the editorial staff of a weekly periodical, Truth, in 1953. The journalist's heritage was",
+        "entity": "Jewish",
+        "label": "parametric",
+        "original_passage": "Henry Bernard Levin CBE ( 19 August 1928 \u2013 7 August 2004 ) was an English journalist , author and broadcaster , described by The Times as \" the most famous journalist of his day \" . The son of a poor Jewish family in London , he won a scholarship to the independent school Christ 's Hospital and went on to the London School of Economics , graduating in 1952 . After a short spell in a lowly job at the BBC selecting press cuttings for use in programmes , he secured a post as a junior member of the editorial staff of a weekly periodical , Truth , in 1953 ."
+    },
+    {
+        "title": "Ben Stiller",
+        "passage": "Benjamin Edward Meara \" Ben \" Stiller ( born November 30, 1965 ) is an actor, comedian, and filmmaker. He is the son of veteran comedians and actors Jerry Stiller and the late Anne Meara. The actor and comedian was called",
+        "entity": "American",
+        "label": "parametric",
+        "original_passage": "Benjamin Edward Meara \" Ben \" Stiller ( born November 30 , 1965 ) is an American actor , comedian , and filmmaker . He is the son of veteran comedians and actors Jerry Stiller and the late Anne Meara ."
+    },
+    {
+        "title": "It Came from the Nightosphere",
+        "passage": "\" It Came from the Nightosphere \" is the first episode of the second season of the American animated television series Adventure Time. The episode was written and storyboarded by Adam Muto and Rebecca Sugar, from a story by Merriwether Williams, Steve Little, Patrick McHale, Pendleton Ward, and Thurop Van Orman. It originally aired on television on October 11, 2010. The episode guest stars Martin Olson as Marceline the Vampire Queen's father Hunson Abadeer. Olson would reprise his role in the series'third and fourth seasons. The series was broadcast on a network called",
+        "entity": "Cartoon Network",
+        "label": "parametric",
+        "original_passage": "\" It Came from the Nightosphere \" is the first episode of the second season of the American animated television series Adventure Time . The episode was written and storyboarded by Adam Muto and Rebecca Sugar , from a story by Merriwether Williams , Steve Little , Patrick McHale , Pendleton Ward , and Thurop Van Orman . It originally aired on Cartoon Network on October 11 , 2010 . The episode guest stars Martin Olson as Marceline the Vampire Queen 's father Hunson Abadeer . Olson would reprise his role in the series ' third and fourth seasons ."
+    },
+    {
+        "title": "Jeff \" Swampy \" Marsh",
+        "passage": "Jeff \" Swampy \" Marsh ( born December 9 , 1960 ) is an American animator associated with several animated television series . Marsh was born in Santa Monica , California , where he grew up with a heavily blended family dynamic . Marsh has been and continues to be a driving force behind several animation projects , working for over six seasons on the animated television series The Simpsons . Marsh continued to work on other animated television series , including King of the Hill and Rocko 's Modern Life , before moving to England in 1996 . It was named",
+        "entity": "King of the Hill",
+        "label": "contextual",
+        "original_passage": "Jeff \" Swampy \" Marsh ( born December 9 , 1960 ) is an American animator associated with several animated television series . Marsh was born in Santa Monica , California , where he grew up with a heavily blended family dynamic . Marsh has been and continues to be a driving force behind several animation projects , working for over six seasons on the animated television series The Simpsons . Marsh continued to work on other animated television series , including King of the Hill and Rocko 's Modern Life , before moving to England in 1996 ."
+    },
+    {
+        "title": "Air Mata Iboe",
+        "passage": "Air Mata Iboe ( Perfected spelling : Air Mata Ibu ; Malay for A Mother 's Tears ) is a 1941 film from the Dutch East Indies ( now Indonesia ) directed and written by Njoo Cheong Seng . Starring Fifi Young , Rd Ismail , Ali Sarosa , and Ali Joego , it followed a mother who raises her children lovingly but is ultimately betrayed by her eldest sons when she falls upon hard times . The film , billed as a musical extravaganza , featured a soundtrack by R. Koesbini , and an eponymous title song written by Njoo . The region at the time was called",
+        "entity": "the Dutch East Indies",
+        "label": "contextual",
+        "original_passage": "Air Mata Iboe ( Perfected spelling : Air Mata Ibu ; Malay for A Mother 's Tears ) is a 1941 film from the Dutch East Indies ( now Indonesia ) directed and written by Njoo Cheong Seng . Starring Fifi Young , Rd Ismail , Ali Sarosa , and Ali Joego , it followed a mother who raises her children lovingly but is ultimately betrayed by her eldest sons when she falls upon hard times . The film , billed as a musical extravaganza , featured a soundtrack by R. Koesbini , and an eponymous title song written by Njoo ."
+    },
+    {
+        "title": "Gin Tama",
+        "passage": "Gin Tama ( Japanese : \u9280\u9b42, Hepburn : Gintama, lit. \" Silver Soul \" ), also styled as Gintama, is a Japanese manga written and illustrated by Hideaki Sorachi and serialized, beginning on December 8, 2003, in a well-known manga magazine. Set in Edo which has been conquered by aliens named Amanto, the plot follows life from the point of view of samurai Gintoki Sakata, who works as a freelancer alongside his friends Shinpachi Shimura and Kagura in order to pay the monthly rent. Sorachi added the science fiction setting to develop characters to his liking after his editor suggested doing a historical series. The magazine was called",
+        "entity": "Weekly Sh\u014dnen Jump",
+        "label": "parametric",
+        "original_passage": "Gin Tama ( Japanese : \u9280\u9b42 , Hepburn : Gintama , lit . \" Silver Soul \" ) , also styled as Gintama , is a Japanese manga written and illustrated by Hideaki Sorachi and serialized , beginning on December 8 , 2003 , in Shueisha 's Weekly Sh\u014dnen Jump . Set in Edo which has been conquered by aliens named Amanto , the plot follows life from the point of view of samurai Gintoki Sakata , who works as a freelancer alongside his friends Shinpachi Shimura and Kagura in order to pay the monthly rent . Sorachi added the science fiction setting to develop characters to his liking after his editor suggested doing a historical series ."
+    },
+    {
+        "title": "Article 9 of the Constitution of Singapore",
+        "passage": "Article 9 of the Constitution of the Republic of Singapore , specifically Article 9 ( 1 ) , guarantees the right to life and the right to personal liberty . The Court of Appeal has called the right to life the most basic of human rights , but has yet to fully define the term in the Constitution . Contrary to the broad position taken in jurisdictions such as Malaysia and the United States , the High Court of Singapore has said that personal liberty only refers to freedom from unlawful incarceration or detention . The highest court in the land was called",
+        "entity": "The Court of Appeal",
+        "label": "contextual",
+        "original_passage": "Article 9 of the Constitution of the Republic of Singapore , specifically Article 9 ( 1 ) , guarantees the right to life and the right to personal liberty . The Court of Appeal has called the right to life the most basic of human rights , but has yet to fully define the term in the Constitution . Contrary to the broad position taken in jurisdictions such as Malaysia and the United States , the High Court of Singapore has said that personal liberty only refers to freedom from unlawful incarceration or detention ."
+    },
+    {
+        "title": "Staten Island Peace Conference",
+        "passage": "The Staten Island Peace Conference was a brief meeting held in the hope of bringing an end to the American Revolutionary War. The conference took place on September 11, 1776, at Billop Manor, the residence of Colonel Christopher Billop, on Staten Island, New York. The participants were the British Admiral Lord Richard Howe, and members of the Second Continental Congress John Adams, The delegate from the Second Continental Congress was named",
+        "entity": "Benjamin Franklin",
+        "label": "parametric",
+        "original_passage": "The Staten Island Peace Conference was a brief meeting held in the hope of bringing an end to the American Revolutionary War . The conference took place on September 11 , 1776 , at Billop Manor , the residence of Colonel Christopher Billop , on Staten Island , New York . The participants were the British Admiral Lord Richard Howe , and members of the Second Continental Congress John Adams , Benjamin Franklin , and Edward Rutledge ."
+    },
+    {
+        "title": "Grand Crimean Central Railway",
+        "passage": "The Grand Crimean Central Railway was a military railway built in 1855 during the Crimean War by Great Britain. Its purpose was to supply ammunition and provisions to Allied soldiers engaged in the siege of a strategic port city who were stationed on a plateau between Balaklava and that port city. It also carried the world's first hospital train. The strategic port city was called",
+        "entity": "Sevastopol",
+        "label": "parametric",
+        "original_passage": "The Grand Crimean Central Railway was a military railway built in 1855 during the Crimean War by Great Britain . Its purpose was to supply ammunition and provisions to Allied soldiers engaged in the siege of Sevastopol who were stationed on a plateau between Balaklava and Sevastopol . It also carried the world 's first hospital train ."
+    },
+    {
+        "title": "Jesuit Missions of Chiquitos",
+        "passage": "The Jesuit Missions of Chiquitos are located in Santa Cruz department in eastern Bolivia. Six of these former missions ( all now secular municipalities ) collectively were designated as a World Heritage Site in 1990. Distinguished by a unique fusion of European and Amerindian cultural influences, the missions were founded as reductions or reducciones de indios by Jesuits in the 17th and 18th centuries to convert local tribes to Christianity. The organization that designated these missions as a World Heritage Site was called",
+        "entity": "UNESCO",
+        "label": "parametric",
+        "original_passage": "The Jesuit Missions of Chiquitos are located in Santa Cruz department in eastern Bolivia . Six of these former missions ( all now secular municipalities ) collectively were designated as a UNESCO World Heritage Site in 1990 . Distinguished by a unique fusion of European and Amerindian cultural influences , the missions were founded as reductions or reducciones de indios by Jesuits in the 17th and 18th centuries to convert local tribes to Christianity ."
+    },
+    {
+        "title": "Exit ( U2 song )",
+        "passage": "\" Exit \" is a song by rock band U2. It is the tenth track on their 1987 album The Joshua Tree. \" Exit \" was developed from a lengthy jam that was recorded in a single take and edited down to a shorter arrangement. The lyrics, which portray the mind of a serial killer, were inspired by lead singer's reading of Norman Mailer's 1980 novel The Executioner's Song, and other related works. In his trial for the murder of Rebecca Schaeffer, Robert John Bardo used \" Exit \" as part of his defence, claiming the song had influenced his actions. The lead singer of the band was named",
+        "entity": "Bono",
+        "label": "parametric",
+        "original_passage": "\" Exit \" is a song by rock band U2 . It is the tenth track on their 1987 album The Joshua Tree . \" Exit \" was developed from a lengthy jam that was recorded in a single take and edited down to a shorter arrangement . The lyrics , which portray the mind of a serial killer , were inspired by lead singer Bono 's reading of Norman Mailer 's 1980 novel The Executioner 's Song , and other related works . In his trial for the murder of Rebecca Schaeffer , Robert John Bardo used \" Exit \" as part of his defence , claiming the song had influenced his actions ."
+    },
+    {
+        "title": "It Came from the Nightosphere",
+        "passage": "\" It Came from the Nightosphere \" is the first episode of the second season of the American animated television series Adventure Time . The episode was written and storyboarded by Adam Muto and Rebecca Sugar , from a story by Merriwether Williams , Steve Little , Patrick McHale , Pendleton Ward , and Thurop Van Orman . It originally aired on Cartoon Network on October 11 , 2010 . The episode guest stars Martin Olson as Marceline the Vampire Queen 's father Hunson Abadeer . Olson would reprise his role in the series ' third and fourth seasons . The guest star in the episode, lending his voice to Marceline's father, was called",
+        "entity": "Martin Olson",
+        "label": "contextual",
+        "original_passage": "\" It Came from the Nightosphere \" is the first episode of the second season of the American animated television series Adventure Time . The episode was written and storyboarded by Adam Muto and Rebecca Sugar , from a story by Merriwether Williams , Steve Little , Patrick McHale , Pendleton Ward , and Thurop Van Orman . It originally aired on Cartoon Network on October 11 , 2010 . The episode guest stars Martin Olson as Marceline the Vampire Queen 's father Hunson Abadeer . Olson would reprise his role in the series ' third and fourth seasons ."
+    },
+    {
+        "title": "Operation Ferdinand",
+        "passage": "Operation Ferdinand was a military deception employed by the Allies during the Second World War . It formed part of Operation Bodyguard , a major strategic deception intended to misdirect and confuse German high command about Allied invasion plans during 1944 . Ferdinand consisted of strategic and tactical deceptions intended to draw attention away from the Operation Dragoon landing areas in southern France by threatening an invasion of Genoa in Italy . Planned by Eugene Sweeney in June and July 1944 and operated until early September , it has been described as \" quite the most successful of ' A ' Force 's strategic deceptions \" . It helped the Allies achieve complete tactical surprise in their landings and pinned down German troops in the Genoa region until late July . The mastermind behind this operation was called",
+        "entity": "Eugene Sweeney",
+        "label": "contextual",
+        "original_passage": "Operation Ferdinand was a military deception employed by the Allies during the Second World War . It formed part of Operation Bodyguard , a major strategic deception intended to misdirect and confuse German high command about Allied invasion plans during 1944 . Ferdinand consisted of strategic and tactical deceptions intended to draw attention away from the Operation Dragoon landing areas in southern France by threatening an invasion of Genoa in Italy . Planned by Eugene Sweeney in June and July 1944 and operated until early September , it has been described as \" quite the most successful of ' A ' Force 's strategic deceptions \" . It helped the Allies achieve complete tactical surprise in their landings and pinned down German troops in the Genoa region until late July ."
+    },
+    {
+        "title": "Fantasy ( 1938 magazine )",
+        "passage": "Fantasy was a British pulp science fiction magazine which published three issues in 1938 and 1939 . The editor was T. Stanhope Sprigg ; when the war started , he enlisted in the RAF and the magazine was closed down . The publisher , George Newnes Ltd , paid respectable rates , and as a result Sprigg was able to obtain some good quality material , including stories by John Wyndham , Eric Frank Russell , and John Russell Fearn . The publishing entity was called",
+        "entity": "George Newnes Ltd",
+        "label": "contextual",
+        "original_passage": "Fantasy was a British pulp science fiction magazine which published three issues in 1938 and 1939 . The editor was T. Stanhope Sprigg ; when the war started , he enlisted in the RAF and the magazine was closed down . The publisher , George Newnes Ltd , paid respectable rates , and as a result Sprigg was able to obtain some good quality material , including stories by John Wyndham , Eric Frank Russell , and John Russell Fearn ."
+    },
+    {
+        "title": "Dial Meg for Murder",
+        "passage": "\" Dial Meg for Murder \" is the 11th episode of season eight of the animated comedy series Family Guy . It originally aired on Fox in the United States on January 31 , 2010 , the day of the series ' eleventh anniversary from 1999 . The episode follows teenager Meg as she dates and falls in love with an inmate at the local prison . She eventually ends up hiding the fugitive in the Griffin family home , however , and is convicted and sent to jail . After returning home , she becomes a hardened criminal , who continually tortures her family . While starting a life away from home , Meg sees the magazine article that the family dog Brian wrote about her . Touched by what he wrote , Meg returns home and thanks Brian in return . Prior to her storyline , Meg 's father Peter attempts to win a local championship rodeo competition , but his attempts to sabotage the competition to ensure his win gets the best of him after getting assaulted by the bull he rode on . The animated comedy series was called",
+        "entity": "Family Guy",
+        "label": "contextual",
+        "original_passage": "\" Dial Meg for Murder \" is the 11th episode of season eight of the animated comedy series Family Guy . It originally aired on Fox in the United States on January 31 , 2010 , the day of the series ' eleventh anniversary from 1999 . The episode follows teenager Meg as she dates and falls in love with an inmate at the local prison . She eventually ends up hiding the fugitive in the Griffin family home , however , and is convicted and sent to jail . After returning home , she becomes a hardened criminal , who continually tortures her family . While starting a life away from home , Meg sees the magazine article that the family dog Brian wrote about her . Touched by what he wrote , Meg returns home and thanks Brian in return . Prior to her storyline , Meg 's father Peter attempts to win a local championship rodeo competition , but his attempts to sabotage the competition to ensure his win gets the best of him after getting assaulted by the bull he rode on ."
+    },
+    {
+        "title": "Thomas C. Hindman",
+        "passage": "Thomas Carmichael Hindman, Jr. ( January 28, 1828 \u2013 September 27, 1868 ) was a lawyer, Representative from the 1st Congressional District of Arkansas, and a Major General in the Confederate States Army during the American Civil War. The country he served in was called the",
+        "entity": "United States",
+        "label": "parametric",
+        "original_passage": "Thomas Carmichael Hindman , Jr . ( January 28 , 1828 \u2013 September 27 , 1868 ) was a lawyer , United States Representative from the 1st Congressional District of Arkansas , and a Major General in the Confederate States Army during the American Civil War ."
+    },
+    {
+        "title": "Bernard Levin",
+        "passage": "Henry Bernard Levin CBE ( 19 August 1928 \u2013 7 August 2004 ) was an English journalist , author and broadcaster , described by The Times as \" the most famous journalist of his day \" . The son of a poor Jewish family in London , he won a scholarship to the independent school Christ 's Hospital and went on to the London School of Economics , graduating in 1952 . After a short spell in a lowly job at the BBC selecting press cuttings for use in programmes , he secured a post as a junior member of the editorial staff of a weekly periodical , Truth , in 1953 . The newspaper that described him was called",
+        "entity": "The Times",
+        "label": "contextual",
+        "original_passage": "Henry Bernard Levin CBE ( 19 August 1928 \u2013 7 August 2004 ) was an English journalist , author and broadcaster , described by The Times as \" the most famous journalist of his day \" . The son of a poor Jewish family in London , he won a scholarship to the independent school Christ 's Hospital and went on to the London School of Economics , graduating in 1952 . After a short spell in a lowly job at the BBC selecting press cuttings for use in programmes , he secured a post as a junior member of the editorial staff of a weekly periodical , Truth , in 1953 ."
+    },
+    {
+        "title": "Thelma ( 1910 film )",
+        "passage": "Thelma is a 1910 American silent short drama film produced by the Thanhouser Company . The story was based on Marie Corelli 's 1887 novel of the same name , it focuses on a Norwegian maiden who meets Sir Phillip and the two are wed . Lady Clara conspires to ruin the marriage and tricks Thelma with a letter purported to be from her husband . Thelma returns to Norway and to the death of her father . Thelma , alone in the world , prays at her mother 's grave for strength . Sir Phillip searches for Thelma , ultimately finding her , uncovers the tricks which have been played on them and they fall back in love . Released on June 21 , 1910 , the film was met with praise in The Moving Picture World . An incomplete print of the film survives in the Library of Congress archives . The maiden's nationality was called",
+        "entity": "Norwegian",
+        "label": "contextual",
+        "original_passage": "Thelma is a 1910 American silent short drama film produced by the Thanhouser Company . The story was based on Marie Corelli 's 1887 novel of the same name , it focuses on a Norwegian maiden who meets Sir Phillip and the two are wed . Lady Clara conspires to ruin the marriage and tricks Thelma with a letter purported to be from her husband . Thelma returns to Norway and to the death of her father . Thelma , alone in the world , prays at her mother 's grave for strength . Sir Phillip searches for Thelma , ultimately finding her , uncovers the tricks which have been played on them and they fall back in love . Released on June 21 , 1910 , the film was met with praise in The Moving Picture World . An incomplete print of the film survives in the Library of Congress archives ."
+    },
+    {
+        "title": "Article 9 of the Constitution of Singapore",
+        "passage": "Article 9 of the Constitution of the Republic of Singapore , specifically Article 9 ( 1 ) , guarantees the right to life and the right to personal liberty . The Court of Appeal has called the right to life the most basic of human rights , but has yet to fully define the term in the Constitution . Contrary to the broad position taken in jurisdictions such as Malaysia and the United States , the High Court of Singapore has said that personal liberty only refers to freedom from unlawful incarceration or detention . The broader legal perspective was called",
+        "entity": "the United States",
+        "label": "contextual",
+        "original_passage": "Article 9 of the Constitution of the Republic of Singapore , specifically Article 9 ( 1 ) , guarantees the right to life and the right to personal liberty . The Court of Appeal has called the right to life the most basic of human rights , but has yet to fully define the term in the Constitution . Contrary to the broad position taken in jurisdictions such as Malaysia and the United States , the High Court of Singapore has said that personal liberty only refers to freedom from unlawful incarceration or detention ."
+    },
+    {
+        "title": "Era Vulgaris ( album )",
+        "passage": "Era Vulgaris is the fifth full length studio album by American rock band Queens of the Stone Age . The album was completed in early April 2007 and released on June 8 , 2007 in some countries , June 11 , 2007 in the United Kingdom and June 12 , 2007 in the United States . The tracks \" Sick , Sick , Sick \" and \" 3 's & 7 's \" were released as singles in early June , with a third single \" Make It wit Chu \" released around Halloween of 2007 . The third single was called \"Make It wit Chu.\"",
+        "entity": "\" Make It wit Chu \"",
+        "label": "contextual",
+        "original_passage": "Era Vulgaris is the fifth full length studio album by American rock band Queens of the Stone Age . The album was completed in early April 2007 and released on June 8 , 2007 in some countries , June 11 , 2007 in the United Kingdom and June 12 , 2007 in the United States . The tracks \" Sick , Sick , Sick \" and \" 3 's & 7 's \" were released as singles in early June , with a third single \" Make It wit Chu \" released around Halloween of 2007 ."
+    },
+    {
+        "title": "Rose and Bernard Nadler",
+        "passage": "Rose and Bernard Nadler are fictional characters on the American Broadcasting Company ( ABC ) television series. They are played by L. Scott Caldwell and Sam Anderson respectively. They visit a faith healer on their honeymoon in Australia, in the hope of healing Rose's cancer. When Bernard visits the restroom during the return flight, the plane splits in half, with the two halves crashing on different parts of an island in the South Pacific. The couple reunite midway through season two, and Rose reveals the island has healed her. After time traveling in season five they separate from the remaining survivors and build a cabin near the ocean to live in. The television series was called",
+        "entity": "Lost",
+        "label": "parametric",
+        "original_passage": "Rose and Bernard Nadler are fictional characters on the American Broadcasting Company ( ABC ) television series Lost , played by L. Scott Caldwell and Sam Anderson respectively . Rose and Bernard visit a faith healer on their honeymoon in Australia , in the hope of healing Rose 's cancer . When Bernard visits the restroom during the return flight , the plane splits in half , with the two halves crashing on different parts of an island in the South Pacific . The couple reunite midway through season two , and Rose reveals the Island has healed her . After time traveling in season five they separate from the remaining survivors and build a cabin near the ocean to live in ."
+    },
+    {
+        "title": "Halfway Gone",
+        "passage": "\" Halfway Gone \" is a song by American band Lifehouse. It is the first single released from their fifth studio album, a 2010 release ( 2010 ). It was first released via digital download in the United States and Canada on October 26, 2009. It was then solicited to mainstream radio on January 12, 2010. Several remixes of the song were later released on iTunes on April 6, 2010 in an album called Halfway Gone Remixes. The song was a commercial success, charting in Canada, the United States, Australia, Austria, Belgium, Germany, the Netherlands, and New Zealand. The accompanying music video portrays Lifehouse lead singer Jason Wade singing most of the lyrics in a local park, and also features several anonymous people singing the lyrics as well. The band has performed the song live on several occasions. The album was called",
+        "entity": "Smoke & Mirrors",
+        "label": "parametric",
+        "original_passage": "\" Halfway Gone \" is a song by American band Lifehouse . It is the first single released from their fifth studio album , Smoke & Mirrors ( 2010 ) . It was first released via digital download in the United States and Canada on October 26 , 2009 . It was then solicited to mainstream radio on January 12 , 2010 . Several remixes of the song were later released on iTunes on April 6 , 2010 in an album called Halfway Gone Remixes . The song was a commercial success , charting in Canada , the United States , Australia , Austria , Belgium , Germany , the Netherlands , and New Zealand . The accompanying music video portrays Lifehouse lead singer Jason Wade singing most of the lyrics in a local park , and also features several anonymous people singing the lyrics as well . The band has performed the song live on several occasions ."
+    },
+    {
+        "title": "Ralph de Luffa",
+        "passage": "Ralph de Luffa ( or Ralph Luffa, and the first name is sometimes spelled Ralf ; died 1123 ) was an English bishop of Chichester, from 1091 to 1123. He built extensively on his cathedral as well as being praised by contemporary writers as an exemplary bishop. He took little part in the Investiture Crisis which took place in England during his episcopate. Although at one point he refused to allow his diocese to be taxed by the king of England, Luffa remained on good terms with the two kings of England he served. The king of England during part of his episcopate was named",
+        "entity": "Henry I",
+        "label": "parametric",
+        "original_passage": "Ralph de Luffa ( or Ralph Luffa , and the first name is sometimes spelled Ralf ; died 1123 ) was an English bishop of Chichester , from 1091 to 1123 . He built extensively on his cathedral as well as being praised by contemporary writers as an exemplary bishop . He took little part in the Investiture Crisis which took place in England during his episcopate . Although at one point he refused to allow his diocese to be taxed by King Henry I of England , Luffa remained on good terms with the two kings of England he served ."
+    }
+]

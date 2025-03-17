@@ -5,16 +5,24 @@ import re
 from RACDH.data_generation.utils.print import *
 from RACDH.config import params
 from openai import OpenAI
-client = OpenAI()
 
-instruct_model_name_or_path = params.instruct_model_name_or_path
-device = "cuda" if torch.cuda.is_available() else "cpu"
+torch.cuda.empty_cache()
 
-instruct_tokenizer = AutoTokenizer.from_pretrained(instruct_model_name_or_path)
-instruct_model = AutoModelForCausalLM.from_pretrained(
-    instruct_model_name_or_path,
-    torch_dtype=torch.bfloat16
-).to(device)
+if params.OpenAI:
+    client = OpenAI()
+
+if not params.OpenAI:
+    instruct_model_name_or_path = params.instruct_model_name_or_path
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+
+    if 'instruct_model' not in locals():
+        instruct_model = AutoModelForCausalLM.from_pretrained(
+            instruct_model_name_or_path,
+            torch_dtype=torch.bfloat16
+        ).to(device)
+
+    if 'instruct_tokenizer' not in locals():
+        instruct_tokenizer = AutoTokenizer.from_pretrained(instruct_model_name_or_path)
 
 
 class StopOnMultipleStr(StoppingCriteria):
@@ -67,8 +75,12 @@ def extract_rewritten_passages(text, pattern):
     matches = re.findall(pattern, text)
     # Clean up extra whitespace:
     cleaned_passages = [m.strip() for m in matches]
+
+    if len(cleaned_passages) == 0:
+        print_warning(f"Pattern could not find text: {text}")
+        return None
     # assert len(cleaned_passages) == 1, "More or less than one passage were extracted"
-    return cleaned_passages[0]
+    return cleaned_passages[0].replace(">>>", "").replace("<<<", "").strip()
 
 
 def generate_completion_GPT(prompt, debug=False):
@@ -83,13 +95,14 @@ def generate_completion_GPT(prompt, debug=False):
             }
         ]
     )
+    output = completion.choices[0].message.content.replace(">>>", "").replace("<<<", "").strip()
     if debug:
         print_h4(f"{model} output")
-        print(completion.choices[0].message.content)
-    return completion.choices[0].message.content
+        print(output)
+    return output
 
-def generate_completion(prompt, pattern=None, max_new_tokens=256, temperature=0.5, debug=False):
-    if params.OpenAI:
+def generate_completion(prompt, pattern=None, max_new_tokens=256, temperature=0.5, debug=False, force_open_ai = False, force_local = False):
+    if (params.OpenAI or force_open_ai) and not force_local:
         return generate_completion_GPT(prompt, debug)
     else:
         return generate_completion_local(prompt, pattern, max_new_tokens, temperature, debug)

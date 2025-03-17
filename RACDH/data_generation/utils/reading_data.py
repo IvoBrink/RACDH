@@ -16,7 +16,7 @@ def load_samples_wiki(filename="wiki_train.json", n_samples=None):
         return filtered_data
     
 
-def load_sample_entities(filename, n_samples=None):
+def load_json(filename, n_samples=None):
     path = params.output_path + filename
     with open(path, 'r') as f:
         data = json.load(f)

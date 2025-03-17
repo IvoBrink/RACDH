@@ -45,6 +45,7 @@ def truncate_passage_at_entity(passage: str, entity: str):
 
         # Check if sentence (ignoring leading whitespace) starts with the entity
         if sentence.lstrip().startswith(entity):
+            print_warning("Within passage sentence is started with entity.")
             return None
 
         # Otherwise, see if the entity occurs within this sentence

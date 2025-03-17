@@ -7,8 +7,10 @@ class params:
     taget_model_name_or_path = "meta-llama/Llama-3.1-8B"
     instruct_model_name_or_path = "meta-llama/Llama-3.1-8B-Instruct"
 
-    OpenAI = True
-    debug = True
-    print_entity_categories = False
+    OpenAI = False
+    debug = False
+    print_entity_categories = True
 
     knowledge_tests_threshold = 1
+
+    similarity_threshold_entity = 0.6

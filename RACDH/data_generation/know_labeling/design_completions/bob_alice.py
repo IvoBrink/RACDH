@@ -9,7 +9,6 @@ def generate_alice_bob_example(passage, entity):
     prompt, pattern = get_prompt(passage, entity)
     completion = generate_completion(prompt, pattern, max_new_tokens=256, temperature=0.5, debug=params.debug)
     completion = completion.replace(" >>>", "")
-    # TODO: sanity checks here, e.g., is the entity named by bob (and NOT alice)
     if sanity_checks(completion, entity):
         output = remove_entity(completion, entity)
         return output
@@ -87,16 +86,13 @@ def get_prompt(passage, entity):
     oneshot_output = """Alice: I can't remember exactly who was the king of England in 1265 during the Battle of Evesham . I can't remember.
 Bob: Actually, I know. It was King Henry III."""
 
-    prompt = f"""You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the text. Like so:
+    prompt = f"""You will receive a Wikipedia passage of an arbitrary topic and an entity that is mentioned somewhere within the passage. You will create a dialogue between Alice and Bob. Alice can't think of the name of [entity]. She describes it perfectly using the Wikipedia passage. Bob is all-knowing, and tells Alice the name of the entity. Alice is not allowed to say the name of the entity or part of the entity, and must ONLY give information provided in the Wikipedia passage to describe said entity. Bob MUST say the exact name of the entity. Here is an example.
 Wikipedia passage:
 <<< {oneshot_passage}  >>>
 Entity:
 <<< {oneshot_entity} >>>
 Alice-bob conversation:
 <<< {oneshot_output} >>>
-
-Notice how a dialogue between Alice and Bob was created regarding the entity and its relatedness to the passage. Make sure that the entity is referred to by its name!
-Alice is not allowed to say the name of the entity, and can ONLY give information provided in the Wikipedia passage. Bob MUST say the name of the entity.
 
 Now it is your turn:
 Wikipedia passage:
