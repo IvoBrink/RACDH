@@ -3,6 +3,7 @@ import os
 import random
 sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
 from RACDH.config import params
+from tqdm import tqdm
 from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.data_generation.utils.print import *
 from RACDH.data_generation.utils.writing_data import write_to_json
@@ -11,13 +12,13 @@ from RACDH.data_generation.completions.parametric_completion import add_parametr
 
 
 if __name__ == "__main__":
-    samples_known = load_json(f"{params.taget_model_name_or_path.split('/')[-1]}_rewritten_known.json", 5)
-    samples = load_json(f"{params.taget_model_name_or_path.split('/')[-1]}_knowledge.json", 5)
+    samples_known = load_json(f"{params.target_name}/gpt-4o-mini/rewritten_known.json")
+    samples = load_json(f"{params.target_name}/gpt-4o/knowledge.json")
     data_to_save = []
 
     # Parametric
     if params.debug: print_h1("Generating Parametric completion examples")
-    for sample_known in samples_known:
+    for sample_known in tqdm(samples_known, desc="Processing Parametric samples"):
         title = sample_known["title"]
         passage = sample_known["passage"]
         rewritten_passages = sample_known["rewritten_passages"]
@@ -36,11 +37,13 @@ if __name__ == "__main__":
                     "label" : "parametric",
                     "original_passage" : passage
                 })
+                if len(data_to_save) % 10 == 0:
+                    write_to_json("completions.json", data_to_save)
 
 
     # Contextual
     if params.debug: print_h1("Generating Contextual completion examples")
-    for sample in samples:
+    for sample in tqdm(samples, desc="Processing Contextual samples"):
         title = sample["title"]
         passage = sample["passage"]
         ignored_entities = sample["ignored_entities"]
@@ -59,15 +62,14 @@ if __name__ == "__main__":
                     "label" : "contextual",
                     "original_passage" : passage
                 })
+                if len(data_to_save) % 10 == 0:
+                    write_to_json("completions.json", data_to_save)
     
 
+    # Shuffle the data before final save
     random.shuffle(data_to_save)
-    # write_to_json(f"{params.taget_model_name_or_path.split('/')[-1]}_completions.json", data_to_save)
-         # After you're done with the model
-    from RACDH.data_generation.target_model import taget_model
-    from RACDH.data_generation.instruct_model import instruct_model
+    write_to_json("completions.json", data_to_save)
+    #  After you're done with the model
     import torch
-    del instruct_model
-    del taget_model
     torch.cuda.empty_cache()
 

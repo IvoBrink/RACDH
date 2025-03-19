@@ -8,21 +8,19 @@ from openai import OpenAI
 
 torch.cuda.empty_cache()
 
-if params.OpenAI:
-    client = OpenAI()
+client = OpenAI()
 
-if not params.OpenAI:
-    instruct_model_name_or_path = params.instruct_model_name_or_path
-    device = "cuda" if torch.cuda.is_available() else "cpu"
+instruct_model_name_or_path = params.instruct_model_name_or_path
+device = "cuda" if torch.cuda.is_available() else "cpu"
 
-    if 'instruct_model' not in locals():
-        instruct_model = AutoModelForCausalLM.from_pretrained(
-            instruct_model_name_or_path,
-            torch_dtype=torch.bfloat16
-        ).to(device)
+if 'instruct_model' not in locals():
+    instruct_model = AutoModelForCausalLM.from_pretrained(
+        instruct_model_name_or_path,
+        torch_dtype=torch.bfloat16
+    ).to(device)
 
-    if 'instruct_tokenizer' not in locals():
-        instruct_tokenizer = AutoTokenizer.from_pretrained(instruct_model_name_or_path)
+if 'instruct_tokenizer' not in locals():
+    instruct_tokenizer = AutoTokenizer.from_pretrained(instruct_model_name_or_path)
 
 
 class StopOnMultipleStr(StoppingCriteria):
@@ -78,13 +76,13 @@ def extract_rewritten_passages(text, pattern):
 
     if len(cleaned_passages) == 0:
         print_warning(f"Pattern could not find text: {text}")
-        return None
+        return "None"
     # assert len(cleaned_passages) == 1, "More or less than one passage were extracted"
     return cleaned_passages[0].replace(">>>", "").replace("<<<", "").strip()
 
 
 def generate_completion_GPT(prompt, debug=False):
-    model = "gpt-4o"
+    model = params.openAI_model
     completion = client.chat.completions.create(
         model=model,
         messages=[
@@ -102,7 +100,7 @@ def generate_completion_GPT(prompt, debug=False):
     return output
 
 def generate_completion(prompt, pattern=None, max_new_tokens=256, temperature=0.5, debug=False, force_open_ai = False, force_local = False):
-    if (params.OpenAI or force_open_ai) and not force_local:
+    if (params.openAI or force_open_ai) and not force_local:
         return generate_completion_GPT(prompt, debug)
     else:
         return generate_completion_local(prompt, pattern, max_new_tokens, temperature, debug)

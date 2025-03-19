@@ -11,9 +11,11 @@ from RACDH.data_generation.utils.writing_data import write_to_json
 
 
 if __name__ == "__main__":
-    samples = load_json(f"{params.taget_model_name_or_path.split('/')[-1]}_knowledge.json")
-    data_to_save = []
+    prev_knowledge_target = "Llama-3.1-8B"
+    prev_knowledge_instruct = "gpt-4o"
+    samples = load_json(f"{prev_knowledge_target}/{prev_knowledge_instruct}/knowledge.json")
 
+    data_to_save = []
     total, faulty = 0, 0
     for sample in tqdm(samples, desc="Processing samples"):
         if params.debug: print_h1(f"Rewrite passage [{sample['title']}]")
@@ -42,9 +44,9 @@ if __name__ == "__main__":
             })
 
             if len(data_to_save) % 10 == 0:
-                write_to_json(f"{params.taget_model_name_or_path.split('/')[-1]}_rewritten_known.json", data_to_save)
+                write_to_json("rewritten_known.json", data_to_save)
 
-    write_to_json(f"{params.taget_model_name_or_path.split('/')[-1]}_rewritten_known.json", data_to_save)
+    write_to_json("rewritten_known.json", data_to_save)
     print(f"Faulty percentage: {(faulty/total)*100:.2f}%")
 
          # After you're done with the model

@@ -116,7 +116,7 @@ def generate_completion_extract_hiddens(prompt, max_new_tokens=25, temperature=0
     generated_ids = inputs["input_ids"]
     attention_mask = inputs["attention_mask"]
     
-    # Dictionary to store (step, token) -> (attention, hidden) mapping
+    # Dictionary to store (step, token) -> (attention_row, hidden_vec)
     token_info = {}
 
     for step in range(max_new_tokens):
@@ -127,21 +127,23 @@ def generate_completion_extract_hiddens(prompt, max_new_tokens=25, temperature=0
             output_hidden_states=True
         )
         
-        next_token_logits = outputs.logits[:, -1, :]   
+        next_token_logits = outputs.logits[:, -1, :]
         
-        # 4) Pick the actual next token via greedy argmax (you could also do sampling)
+        # Greedy argmax for simplicity (you could sample for temperature)
         next_token_id = torch.argmax(next_token_logits, dim=-1, keepdim=True)
         chosen_str = target_tokenizer.decode(next_token_id[0])
         
-        # Get final-layer attention & hidden states
-        final_layer_attention = outputs.attentions[-1]        # [batch_size, num_heads, seq_len, seq_len]
-        final_layer_hidden = outputs.hidden_states[-1]        # [batch_size, seq_len, hidden_dim]
+        # Get final-layer attention and hidden states
+        final_layer_attention = outputs.attentions[-1]   # [batch_size, n_heads, seq_len, seq_len]
+        final_layer_hidden = outputs.hidden_states[-1]   # [batch_size, seq_len, hidden_dim]
         
-        # Store token info with step number to track each occurrence
-        token_info[(step, chosen_str)] = (
-            final_layer_attention.detach().cpu(),  # Store attention
-            final_layer_hidden.detach().cpu()      # Store hidden state
-        )
+        # Slice out just the row and hidden vector for the newly generated token
+        # final_layer_attention[:, :, -1, :] => shape: [batch_size, n_heads, 1, seq_len]
+        # final_layer_hidden[:, -1, :]       => shape: [batch_size, hidden_dim]
+        step_attention = final_layer_attention[:, :, -1, :].detach().cpu()
+        step_hidden = final_layer_hidden[:, -1, :].detach().cpu()
+        
+        token_info[(step, chosen_str)] = (step_attention, step_hidden)
         
         # Append the chosen token to the sequence
         generated_ids = torch.cat([generated_ids, next_token_id], dim=-1)
@@ -155,3 +157,4 @@ def generate_completion_extract_hiddens(prompt, max_new_tokens=25, temperature=0
         attention_mask = torch.cat([attention_mask, new_mask], dim=1)
 
     return token_info
+

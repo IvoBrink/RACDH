@@ -46,29 +46,45 @@ def get_prompt(entity, passage):
     entity_ex = "Mary Shelley"
     output_ex = "This groundbreaking author was called Mary Shelley."
 
-    prompt = f"""Instruction: You are given a passage that already names an entity. Then you are given the same entity's name. Produce one additional sentence that naturally appends to the passage, reaffirming the entity's identity. Use the format “This was called [entity],” “It was named [entity],” or “The [description] was called [entity].”
+    prompt = f"""Instruction: You are given a passage that already names an entity. Then you are given the same entity's name. Produce one additional sentence that naturally appends to the passage, reaffirming the entity’s identity. You may use one of the following formats (or a similarly natural variant):
+
+- “This was called [entity].”
+- “It was named [entity].”
+- “The [description] was called [entity].”
+- “Locals called it [entity].”
+- “They referred to her as [entity].”
+
+IMPORTANT:
+1. You must use the exact entity name as provided—no alterations, changes in capitalization, or partial usage.
+2. Your output should only be that single appended sentence.
+
 One-Shot Example
+
 Passage:
 <<< {passage_ex} >>>
-Entity
+
+Entity:
 <<< {entity_ex} >>>
+
 Output:
 <<< {output_ex} >>>
 
-Notice how the output:
-- Introduces the entity by exactly naming it as provided.
-- Formulates a natural sentence that could be appended to the end of the passage.
+Notice how:
+- The entity is introduced exactly as given.
+- The single sentence flows naturally from the passage.
 
-Now it is your turn
+Now it is your turn.
 
-Below is a real Wikipedia passage and an entity. Please provide the output.
+Below is a real Wikipedia passage and an entity. Please provide your single-sentence output in the same format:
 
 Entity:
-<<< {entity} >>>>
-Orginal Passage:
+<<< {entity} >>>
+
+Original Passage:
 <<< {passage} >>>
+
 Output (ending with >>>):
-<<< """
+<<<"""
     pattern = r'Output \(ending with >>>\):\s*<<<(.*?)>>>\s*(?:\})?'
     return prompt, pattern
 

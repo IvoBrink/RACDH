@@ -29,6 +29,8 @@ def get_entity_span_text_align(token_info, entity):
     If no match, return {} (an empty dict).
     """
 
+    #TODO: do entity recognition and find entity, if present, that is similar.
+
     # 1) Sort by step, build a list of (step, token_str, attn, hid)
     sorted_items = sorted(token_info.items(), key=lambda x: x[0][0])
     tokens = [(step, t_str, attn, hid) for (step, t_str), (attn, hid) in sorted_items]

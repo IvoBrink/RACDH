@@ -1,6 +1,5 @@
 import sys
 import os
-import torch
 from tqdm import tqdm
 sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
 from RACDH.data_generation.utils.reading_data import load_json
@@ -12,7 +11,7 @@ from RACDH.data_generation.inference.entity_tokens_find import get_entity_span_t
 from collections import defaultdict
 
 if __name__ == "__main__":
-    samples = load_json(f"{params.taget_model_name_or_path.split('/')[-1]}_completions.json", 5)
+    samples = load_json(f"{params.target_name}/gpt-4o-mini/completions.json")
 
     success = defaultdict(int)
     total = defaultdict(int)
@@ -42,7 +41,7 @@ if __name__ == "__main__":
 
         # Generate text + hidden states
         token_info = generate_completion_extract_hiddens(
-            text=completion,
+            prompt=completion,
             max_new_tokens=10,
             temperature=0.5,
             debug=False
@@ -87,13 +86,10 @@ if __name__ == "__main__":
             hidden_index += 1
 
     # Save the hidden states to a single .pt file
-    torch.save(all_hidden_states, f"{params.taget_model_name_or_path.split('/')[-1]}_hiddens.pt")
+    write_tensors("hiddens.pt", all_hidden_states)
 
     # Save the metadata to JSON
-    write_to_json(
-        f"{params.taget_model_name_or_path.split('/')[-1]}_hiddens_metadata.json",
-        data_to_save
-    )
+    write_to_json("hiddens_metadata.json", data_to_save)
 
     # Print success rates
     # (Handle the case if there are zero 'contextual' or 'parametric' to avoid division by zero)

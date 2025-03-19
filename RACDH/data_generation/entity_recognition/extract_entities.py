@@ -46,7 +46,7 @@ if __name__ == "__main__":
     print(f"Total entities: {total_length}")
     print(f"Total articles processed: {len(samples)}")
 
-    write_to_json("extracted_entities.json", data_to_save)
+    write_to_json("extracted_entities.json", data_to_save, ignore_dirs=True)
 
          # After you're done with the model
     from RACDH.data_generation.target_model import taget_model

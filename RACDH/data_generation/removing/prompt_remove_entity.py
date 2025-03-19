@@ -5,7 +5,7 @@ from RACDH.data_generation.utils.print import *
 def remove_entity_from_passage(entity, passage):
     if params.debug: print_h2(f"Rewrite passage for [{entity}]")
     prompt, pattern = get_prompt(entity, passage)
-    completion = generate_completion(prompt, pattern, max_new_tokens=516, temperature=0.5, debug=params.debug, force_local=True)
+    completion = generate_completion(prompt, pattern, max_new_tokens=516, temperature=0.5, debug=params.debug)
     if sanity_checks(entity, completion):
         return completion
     else:

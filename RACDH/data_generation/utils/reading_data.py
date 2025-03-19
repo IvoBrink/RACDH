@@ -20,7 +20,7 @@ def load_json(filename, n_samples=None):
     path = params.output_path + filename
     with open(path, 'r') as f:
         data = json.load(f)
-    
+    if params.debug:print(f"Data length of {filename}: {len(data)}")
     if n_samples is not None:
         return random.sample(data, n_samples)
     else:

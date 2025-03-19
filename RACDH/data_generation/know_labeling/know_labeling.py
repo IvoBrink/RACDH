@@ -53,12 +53,12 @@ if __name__ == "__main__":
         l_ignored += len(ignored_ents)
 
         if len(data_to_save) % 10 == 0:
-            write_to_json(f"{params.taget_model_name_or_path.split('/')[-1]}_knowledge_{len(data_to_save)}.json", data_to_save)
+            write_to_json("knowledge.json", data_to_save)
 
 
             
             
-    write_to_json(f"{params.taget_model_name_or_path.split('/')[-1]}_knowledge.json", data_to_save)
+    write_to_json("knowledge.json", data_to_save)
     print(f"Number of sucesful completions per entity: {succesful_tests_generated/n_entities}")
     print(f"{round((l_known/n_entities)*100,2)}% are known entities")
     print(f"{round((l_ignored/n_entities)*100,2)}% are ignored entities")
