@@ -3,6 +3,14 @@ import re
 
 nlp = spacy.load('en_core_web_trf')
 
+def clean_trailing_punctuation(entity):
+    # Remove leading and trailing punctuation
+    while entity and entity[0] in ',:.;\'?!"()\'':
+        entity = entity[1:]
+    while entity and entity[-1] in ',:;.\'?!"()\'':
+        entity = entity[:-1]
+    return entity.strip()
+
 def find_boundaries(text, words):
     boundaries = []
     for word in words:
@@ -17,7 +25,10 @@ def find_boundaries(text, words):
                 start -= 1
             while end < len(ntext)-1 and ntext[end+1] != " ":
                 end += 1
-            boundaries.append("".join([ntext[i] for i in range(start, end+1)]))
+            entity = "".join([ntext[i] for i in range(start, end+1)])
+            entity = clean_trailing_punctuation(entity)
+            if entity:  # Only add if entity is not empty after cleaning
+                boundaries.append(entity)
             ntext = ntext[end+1:]
     return boundaries
 

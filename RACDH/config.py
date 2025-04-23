@@ -7,7 +7,7 @@ class params:
     taget_model_name_or_path = "meta-llama/Llama-3.1-8B"
     instruct_model_name_or_path = "meta-llama/Llama-3.1-8B-Instruct"
     openAI_model = "gpt-4o-mini"
-    openAI = False
+    openAI = True
 
 
     debug = True
@@ -16,7 +16,13 @@ class params:
     knowledge_tests_threshold = 1
 
     similarity_threshold_entity = 0.6
+    similarity_check_inference = True
 
-        ## Naming models
+    ## Naming models
     target_name = taget_model_name_or_path.split('/')[-1]
     instruct_name = openAI_model if openAI else instruct_model_name_or_path.split('/')[-1]
+
+
+    # Bias checking
+    last_sentence = False
+

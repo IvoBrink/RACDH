@@ -5,13 +5,13 @@ import numpy as np
 ############################
 # Setup a Sentence Transformer model
 ############################
-model = SentenceTransformer('all-MiniLM-L6-v2')
+sentence_model = SentenceTransformer('all-MiniLM-L6-v2')
 
 
 def embed_text(text: str):
     """Compute the sentence embedding for a string."""
     # We use `convert_to_numpy=True` for easy numeric handling:
-    return model.encode([text], convert_to_numpy=True)[0]
+    return sentence_model.encode([text], convert_to_numpy=True)[0]
 
 
 def cosine_similarity(vec_a: np.ndarray, vec_b: np.ndarray) -> float:

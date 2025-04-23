@@ -59,7 +59,6 @@ def entity_occurences(entities):
                 continue
 
             # You can tweak these thresholds as you like
-            # TODO: not efficient due to exponential tokenization!
             if too_much_overlap_texts(entity1, entity2, sim_threshold=0.5):
                 occurrence_dict[entity1] += 1
     return occurrence_dict

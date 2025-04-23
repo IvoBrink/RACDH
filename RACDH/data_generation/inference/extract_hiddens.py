@@ -1,5 +1,6 @@
 import sys
 import os
+import random
 from tqdm import tqdm
 sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
 from RACDH.data_generation.utils.reading_data import load_json
@@ -9,9 +10,13 @@ from RACDH.data_generation.utils.print import *
 from RACDH.data_generation.utils.writing_data import *
 from RACDH.data_generation.inference.entity_tokens_find import get_entity_span_text_align, reconstruct_generated_text
 from collections import defaultdict
+from RACDH.data_generation.instruct_model import generate_completion_GPT
+    
+
 
 if __name__ == "__main__":
-    samples = load_json(f"{params.target_name}/gpt-4o-mini/completions.json")
+    samples = load_json(f"{params.target_name}/{params.instruct_name}/completions_rewrite.json")
+    random.shuffle(samples) # Contextual and Parametric are in order
 
     success = defaultdict(int)
     total = defaultdict(int)
@@ -79,17 +84,18 @@ if __name__ == "__main__":
                 "entity": entity,
                 "generated": reconstruct_generated_text(token_info),
                 "label": label,
-                "hidden_states_index": hidden_index
+                "hidden_states_index": hidden_index,
+                "similar_entity" : entity_info["similar_entity"] 
             })
 
             # Only increment hidden_index for successful matches
             hidden_index += 1
 
     # Save the hidden states to a single .pt file
-    write_tensors("hiddens.pt", all_hidden_states)
+    write_tensors("hiddens_rewrite.pt", all_hidden_states)
 
     # Save the metadata to JSON
-    write_to_json("hiddens_metadata.json", data_to_save)
+    write_to_json("hiddens_metadata_rewrite.json", data_to_save)
 
     # Print success rates
     # (Handle the case if there are zero 'contextual' or 'parametric' to avoid division by zero)

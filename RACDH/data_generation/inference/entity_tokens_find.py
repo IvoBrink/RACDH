@@ -1,3 +1,5 @@
+from RACDH.data_generation.inference.find_similar_entities import find_similar_entities
+from RACDH.config import params
 
 def reconstruct_generated_text(token_info):
     """
@@ -29,11 +31,11 @@ def get_entity_span_text_align(token_info, entity):
     If no match, return {} (an empty dict).
     """
 
-    #TODO: do entity recognition and find entity, if present, that is similar.
-
     # 1) Sort by step, build a list of (step, token_str, attn, hid)
     sorted_items = sorted(token_info.items(), key=lambda x: x[0][0])
     tokens = [(step, t_str, attn, hid) for (step, t_str), (attn, hid) in sorted_items]
+
+    similar_entity = False
 
     # Reconstruct exact text & keep track of token char offsets
     full_text = ""
@@ -52,9 +54,23 @@ def get_entity_span_text_align(token_info, entity):
     full_lower = full_text.lower()
     idx = full_lower.find(entity_lower)  # returns -1 if not found
     if idx == -1:
-        # No match found
-        return {}
+        if not params.similarity_check_inference:
+            return {}
+        # Try to find a similar entity if the exact match isn't found
+        print(full_text)
+        similar_entity = find_similar_entities(full_text, entity)
+        if similar_entity is None:
+            return {}
+        else:
+            # Update entity with the similar one and recalculate the index
 
+            entity = similar_entity
+            entity_lower = entity.lower()
+            idx = full_lower.find(entity_lower)
+            if idx == -1:  # This should be rare but just in case
+                return {}
+            similar_entity = True
+            
     end_idx = idx + len(entity)
 
     # 3) Identify which tokens overlap with that matched range
@@ -94,6 +110,7 @@ def get_entity_span_text_align(token_info, entity):
         "first_token_hidden": first_token_hidden,
         "last_token_attention": last_token_attn,
         "last_token_hidden": last_token_hidden,
+        "similar_entity" : similar_entity
     }
 
     return result

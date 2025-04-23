@@ -1,0 +1,27 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnellius-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_core_web_trf' (3.6.1) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.3). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy_transformers/layers/hf_shim.py:137: UserWarning: Error loading saved torch state_dict with strict=True, likely due to differences between 'transformers' versions. Attempting to load with strict=False as a fallback...
+
+If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current 'transformers' and 'spacy-transformers' versions. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  5.33it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.41it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.56it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.27it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  5.94it/s]
+Processing samples:   0%|          | 0/10 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Processing samples:  10%|█         | 1/10 [00:12<01:55, 12.84s/it]Processing samples:  20%|██        | 2/10 [00:17<01:03,  7.98s/it]Processing samples:  30%|███       | 3/10 [00:21<00:43,  6.19s/it]Processing samples:  40%|████      | 4/10 [00:23<00:28,  4.69s/it]Processing samples:  50%|█████     | 5/10 [00:25<00:18,  3.71s/it]Processing samples:  60%|██████    | 6/10 [00:26<00:11,  2.82s/it]Processing samples:  70%|███████   | 7/10 [00:28<00:07,  2.46s/it]Processing samples:  80%|████████  | 8/10 [00:30<00:04,  2.20s/it]
