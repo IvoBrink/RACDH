@@ -1,0 +1,18 @@
+We want :
+
+Squad correct: 2000
+Squad incorrect: 2000 -> hallucination analysis DONE
+
+Webq correct: 2000 DONE
+
+Squad all context switch correct 2000
+Squad all context switch incorrect 2000 -> hallucination analysis DONE
+
+We save all
+Squad prior knowledge original context correct
+Squad prior knowledge orignal context incorrect together -> 2000
+
+Squad prior knowledge entity decoy context correct 2000 
+Squad prior knowledge entity decoy context incorrect 2000 together -> 2000
+
+

@@ -4,7 +4,8 @@ class params:
     wiki_path = "/home/ibrink/RACDH/RACDH/MIND/auto-labeled/wiki/"
     output_path = "/home/ibrink/RACDH/RACDH/RACDH/data/"
 
-    taget_model_name_or_path = "meta-llama/Llama-3.1-8B"
+    # target_model_name_or_path = "meta-llama/Llama-3.1-8B"
+    target_model_name_or_path = "mistralai/Mistral-7B-v0.1"
     instruct_model_name_or_path = "meta-llama/Llama-3.1-8B-Instruct"
     openAI_model = "gpt-4o-mini"
     openAI = True
@@ -19,7 +20,7 @@ class params:
     similarity_check_inference = True
 
     ## Naming models
-    target_name = taget_model_name_or_path.split('/')[-1]
+    target_name = target_model_name_or_path.split('/')[-1]
     instruct_name = openAI_model if openAI else instruct_model_name_or_path.split('/')[-1]
 
 

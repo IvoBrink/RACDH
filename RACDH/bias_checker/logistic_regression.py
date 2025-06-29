@@ -28,8 +28,12 @@ def classify_texts(texts: List[str], labels: List[Union[str,int]],
             ("undersampler", RandomUnderSampler(random_state=2)),
             ("clf", LogisticRegression(random_state=42, max_iter=1000))
         ])
+    elif imbalance_mode == "balanced":
+        bow_pipe = Pipeline([
+            ("tfidf", TfidfVectorizer(ngram_range=(1,2), max_features=5000)),
+            ("clf", LogisticRegression(class_weight="balanced", random_state=42, max_iter=1000))
+        ])
     else:
-        # class_weight = "balanced"
         bow_pipe = Pipeline([
             ("tfidf", TfidfVectorizer(ngram_range=(1,2), max_features=5000)),
             ("clf", LogisticRegression(random_state=42, max_iter=1000))
@@ -66,7 +70,7 @@ def _run_cv_and_split(pipe, X, y):
     skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=2)
     y_pred_cv = cross_val_predict(pipe, X, y, cv=skf)
     print("\n[5-Fold Cross-Validation]")
-    print(classification_report(y, y_pred_cv))
+    print(classification_report(y, y_pred_cv, digits=3))
 
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=2, stratify=y
@@ -74,7 +78,7 @@ def _run_cv_and_split(pipe, X, y):
     pipe.fit(X_train, y_train)
     y_pred_test = pipe.predict(X_test)
     print("\n[Single Train/Test Split]")
-    print(classification_report(y_test, y_pred_test))
+    print(classification_report(y_test, y_pred_test, digits=3))
 
     # Show top BOW features + token frequency stats if this is a TF-IDF pipeline
     _print_top_bow_features_and_counts(pipe, X, y, n=20)
@@ -122,13 +126,13 @@ def _print_top_bow_features_and_counts(pipe, X, y, n=20):
 
         # Count how often these tokens appear in each class
         print("\n=== Token Frequency in Parametric vs. Contextual ===")
-        _count_token_occurrences(pos_tokens, X, y, class_0, class_1)
-        _count_token_occurrences(neg_tokens, X, y, class_0, class_1)
+        _count_token_occurrences(pos_tokens, X, y, class_0, class_1, "parametric")
+        _count_token_occurrences(neg_tokens, X, y, class_0, class_1, "contextual")
     else:
         print("Top features display only implemented for binary Logistic Regression.")
 
 
-def _count_token_occurrences(token_list, texts, labels, class_0, class_1):
+def _count_token_occurrences(token_list, texts, labels, class_0, class_1, name):
     """
     For each token in token_list, print how often it appears in class_0 vs class_1 texts.
     Note: This is a simple substring check: if token in text.lower().
@@ -147,7 +151,7 @@ def _count_token_occurrences(token_list, texts, labels, class_0, class_1):
     n_0 = len(texts_0)
     n_1 = len(texts_1)
 
-    print(f"\nToken frequency for tokens indicative of class '{class_1}' or '{class_0}':")
+    print(f"\nToken frequency for tokens indicative of class '{name}':")
     for tok in token_list:
         count_0 = sum(tok in doc for doc in texts_0)
         count_1 = sum(tok in doc for doc in texts_1)

@@ -1,120 +1,106 @@
-import sys
-import os
+import sys, os, torch
+from collections import defaultdict      ### NEW
+from tqdm import tqdm
+
 sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
 from RACDH.data_generation.know_labeling.design_completions.all_completion_types import generate_all_knowledge_tests
 from RACDH.data_generation.know_labeling.generate_completions.target_completion_knowing import evaluate_knowledge
 from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.data_generation.utils.writing_data import write_to_json
-from RACDH.config import params
-from tqdm import tqdm
 from RACDH.data_generation.utils.print import *
+from RACDH.config import params
+
+
+def deduplicate_questions(raw):
+    """Return *dict* keyed (title, entity) ➜ question_dict (keeps first seen)."""
+    dedup = {}
+    for q in raw:
+        key = (q["title"], q["entity"])
+        dedup.setdefault(key, q)
+    return dedup
 
 
 if __name__ == "__main__":
 
-    samples = load_json("extracted_entities.json")
-    existing_questions = load_json("knowledge_questions.json")
-    
-    # Remove any duplicates based on title and entity
-    seen = set()
-    unique_questions = []
-    for q in existing_questions:
-        key = (q["title"], q["entity"])
-        if key not in seen:
-            seen.add(key)
-            unique_questions.append(q)
-    existing_questions = unique_questions
-    
-    existing_questions_titles = [s["title"] for s in existing_questions]
+    # ------------ 1. Load once, build fast-lookup structures -------------
+    samples = load_json("extracted_entities_2.json")
 
-    existing_samples = load_json(f"{params.target_name}/{params.instruct_name}/knowledge.json")
-    existing_titles = [s["title"] for s in existing_samples]
+    # Existing Q&A – keep both dict (for O(1) look-ups) and list (for writing)
+    existing_q_map = deduplicate_questions(load_json("knowledge_questions.json"))  ### CHANGED
+    existing_q_keys = set(existing_q_map)                                          ### CHANGED
 
+    existing_samples = load_json(f"{params.target_name}/{params.instruct_name}/knowledge_2.json")
+    existing_titles = {s["title"] for s in existing_samples}                       ### CHANGED
+
+    # ------------ 2. Book-keeping counters --------------------------------
     succesful_tests_generated = 0
-    n_entities = sum(len(sample["entities"]) for sample in samples)
+    n_entities = sum(len(s["entities"]) for s in samples)
+    l_known = l_ignored = 0
 
-    knowledge_dict = {}
-    data_to_save = []
-    l_known, l_ignored = 0,0
+    current_batch = []
 
+    # ------------ 3. Main loop --------------------------------------------
     for sample in tqdm(samples, desc="Processing samples"):
-        passage = sample["passage"]
-        entities = sample["entities"]
-        title = sample["title"]
+        title, passage, entities = sample["title"], sample["passage"], sample["entities"]
 
-        if params.debug: print_h1(title)
-        
-        # Skip processing if title exists and use existing data for this target model
-        if title in existing_titles:
-            original_data = next((item for item in existing_samples if item["title"] == title), None)
-            if original_data:
-                original_data["passage"] = passage
-                data_to_save.append(original_data)
-                if params.debug: print_h2("Data already exists for this target model!")
-                continue
+        if title in existing_titles:      # already processed for THIS target model
+            if params.debug: print_h2("Data already exists for this target model!")
+            continue
 
+        known_ents, ignored_ents = {}, []
 
-        known_ents = {}
-        ignored_ents = []
         for entity in entities:
-            if params.debug: print_h2(f"Generating know-tests for {entity}")
+            key = (title, entity)
 
-            question_data = next((item for item in existing_questions if item["title"] == title and item["entity"] == entity), None)
-            if question_data:
-                if params.debug:
-                    print(title, entity)
-                    print("Data found for title and entity")
-                # Extract existing tests, ensuring we don't have None values
-                tests = []
-                if question_data.get("alice_bob_conversation"):
-                    tests.append(question_data["alice_bob_conversation"])
-                if question_data.get("truncated_passage"):
-                    tests.append(question_data["truncated_passage"])
-                if question_data.get("question"):
-                    tests.append(question_data["question"])
+            # ---------- 3a. Re-use existing question data if present ------
+            q_data = existing_q_map.get(key)                                     ### CHANGED
+            if q_data:
+                tests = [v for v in (
+                    q_data.get("alice_bob_conversation"),
+                    q_data.get("truncated_passage"),
+                    q_data.get("question")
+                ) if v]                                                          # drop Nones
             else:
                 tests = generate_all_knowledge_tests(passage, entity)
-                existing_questions.append({
+                existing_q_map[key] = {                                          ### CHANGED
                     "title": title,
                     "entity": entity,
                     "alice_bob_conversation": tests[0] if len(tests) > 0 else None,
-                    "truncated_passage": tests[1] if len(tests) > 1 else None,
-                    "question": tests[2] if len(tests) > 2 else None
-                })
+                    "truncated_passage"    : tests[1] if len(tests) > 1 else None,
+                    "question"             : tests[2] if len(tests) > 2 else None
+                }
+
             succesful_tests_generated += len(tests)
 
-            if params.debug: print_h2(f"Completing tasks for {entity}")
-
+            # ---------- 3b. Evaluate knowledge ----------------------------
             tests_passed = evaluate_knowledge(tests, entity)
-            if  tests_passed >= params.knowledge_tests_threshold:
+            if tests_passed >= params.knowledge_tests_threshold:
                 known_ents[entity] = tests_passed
             else:
                 ignored_ents.append(entity)
 
-        data_to_save.append({
+        # ---------- 3c. Persist periodically ------------------------------
+        current_batch.append({
             "title": title,
             "passage": passage,
             "entities": entities,
             "known_entites": known_ents,
             "ignored_entities": ignored_ents
         })
-
-        l_known += len(known_ents)
+        l_known   += len(known_ents)
         l_ignored += len(ignored_ents)
 
-        if len(data_to_save) % 10 == 0:
-            write_to_json("knowledge.json", data_to_save, ignore_dirs=False, overwrite=False)
-            write_to_json("knowledge_questions.json", existing_questions, ignore_dirs=True, overwrite=True)
+        if len(current_batch) > 10:
+            write_to_json("knowledge_2.json", current_batch, ignore_dirs=False, overwrite=False)
+            write_to_json("knowledge_questions.json", list(existing_q_map.values()),  ### CHANGED
+                          ignore_dirs=True, overwrite=True)
+            current_batch = []
 
-    write_to_json("knowledge.json", data_to_save, ignore_dirs=False, overwrite=False)
-            
-    # print(f"Number of sucesful completions per entity: {succesful_tests_generated/n_entities}")
-    # print(f"{round((l_known/n_entities)*100,2)}% are known entities")
-    # print(f"{round((l_ignored/n_entities)*100,2)}% are ignored entities")
+    # ------------ 4. Final flush & cleanup --------------------------------
+    if current_batch:
+        write_to_json("knowledge_2.json", current_batch, ignore_dirs=False, overwrite=False)
 
-    # Write the updated questions to file
-    write_to_json("knowledge_questions.json", existing_questions, ignore_dirs=True, overwrite=True)
+    write_to_json("knowledge_questions.json", list(existing_q_map.values()),       ### CHANGED
+                  ignore_dirs=True, overwrite=True)
 
-     # After you're done with the models
-    import torch
     torch.cuda.empty_cache()

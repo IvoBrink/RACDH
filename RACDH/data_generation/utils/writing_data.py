@@ -1,7 +1,6 @@
 import json
 import random
 import os
-import torch
 from RACDH.config import params
 import os
 import json
@@ -47,6 +46,7 @@ def write_to_json(filename, data, ignore_dirs=False, overwrite=True):
 
 
 def write_tensors(filename, data, ignore_dirs=False):
+    import torch
     if ignore_dirs:
         output_path = params.output_path
     else:

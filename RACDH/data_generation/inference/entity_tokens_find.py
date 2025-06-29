@@ -18,99 +18,122 @@ def reconstruct_generated_text(token_info):
 
 
 
-def get_entity_span_text_align(token_info, entity):
+# ---------- helpers -------------------------------------------------- #
+def _sort_tokens(token_hiddens):
+    """Return [(step, tok_str, hidden), …] sorted by generation step."""
+    return sorted(
+        [(step, t_str, hid) for (step, t_str), hid in token_hiddens.items()],
+        key=lambda x: x[0]
+    )
+
+
+def _reconstruct_text(tokens):
     """
-    1) Reconstruct the final text from the generated tokens (in order).
-    2) Find the FIRST substring match of `entity` in that text (case-insensitive).
-    3) Identify which tokens overlap with that matched range.
-    4) Return a dict with keys:
-       - "tokens": list of (step, token_str, attention, hidden) for the matched span
-       - "first_token_attention", "first_token_hidden"
-       - "last_token_attention",  "last_token_hidden"
-
-    If no match, return {} (an empty dict).
+    From tokens → (full_text, char_offsets)
+    where char_offsets[i] == (start_char, end_char) of tokens[i].
     """
-
-    # 1) Sort by step, build a list of (step, token_str, attn, hid)
-    sorted_items = sorted(token_info.items(), key=lambda x: x[0][0])
-    tokens = [(step, t_str, attn, hid) for (step, t_str), (attn, hid) in sorted_items]
-
-    similar_entity = False
-
-    # Reconstruct exact text & keep track of token char offsets
-    full_text = ""
-    token_char_offsets = []
-    current_pos = 0
-
-    for (step, t_str, attn, hid) in tokens:
-        start_char = current_pos
+    full_text, offsets, pos = "", [], 0
+    for _, t_str, _ in tokens:
+        start, end = pos, pos + len(t_str)
         full_text += t_str
-        end_char = start_char + len(t_str)
-        token_char_offsets.append((start_char, end_char))
-        current_pos = end_char
+        offsets.append((start, end))
+        pos = end
+    return full_text, offsets
 
-    # 2) Find the FIRST match of `entity` (ignore case)
-    entity_lower = entity.lower()
-    full_lower = full_text.lower()
-    idx = full_lower.find(entity_lower)  # returns -1 if not found
-    if idx == -1:
-        if not params.similarity_check_inference:
-            return {}
-        # Try to find a similar entity if the exact match isn't found
-        print(full_text)
-        similar_entity = find_similar_entities(full_text, entity)
-        if similar_entity is None:
-            return {}
-        else:
-            # Update entity with the similar one and recalculate the index
 
-            entity = similar_entity
-            entity_lower = entity.lower()
-            idx = full_lower.find(entity_lower)
-            if idx == -1:  # This should be rare but just in case
-                return {}
-            similar_entity = True
-            
-    end_idx = idx + len(entity)
+def _locate_entity(full_text, entity, allow_fuzzy):
+    """
+    Return (idx_start, idx_end, resolved_entity, used_fuzzy).
+    If not found (even with fuzzy) → (None, None, entity, False).
+    """
+    full_lower, ent_lower = full_text.lower(), entity.lower()
+    idx = full_lower.find(ent_lower)
+    if idx != -1:
+        return idx, idx + len(entity), entity, False
 
-    # 3) Identify which tokens overlap with that matched range
-    matched_indices = []
-    for i, (start_char, end_char) in enumerate(token_char_offsets):
-        # Overlap if not completely to the left or right
-        if not (end_char <= idx or start_char >= end_idx):
-            matched_indices.append(i)
+    if not allow_fuzzy:
+        return None, None, entity, False
 
-    if not matched_indices:
-        # No tokens actually overlapped (shouldn't happen if text truly matches)
-        return {}
+    similar = find_similar_entities(full_text, entity)
+    if similar is None:
+        return None, None, entity, False
 
-    first_token_idx = matched_indices[0]
-    last_token_idx  = matched_indices[-1]
+    ent_lower = similar.lower()
+    idx = full_lower.find(ent_lower)
+    if idx == -1:          # extremely unlikely guard
+        return None, None, entity, False
 
-    # 4) Extract the token info from those indices
-    matched_tokens = tokens[first_token_idx : last_token_idx + 1]
+    return idx, idx + len(similar), similar, True
 
-    # The very first token in the span
-    _, _, first_token_attn, first_token_hidden = tokens[first_token_idx]
-    # The very last token in the span
-    _, _, last_token_attn, last_token_hidden   = tokens[last_token_idx]
 
-    # Build a friendly return structure
-    result = {
+def _overlapping_token_indices(offsets, span):
+    """Indices of tokens whose char-range overlaps [span_start, span_end)."""
+    span_start, span_end = span
+    return [
+        i for i, (s, e) in enumerate(offsets)
+        if not (e <= span_start or s >= span_end)
+    ]
+
+
+def _build_result(tokens, idxs, first_token_gen, before_ent_hidden, similar_flag):
+    """Assemble final dictionary."""
+    first_idx, last_idx = idxs[0], idxs[-1]
+    matched = tokens[first_idx:last_idx + 1]
+
+    return {
         "tokens": [
-            {
-                "step": step,
-                "token_str": t_str,
-                "attention": attn,
-                "hidden": hid
-            }
-            for (step, t_str, attn, hid) in matched_tokens
+            {"step": step, "token_str": t_str, "hidden": hid}
+            for (step, t_str, hid) in matched
         ],
-        "first_token_attention": first_token_attn,
-        "first_token_hidden": first_token_hidden,
-        "last_token_attention": last_token_attn,
-        "last_token_hidden": last_token_hidden,
-        "similar_entity" : similar_entity
+        "first_token_entity": matched[0][2],
+        "last_token_entity":  matched[-1][2],
+        "first_token_generation": first_token_gen,
+        "last_token_before_entity": before_ent_hidden if not None else matched[0][2],
+        "similar_entity": similar_flag,
     }
 
-    return result
+
+# ---------- public API ----------------------------------------------- #
+def get_entity_span_text_align(token_hiddens,
+                               entity,
+                               similarity_check_inference=params.similarity_check_inference):
+    """
+    Locate `entity` in generated text and return hidden-state stacks
+    for relevant tokens.
+
+    See `_build_result` for returned structure.
+    """
+    # 1. tokens sorted + first token of entire generation
+    tokens = _sort_tokens(token_hiddens)
+    if not tokens:
+        return {}
+
+    first_token_gen_hidden = tokens[0][2]
+
+    # 2. full string and char offsets
+    full_text, offsets = _reconstruct_text(tokens)
+
+    # 3. locate entity (with optional fuzzy fallback)
+    idx, end_idx, resolved_entity, used_fuzzy = _locate_entity(
+        full_text, entity, similarity_check_inference)
+    if idx is None:
+        return {}
+
+    # 4. which token indices overlap that span?
+    matched_indices = _overlapping_token_indices(offsets, (idx, end_idx))
+    if not matched_indices:
+        return {}
+
+    # 5. hidden state just before the entity (may be None)
+    before_ent_hidden = (
+        tokens[matched_indices[0] - 1][2] if matched_indices[0] > 0 else None
+    )
+
+    # 6. build and return
+    return _build_result(
+        tokens, matched_indices,
+        first_token_gen_hidden,
+        before_ent_hidden,
+        used_fuzzy
+    )
+

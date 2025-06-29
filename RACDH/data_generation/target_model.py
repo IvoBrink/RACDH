@@ -2,19 +2,19 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, StoppingCriteria, StoppingCriteriaList
 from RACDH.data_generation.utils.print import *
 
-taget_model_name_or_path = params.taget_model_name_or_path# example name
+target_model_name_or_path = params.target_model_name_or_path# example name
 
 torch.cuda.empty_cache()
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Download/check the model & tokenizer from the Hugging Face hub into your local cache
-if 'taget_model' not in locals():
-    target_tokenizer = AutoTokenizer.from_pretrained(taget_model_name_or_path)
+if 'target_model' not in locals():
+    target_tokenizer = AutoTokenizer.from_pretrained(target_model_name_or_path)
 
 # Load model only if not already loaded
-if 'taget_model' not in locals():
-    taget_model = AutoModelForCausalLM.from_pretrained(
-        taget_model_name_or_path,
+if 'target_model' not in locals():
+    target_model = AutoModelForCausalLM.from_pretrained(
+        target_model_name_or_path,
         torch_dtype=torch.bfloat16
     ).to(device)
 
@@ -53,7 +53,7 @@ def generate_completion(prompt, entity, max_new_tokens=25, temperature=0.5, debu
     custom_stop = TokenMatchStop(target_tokenizer, stop_tokens)
     stopping_criteria = StoppingCriteriaList([custom_stop])
 
-    output_ids = taget_model.generate(
+    output_ids = target_model.generate(
         **inputs,
         max_new_tokens=max_new_tokens,
         temperature=temperature,
@@ -76,7 +76,7 @@ def generate_completion(prompt, entity, max_new_tokens=25, temperature=0.5, debu
 
     if debug:
 
-        print_h3(f"{taget_model_name_or_path} output (cleaned!)")
+        print_h3(f"{target_model_name_or_path} output (cleaned!)")
         print_generated_completion(prompt," " + output) #Note: here we use the cleaned output, so we cannot check if stopping crit. works
         # print_h3("Tokens:")
         # print(generated_tokens)
@@ -91,8 +91,8 @@ def clean_output(output):
     # Remove everything after a newline and strip whitespace
     split = output.split('\n')
     output = split[0].strip()
-    if len(split) > 1:
-        print_warning(f"Number of newline splits is more than one: {split}")
+    # if len(split) > 1:
+        # print_warning(f"Number of newline splits is more than one: {split}")
     # Remove punctuation at the end of the sentence
     return output.rstrip('.,!?;:')  # Add any other punctuation you want to remove
 
@@ -111,50 +111,76 @@ def clean_output(output):
 #     token_str = target_tokenizer.decode([token_id])
 #     print(f"  {rank+1}) '{token_str}' (id={token_id}, prob={token_prob:.4f})")
 
-def generate_completion_extract_hiddens(prompt, max_new_tokens=25, temperature=0.5, debug=False):
+def generate_completion_extract_hiddens(
+        prompt: str,
+        max_new_tokens: int = 25,
+        temperature: float = 0.5,
+        debug: bool = False
+    ):
+    """
+    Generate tokens autoregressively and keep the hidden-state vector
+    of the *new* token from every layer at every step.
+
+    Returns
+    -------
+    token_hiddens : dict
+        {(step, decoded_token) : torch.Tensor[num_layers, hidden_dim]}
+    """
+    # Encode prompt
     inputs = target_tokenizer(prompt, return_tensors="pt").to(device)
-    generated_ids = inputs["input_ids"]
-    attention_mask = inputs["attention_mask"]
-    
-    # Dictionary to store (step, token) -> (attention_row, hidden_vec)
-    token_info = {}
+    generated_ids   = inputs["input_ids"]
+    attention_mask  = inputs["attention_mask"]
 
-    for step in range(max_new_tokens):
-        outputs = taget_model(
-            input_ids=generated_ids,
-            attention_mask=attention_mask,
-            output_attentions=True,
-            output_hidden_states=True
-        )
-        
-        next_token_logits = outputs.logits[:, -1, :]
-        
-        # Greedy argmax for simplicity (you could sample for temperature)
-        next_token_id = torch.argmax(next_token_logits, dim=-1, keepdim=True)
-        chosen_str = target_tokenizer.decode(next_token_id[0])
-        
-        # Get final-layer attention and hidden states
-        final_layer_attention = outputs.attentions[-1]   # [batch_size, n_heads, seq_len, seq_len]
-        final_layer_hidden = outputs.hidden_states[-1]   # [batch_size, seq_len, hidden_dim]
-        
-        # Slice out just the row and hidden vector for the newly generated token
-        # final_layer_attention[:, :, -1, :] => shape: [batch_size, n_heads, 1, seq_len]
-        # final_layer_hidden[:, -1, :]       => shape: [batch_size, hidden_dim]
-        step_attention = final_layer_attention[:, :, -1, :].detach().cpu()
-        step_hidden = final_layer_hidden[:, -1, :].detach().cpu()
-        
-        token_info[(step, chosen_str)] = (step_attention, step_hidden)
-        
-        # Append the chosen token to the sequence
-        generated_ids = torch.cat([generated_ids, next_token_id], dim=-1)
-        
-        # Update the attention mask
-        new_mask = torch.ones(
-            (attention_mask.size(0), 1),
-            dtype=attention_mask.dtype,
-            device=attention_mask.device
-        )
-        attention_mask = torch.cat([attention_mask, new_mask], dim=1)
+    token_hiddens = {}
+    with torch.no_grad(): 
+        for step in range(max_new_tokens):
+            # NOTE: no output_attentions flag 
 
-    return token_info
+            outputs = target_model(
+                input_ids=generated_ids,
+                attention_mask=attention_mask,
+                output_hidden_states=True
+            )
+
+            # Greedy selection (replace with sampling if you want temperature)
+            next_token_logits = outputs.logits[:, -1, :]
+            next_token_id     = torch.argmax(next_token_logits, dim=-1, keepdim=True)
+
+            if params.target_name == "meta-llama/Llama-3.1-8B":
+                chosen_str = target_tokenizer.decode(next_token_id[0])
+            else:
+                raw_tok = target_tokenizer.convert_ids_to_tokens(next_token_id[0].item())
+                if raw_tok.startswith(("▁", "Ġ")):          # SentencePiece / BPE marker
+                    chosen_str = " " + raw_tok[1:]
+                elif raw_tok in {"<0x0A>", "<0x0D>"}:       # LF / CR shown literally
+                    chosen_str = "\n"
+                else:
+                    chosen_str = raw_tok
+
+
+            # -----------------------------
+            # Collect hidden states
+            # -----------------------------
+            # outputs.hidden_states is a tuple:
+            #   (layer0_embeddings, layer1_hidden, …, layerN_hidden)
+            layer_hiddens = [
+                layer[:, -1, :].detach().cpu()      # (1, hidden_dim)
+                for layer in outputs.hidden_states
+            ]
+            # Stack to (num_layers, hidden_dim). squeeze(1) drops the batch dim
+            step_hiddens = torch.stack(layer_hiddens).squeeze(1)
+
+            token_hiddens[(step, chosen_str)] = step_hiddens  # save
+
+            # Append token & extend mask
+            generated_ids = torch.cat([generated_ids, next_token_id], dim=-1)
+            attention_mask = torch.cat(
+                [attention_mask,
+                torch.ones_like(next_token_id, dtype=attention_mask.dtype)], dim=1)
+
+            if debug:
+                print(f"Step {step:02d}: '{chosen_str}' | hidden shape =", step_hiddens.shape)
+
+    return token_hiddens
+
 

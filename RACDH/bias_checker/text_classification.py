@@ -53,8 +53,7 @@ def remove_last_sentence(text):
 
 
 if __name__ == "__main__":
-
-    samples = load_json(f"{params.target_name}/{params.instruct_name}/hiddens_metadata_rewrite.json")
+    samples = load_json(f"{params.target_name}/{params.instruct_name}/hiddens_metadata_all_2.json")
 
     n_synonym = len([x for x in samples if x["similar_entity"]])
     context = len([x for x in samples if x["similar_entity"] and x["label"] == "contextual"])
@@ -70,4 +69,4 @@ if __name__ == "__main__":
 
     labels = [sample["label"] for sample in samples]
 
-    classify_texts(passages, labels, imbalance_mode="undersample", model_name="microsoft/deberta-v3-large")
+    classify_texts(passages, labels, imbalance_mode="balanced", model_name="microsoft/deberta-v3-large")
