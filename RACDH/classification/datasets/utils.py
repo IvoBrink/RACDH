@@ -1,6 +1,3 @@
-# utils.py
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """Shared helpers for SQuAD/WebQ evaluation."""
 
 import json, os, sys
@@ -17,16 +14,6 @@ from RACDH.data_generation.inference.entity_tokens_find import _reconstruct_text
 from RACDH.data_generation.target_model import generate_completion_extract_hiddens, generate_completion
 from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.data_generation.cross_encoder import get_similarity_score
-
-# class Settings:
-#     ROOT = Path(params.output_path)
-#     MODEL = "weighted_agg_first_token_generation"  # overridable from CLI
-#     MODEL_PATH = ROOT / "models" / f"{MODEL}.joblib"
-#     TOKEN_KEY = "first_token_generation"
-#     MAX_NEW_TOKENS = 10
-#     PARAM_THRESHOLD = 0.5
-#     PLOTS_DIR = ROOT / "plots"
-
 
 # --------------------------------------------------------------------------- #
 # QA‑pair abstractions                                                        #
