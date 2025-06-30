@@ -4,9 +4,9 @@ This repo implements a lightweight, probing-based framework to detect where larg
 
 ## Key features
 
-* **AttriWiki**: automatic dataset builder that forces LLMs to retrieve withheld entities from either context or parametric memory.
-* **Real-time attribution classifier**: a compact linear probe on decoder hidden states reaches up to 96% Macro-F1 on LLaMA-3.1-8B and Mistral-7B, generalizing to SQuAD and WebQuestions without retraining.
-* **Correlation with hallucinations**: reveals that attribution mismatches increase wrong-answer odds by \~70%.
+* **AttriWiki**: automatic dataset builder that forces LLMs to retrieve withheld entities from either context or parametric memory. Can be found in the "data_generation" folder.
+* **Real-time attribution classifier**: a compact linear probe on decoder hidden states reaches up to 96% Macro-F1 on LLaMA-3.1-8B and Mistral-7B, generalizing to SQuAD and WebQuestions without retraining. Can be found in the "classification" folder.
+* **Correlation with hallucinations**: reveals that attribution mismatches increase wrong-answer odds by \~70%. Can be found in the "analysis" folder.
 * **Fast + interpretable**: no extra forward/backward passes, operates in real time at token level.
 
 ## Installation
