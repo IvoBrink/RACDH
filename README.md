@@ -67,7 +67,13 @@ Test the classifier on new datasets:
 Analyze how attribution mismatches correlate with hallucination:
 - Example: `python RACDH/analysis/analysis_hallucination.py`
 
-> See the respective script files for more details and arguments. Outputs are saved in the `RACDH/data/` and `RACDH/job_outputs/` directories.
+> See the respective script files for more details and arguments. Outputs are saved in the `RACDH/data/` directory.
+
+---
+
+**Configuration:**
+- For major changes that affect multiple scripts (e.g., model selection, data paths), edit the central configuration file: `RACDH/config.py`.
+- For changes specific to a single script (e.g., input/output files, batch size), use the command-line arguments provided by that script (see `--help` for options).
 
 ## Papers & citation
 
