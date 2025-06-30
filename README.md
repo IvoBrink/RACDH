@@ -54,6 +54,10 @@ The data generation pipeline creates the datasets for probing LLM knowledge sour
 5. **Hidden State Extraction**: Extract hidden states from the LLM for each completion.
    - `python RACDH/data_generation/inference/extract_hiddens.py`
 
+**Optional: Bias Checker**
+- You can optionally run the bias checker to analyze potential biases in the generated data or model predictions.
+  - Example: `python RACDH/bias_checker/text_classification.py`
+
 ### 2. Classification (Model Training)
 Train a classifier to attribute knowledge source using the generated data:
 - Example: `python RACDH/classification/all_layer_linear.py` (this is the best model, params are already optimal)
