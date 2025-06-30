@@ -88,3 +88,10 @@ This project is based on the MSc thesis:
 > Ivo Brink (2025). *Real-time Knowledge Attribution as an Early-Warning Signal for LLM Hallucinations*. University of Amsterdam.
 
 If you use this work, please cite the thesis.
+
+## Codebase Summary
+
+- Total files analyzed: 53
+- Total code lines: 3381
+- Total comment lines: 788
+- Total empty lines: 1104
