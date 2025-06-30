@@ -1,29 +1,6 @@
 # evaluate.py
 #!/usr/bin/env python3
 """evaluate.py – *lightweight* post‑processing for `generate.py` outputs
------------------------------------------------------------------------
-Reads one or more `infer_*.json` files (from both **SQuAD** & **WebQuestions**)
-and evaluates their hidden‑state vectors with a saved classifier.
-
-**New in this version**
-=======================
-* **Filename‑encoded settings are parsed** (e.g. model name, `par-testing`,
-  `entity-bait`, `sample`) and stored alongside each record, so they remain
-  available throughout the script – in the pandas DataFrame, in printed
-  reports, and in the final results JSON.
-* Works with any mix of SQuAD & WebQ files – records get auto‑routed to the
-  correct dataset bucket and evaluated separately.
-* Same outputs as before → classification reports to stdout, per‑dataset KDE
-  plots & consolidated results JSON files written to `--plot-dir`.
-
-Filename conventions recognised
--------------------------------
-```
-SQuAD: infer_<MODEL>_par-testing:<bool>_entity-bait:<bool>_<SAMPLE>.json
-WebQ : infer_<MODEL>_<SAMPLE>.json
-```
-Other patterns fall back gracefully; anything of the form `key:value` or a lone
-integer token (`sample`) is captured.
 """
 from __future__ import annotations
 
