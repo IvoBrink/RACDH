@@ -91,7 +91,7 @@ If you use this work, please cite the thesis.
 
 ## Codebase Summary
 
-- Total files analyzed: 53
+- Total *.py files: 53
 - Total code lines: 3381
 - Total comment lines: 788
 - Total empty lines: 1104
