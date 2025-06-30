@@ -2,15 +2,11 @@
 ## 1. Detecting the proper entities
 From a Wikipedia article we detect all entities. We remove the ones too similar to each other or the title of the passage (using cosine similarity of embeddings). The intuition behind this is that the entity is not too detrimental to the text, making it hard to remove any mention of it for the parametric task, but also preventing too much repitition making contextual retrieval trivial.
 
-* ~ $8,300$ articles 
-* ~ $6.6$ entities per article 
-
-$8,300 * 6.6 \approx 55,000$ entities total.
 ## 2. Knowing
 First, for a *target model*, we determine if it knows the relation *article-entity* without any further context. We save this.
 
 We want to test this *thoroughly*. So we design 3 completion-settings for every article-entity pair. 
-* 55,000 * 3 $\approx$ 170,000 completions
+
 ### 2.1 Design completions
 We prompt an instruct model to generate the completions using (i) the passage and (ii) the entity. We define 3 types.
 * Bob-Alice.
