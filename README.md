@@ -23,7 +23,7 @@ cd RACDH
 If you use [conda](https://docs.conda.io/), you can create an environment with all dependencies:
 
 ```bash
-conda env create -f RACDH/env.yml
+conda env create -f environment.yml
 conda activate RACDH
 ```
 
