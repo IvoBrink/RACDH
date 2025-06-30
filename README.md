@@ -69,6 +69,10 @@ Analyze how attribution mismatches correlate with hallucination:
 
 > See the respective script files for more details and arguments. Outputs are saved in the `RACDH/data/` directory.
 
+**Data availability:**
+- Some data and results are already included in this repository. Directories are organized by target model (e.g., `Llama-3.1-8B`, `Mistral-7B-v0.1`).
+- **Hidden states are not included** due to their large size. To obtain them, contact the author or recreate them using the provided scripts.
+
 ---
 
 **Configuration:**
