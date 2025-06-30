@@ -13,9 +13,7 @@ from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.data_generation.utils.print import *
 from RACDH.config import params
 
-
 if __name__ == "__main__":
-    # dataset = "webquestions"
     datasets = ["squad", "squad-switch"]
     classifier = "logreg"
     models = ["Llama-3.1-8B", "Mistral-7B-v0.1"]
@@ -26,21 +24,19 @@ if __name__ == "__main__":
             print(f"\nModel: {model} | Dataset: {dataset}")
             df = pd.DataFrame(samples)
 
-            # binary flags -----------------------------------------------------
+            # binary flags
             df["correct"]   = df["answer_correct"].astype(bool)
             df["gold"]      = "Contextual" if dataset == "squad" else "Parametric" 
-            df["mismatch"]  = (df["label"] != df["gold"]) # True ↔ wrong channel
+            df["mismatch"]  = (df["label"] != df["gold"])  # True - wrong channel
 
-            # ------------------------------------------------------------------
             # 2 × 2 contingency: rows = mismatch / no-mismatch, cols = correct / incorrect
-            # ------------------------------------------------------------------
             a = ((~df["mismatch"]) &  df["correct"]).sum()   # no-mismatch & correct
             b = ((~df["mismatch"]) & ~df["correct"]).sum()   # no-mismatch & incorrect
             c = ( df["mismatch"]  &  df["correct"]).sum()    #    mismatch & correct
             d = ( df["mismatch"]  & ~df["correct"]).sum()    #    mismatch & incorrect
 
             table = np.array([[a, b],
-                            [c, d]])
+                              [c, d]])
 
             print("Contingency table (rows=mismatch, cols=correctness)")
             print(pd.DataFrame(table,
@@ -48,21 +44,15 @@ if __name__ == "__main__":
                 columns=["correct","incorrect"]))
             print()
 
-            # ------------------------------------------------------------------
             # Fisher’s exact test (two-sided) – odds ratio & p-value
-            # ------------------------------------------------------------------
             odds_ratio, p_fisher = fisher_exact(table, alternative='two-sided')
             print(f"Fisher exact odds-ratio = {odds_ratio:0.3f},  p = {p_fisher:0.3g}")
 
-            # ------------------------------------------------------------------
-            # χ² test of independence
-            # ------------------------------------------------------------------
+            # Chi test of independence
             chi2, p_chi, dof, expected = chi2_contingency(table, correction=False)
             print(f"χ²({dof}) = {chi2:0.2f},  p = {p_chi:0.3g}")
 
-            # ------------------------------------------------------------------
             # Relative risk  + 95 % Wald CI   (risk = P(incorrect))
-            # ------------------------------------------------------------------
             risk_mismatch     = d / (c + d)
             risk_no_mismatch  = b / (a + b)
             rel_risk          = risk_mismatch / risk_no_mismatch
@@ -76,6 +66,4 @@ if __name__ == "__main__":
             )
 
             print(f"Relative risk = {rel_risk:0.3f}  "
-                f"(95 % CI {ci_low:0.3f} – {ci_high:0.3f})")
-
-
+                  f"(95 % CI {ci_low:0.3f} – {ci_high:0.3f})")

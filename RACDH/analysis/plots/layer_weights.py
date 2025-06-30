@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 """
 Density‑curve plot of layer‑aggregation weights with improved aesthetics.
-
-✔ Smoother curves (higher Gaussian σ) so no spiky wiggles.
-✔ Thicker outlines, subtler translucent fill so the grid stays visible.
-✔ Consistent colours between legend, lines and fills.
-✔ Adjustable y‑axis headroom so curves never look clipped.
 """
 
 from __future__ import annotations
@@ -16,15 +11,11 @@ import matplotlib.pyplot as plt
 from matplotlib import colors as mcolors
 from scipy.ndimage import gaussian_filter1d
 
-# ---------------------------------------------------------------------------
-# Environment (keep if you need other RACDH utilities)
-# ---------------------------------------------------------------------------
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
-from RACDH.config import params      # noqa: E402  (after path tweak)
 
-# ---------------------------------------------------------------------------
-# Style tweaks
-# ---------------------------------------------------------------------------
+sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+from RACDH.config import params     
+
+
 plt.rcParams.update({
     "font.size": 13,
     "axes.titlesize": 14,
@@ -50,14 +41,9 @@ TOKEN_LABEL = {
     "first_token_generation" : "First‑token generation",
 }
 
-# ---------------------------------------------------------------------------
-# Constants
-# ---------------------------------------------------------------------------
-HEADROOM = 0.08  # 8 % extra space above tallest curve – tweak as needed
 
-# ---------------------------------------------------------------------------
-# Helpers
-# ---------------------------------------------------------------------------
+HEADROOM = 0.08  # 8 % extra space above tallest curve
+
 
 def _smooth_curve(x: np.ndarray, y: np.ndarray, *, n: int = 600,
                   sigma: float = 3.5) -> tuple[np.ndarray, np.ndarray]:
@@ -71,7 +57,7 @@ def _smooth_curve(x: np.ndarray, y: np.ndarray, *, n: int = 600,
 def _light_rgba(hex_colour: str, alpha: float = 0.15):
     """Blend the hex colour toward white, retaining *alpha* opacity."""
     rgb = np.array(mcolors.to_rgb(hex_colour))
-    lighter = rgb * 0.55 + 0.45   # 55 % colour, 45 % white
+    lighter = rgb * 0.55 + 0.45
     return (*lighter, alpha)
 
 # ---------------------------------------------------------------------------
@@ -87,7 +73,6 @@ def main() -> None:
         "first_token_generation",
     ]
 
-    # ── Load data ────────────────────────────────────────────────
     weights = {
         (m, t): np.load(f"RACDH/data/plots/{m}/layer_weights_{classifier}_{t}.npy")
         for m in models for t in tokens
@@ -96,7 +81,7 @@ def main() -> None:
     n_layers = next(iter(weights.values())).shape[0]
     layers   = np.arange(n_layers, dtype=float)
 
-    # ── Figure canvas ────────────────────────────────────────────
+
     fig_h = 4.0 * len(models)
     fig_w = 0.23 * n_layers + 5
     fig, axes = plt.subplots(
@@ -105,10 +90,9 @@ def main() -> None:
     )
     axes = np.atleast_1d(axes)
 
-    # ── Plot curves ─────────────────────────────────────────────
     for ax, model in zip(axes, models):
         tallest = 0.0
-        ax.set_axisbelow(False)  # grid above fill, see below
+        ax.set_axisbelow(False) 
         ax.grid(zorder=1)
 
         for token in tokens:
@@ -116,13 +100,12 @@ def main() -> None:
             x, y = _smooth_curve(layers, w, sigma=7)
             tallest = max(tallest, float(y.max()))
 
-            # Light translucent fill (below grid)
             ax.fill_between(
                 x, 0, y,
                 color=_light_rgba(PALETTE[token]),
                 zorder=2,
             )
-            # Bold outline (above fill & grid)
+            
             ax.plot(
                 x, y,
                 color=PALETTE[token],
@@ -131,8 +114,7 @@ def main() -> None:
                 label=TOKEN_LABEL[token] if ax is axes[0] else None,
             )
 
-        # Axis cosmetics -----------------------------------------------------
-        y_max = tallest * (1 + HEADROOM)  # add configurable head‑room
+        y_max = tallest * (1 + HEADROOM)
         ax.set_ylim(0, y_max)
         ax.set_xticks(range(0, n_layers, 4))
         ax.set_title(model, loc="left", pad=10)
@@ -143,7 +125,6 @@ def main() -> None:
 
     axes[-1].set_xlabel("Transformer layer index")
 
-    # ── Legend & overall title ──────────────────────────────────
     handles, labels = axes[0].get_legend_handles_labels()
     fig.legend(
         handles, labels, loc="upper center",
@@ -154,13 +135,11 @@ def main() -> None:
         y=1.15, fontsize=16,
     )
 
-    # ── Save ────────────────────────────────────────────────────
+
     fig.savefig(
         params.output_path + f"/plots/layer_weight_density_grid_{classifier}.png",
         dpi=300, bbox_inches="tight",
     )
-    # plt.show()  # ↲ uncomment for interactive use
-
-# ---------------------------------------------------------------------------
+ 
 if __name__ == "__main__":
     main()
