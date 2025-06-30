@@ -25,11 +25,7 @@ def get_last_sentence(text):
     """
     # Split on common sentence endings (., !, ?)
     sentences = text.replace('!', '.').replace('?', '.').split('.')
-    
-    # Remove empty strings and whitespace
     sentences = [s.strip() for s in sentences if s.strip()]
-    
-    # Return last sentence if exists, empty string if no sentences
     return sentences[-1] if sentences else ""
 
 def remove_last_sentence(text):
@@ -44,11 +40,7 @@ def remove_last_sentence(text):
     """
     # Split on common sentence endings (., !, ?)
     sentences = text.replace('!', '.').replace('?', '.').split('.')
-    
-    # Remove empty strings and whitespace
     sentences = [s.strip() for s in sentences if s.strip()]
-    
-    # Return all but last sentence if multiple exist, empty string if 0-1 sentences
     return '. '.join(sentences[:-1]) + '.' if len(sentences) > 1 else ""
 
 

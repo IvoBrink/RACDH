@@ -10,13 +10,69 @@ This repo implements a lightweight, probing-based framework to detect where larg
 * **Fast & interpretable**: No extra forward/backward passes; operates in real time at the token level.
 
 ## Installation
+To get started, clone this repository and install the required dependencies.
 
+First, clone the repository:
 
+```bash
+git clone https://github.com/IvoBrink/RACDH.git
+cd RACDH
+```
+
+### Option 1: Using Conda (recommended)
+If you use [conda](https://docs.conda.io/), you can create an environment with all dependencies:
+
+```bash
+conda env create -f RACDH/env.yml
+conda activate RACDH
+```
+
+### Option 2: Using pip
+If you prefer pip, install the dependencies from `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+> **Note:** The `requirements.txt` includes both conda and pip-style dependencies. If you encounter issues, prefer the conda environment or manually install any missing packages.
+
+## Workflow: Running the Pipeline
+
+Below is the recommended order for running the main components of this project:
+
+### 1. Data Generation (4 steps)
+The data generation pipeline creates the datasets for probing LLM knowledge sources. **Run these scripts in the following order:**
+
+1. **Entity Extraction**: Extract entities from Wikipedia or your corpus.
+   - `python RACDH/data_generation/entity_recognition/extract_entities.py`
+2. **Know Labeling**: Determine which entities a model already knows (before generating completions).
+   - `python RACDH/data_generation/know_labeling/know_labeling.py`
+3. **Completions Generation**: Generate LLM completions for the entities.
+   - `python RACDH/data_generation/completions/add_completions.py`
+4. **Hidden State Extraction**: Extract hidden states from the LLM for each completion.
+   - `python RACDH/data_generation/inference/extract_hiddens.py`
+
+### 2. Classification (Model Training)
+Train a classifier to attribute knowledge source using the generated data:
+- Example: `python RACDH/classification/all_layer_linear.py` (this is the best model, params are already optimal)
+
+### 3. Validation (Out-of-Domain Generalization)
+Test the classifier on new datasets:
+1. **Sample Generation**: Create validation samples from out-of-domain datasets.
+   - `python RACDH/classification/datasets/samples.py`
+2. **Validation**: Run the trained classifier on these samples.
+   - `python RACDH/classification/datasets/validate.py`
+
+### 4. Analysis (Correlation with Hallucination)
+Analyze how attribution mismatches correlate with hallucination:
+- Example: `python RACDH/analysis/analysis_hallucination.py`
+
+> See the respective script files for more details and arguments. Outputs are saved in the `RACDH/data/` and `RACDH/job_outputs/` directories.
 
 ## Papers & citation
 
 This project is based on the MSc thesis:
 
-> Ivo Brink (2025). *Real-time Knowledge Attribution as an Early-Warning Signal for LLM Hallucinations*. University of Amsterdam. [PDF](link-if-available)
+> Ivo Brink (2025). *Real-time Knowledge Attribution as an Early-Warning Signal for LLM Hallucinations*. University of Amsterdam.
 
 If you use this work, please cite the thesis.
