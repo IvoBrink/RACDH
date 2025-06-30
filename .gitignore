@@ -1,3 +1,9 @@
 secret
 RACDH/jobs
-RACDH/data
+# RACDH/data/Llama-3.1-8B
+# RACDH/data/Mistral-7B-v0.1
+RACDH/data/squad
+RACDH/data/webq
+__pycache__
+
+*.pt

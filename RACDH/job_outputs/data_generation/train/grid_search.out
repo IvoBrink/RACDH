@@ -1,0 +1,129 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnellius-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+Data length of Llama-3.1-8B/gpt-4o-mini/hiddens_metadata_all_2.json: 27244
+[grid] d=0.00 α=0.00 wd=0.0e+00 bn=128 → acc 0.899 f1 0.886 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.00 α=0.00 wd=1.0e-04 bn=128 → acc 0.900 f1 0.887 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.00 α=0.00 wd=5.0e-04 bn=128 → acc 0.900 f1 0.887 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.00 α=0.01 wd=0.0e+00 bn=128 → acc 0.898 f1 0.884 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.00 α=0.01 wd=1.0e-04 bn=128 → acc 0.899 f1 0.886 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.00 α=0.01 wd=5.0e-04 bn=128 → acc 0.898 f1 0.885 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.00 α=0.05 wd=0.0e+00 bn=128 → acc 0.894 f1 0.879 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▆▇▇▆▆▅▅▄▄▃▃▃▃▃▃▂▂▁
+[grid] d=0.00 α=0.05 wd=1.0e-04 bn=128 → acc 0.894 f1 0.880 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▆▇▇▆▆▅▅▄▄▃▃▃▃▃▃▂▂▁
+[grid] d=0.00 α=0.05 wd=5.0e-04 bn=128 → acc 0.894 f1 0.880 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▆▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+[grid] d=0.10 α=0.00 wd=0.0e+00 bn=128 → acc 0.898 f1 0.884 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▅▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.10 α=0.00 wd=1.0e-04 bn=128 → acc 0.899 f1 0.885 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.10 α=0.00 wd=5.0e-04 bn=128 → acc 0.899 f1 0.886 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.10 α=0.01 wd=0.0e+00 bn=128 → acc 0.897 f1 0.883 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.10 α=0.01 wd=1.0e-04 bn=128 → acc 0.896 f1 0.882 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.10 α=0.01 wd=5.0e-04 bn=128 → acc 0.897 f1 0.883 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.10 α=0.05 wd=0.0e+00 bn=128 → acc 0.894 f1 0.879 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▅▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+[grid] d=0.10 α=0.05 wd=1.0e-04 bn=128 → acc 0.894 f1 0.879 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▅▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+[grid] d=0.10 α=0.05 wd=5.0e-04 bn=128 → acc 0.894 f1 0.879 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▅▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+[grid] d=0.20 α=0.00 wd=0.0e+00 bn=128 → acc 0.897 f1 0.883 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▆▄▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.20 α=0.00 wd=1.0e-04 bn=128 → acc 0.898 f1 0.884 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▅▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.20 α=0.00 wd=5.0e-04 bn=128 → acc 0.898 f1 0.883 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▂▇▇▅▃▃▂▁▁▁▁▁▁▁▁▁▁▁
+[grid] d=0.20 α=0.01 wd=0.0e+00 bn=128 → acc 0.896 f1 0.882 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.20 α=0.01 wd=1.0e-04 bn=128 → acc 0.896 f1 0.882 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.20 α=0.01 wd=5.0e-04 bn=128 → acc 0.897 f1 0.884 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▇▇▅▄▃▃▂▂▁▁▁▁▁▁▁▁▁
+[grid] d=0.20 α=0.05 wd=0.0e+00 bn=128 → acc 0.893 f1 0.878 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▅▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+[grid] d=0.20 α=0.05 wd=1.0e-04 bn=128 → acc 0.892 f1 0.878 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▅▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+[grid] d=0.20 α=0.05 wd=5.0e-04 bn=128 → acc 0.893 f1 0.878 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▅▇▇▆▆▅▅▄▄▃▃▃▃▃▂▂▂▁
+
+=== Best hyper‑parameters ===
+{
+  "dropout_p": 0.0,
+  "alpha": 0.0,
+  "weight_decay": 0.0005,
+  "bottleneck": 128
+}
+Data length of Llama-3.1-8B/gpt-4o-mini/hiddens_metadata_all_2.json: 27244
+[grid] d=0.00 α=0.00 wd=0.0e+00 bn=64  → acc 0.918 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.00 wd=0.0e+00 bn=128 → acc 0.916 f1 0.909 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.00 wd=1.0e-04 bn=64  → acc 0.919 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.00 wd=1.0e-04 bn=128 → acc 0.914 f1 0.903 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▃▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.00 wd=5.0e-04 bn=64  → acc 0.922 f1 0.914 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.00 wd=5.0e-04 bn=128 → acc 0.921 f1 0.913 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.01 wd=0.0e+00 bn=64  → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.01 wd=0.0e+00 bn=128 → acc 0.921 f1 0.913 layers:▁▁▁▁▁▁▁▁▁▁▁▂▂▃▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.00 α=0.01 wd=1.0e-04 bn=64  → acc 0.920 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.01 wd=1.0e-04 bn=128 → acc 0.920 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▂▂▃▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.00 α=0.01 wd=5.0e-04 bn=64  → acc 0.921 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.00 α=0.01 wd=5.0e-04 bn=128 → acc 0.920 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▃▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.00 α=0.05 wd=0.0e+00 bn=64  → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.00 α=0.05 wd=0.0e+00 bn=128 → acc 0.915 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.00 α=0.05 wd=1.0e-04 bn=64  → acc 0.917 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▇▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.00 α=0.05 wd=1.0e-04 bn=128 → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.00 α=0.05 wd=5.0e-04 bn=64  → acc 0.919 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.00 α=0.05 wd=5.0e-04 bn=128 → acc 0.917 f1 0.909 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.10 α=0.00 wd=0.0e+00 bn=64  → acc 0.920 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▂▅▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.00 wd=0.0e+00 bn=128 → acc 0.919 f1 0.913 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▃▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.00 wd=1.0e-04 bn=64  → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▂▅▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.00 wd=1.0e-04 bn=128 → acc 0.914 f1 0.909 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▅▆▇▆▃▄▃▃▂▂▂▃▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.00 wd=5.0e-04 bn=64  → acc 0.916 f1 0.909 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▂▆▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.00 wd=5.0e-04 bn=128 → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▂▂▃▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.01 wd=0.0e+00 bn=64  → acc 0.918 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.01 wd=0.0e+00 bn=128 → acc 0.917 f1 0.906 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.10 α=0.01 wd=1.0e-04 bn=64  → acc 0.920 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.01 wd=1.0e-04 bn=128 → acc 0.918 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.10 α=0.01 wd=5.0e-04 bn=64  → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▂▂▂▂▂▂▁
+[grid] d=0.10 α=0.01 wd=5.0e-04 bn=128 → acc 0.916 f1 0.906 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.10 α=0.05 wd=0.0e+00 bn=64  → acc 0.917 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.10 α=0.05 wd=0.0e+00 bn=128 → acc 0.916 f1 0.909 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▄▃▃▃▄▃▃▂
+[grid] d=0.10 α=0.05 wd=1.0e-04 bn=64  → acc 0.917 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.10 α=0.05 wd=1.0e-04 bn=128 → acc 0.919 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▄▃▄▃▃▃▃▂
+[grid] d=0.10 α=0.05 wd=5.0e-04 bn=64  → acc 0.917 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.10 α=0.05 wd=5.0e-04 bn=128 → acc 0.916 f1 0.907 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▄▃▄▃▃▃▃▃▃▂
+[grid] d=0.20 α=0.00 wd=0.0e+00 bn=64  → acc 0.921 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▅▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.00 wd=0.0e+00 bn=128 → acc 0.918 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▃▄▃▃▂▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.00 wd=1.0e-04 bn=64  → acc 0.920 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▅▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.00 wd=1.0e-04 bn=128 → acc 0.916 f1 0.904 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▅▆▇▆▃▄▃▃▂▂▂▃▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.00 wd=5.0e-04 bn=64  → acc 0.920 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▁▁▅▆▇▆▃▄▃▃▂▂▂▂▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.00 wd=5.0e-04 bn=128 → acc 0.919 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▅▆▇▆▃▄▃▃▂▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.01 wd=0.0e+00 bn=64  → acc 0.917 f1 0.907 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.01 wd=0.0e+00 bn=128 → acc 0.919 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.20 α=0.01 wd=1.0e-04 bn=64  → acc 0.918 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.01 wd=1.0e-04 bn=128 → acc 0.921 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.20 α=0.01 wd=5.0e-04 bn=64  → acc 0.920 f1 0.912 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▇▇▆▄▄▃▃▃▃▂▃▂▂▂▂▂▂▁
+[grid] d=0.20 α=0.01 wd=5.0e-04 bn=128 → acc 0.918 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▁▂▂▆▆▇▆▄▄▃▃▃▃▃▃▃▃▃▃▃▂▁
+[grid] d=0.20 α=0.05 wd=0.0e+00 bn=64  → acc 0.918 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▃▃▃▃▃▃▃▃▃▂
+[grid] d=0.20 α=0.05 wd=0.0e+00 bn=128 → acc 0.920 f1 0.911 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▄▄▃▄▃▄▄▄▃▃▂
+[grid] d=0.20 α=0.05 wd=1.0e-04 bn=64  → acc 0.916 f1 0.907 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▄▃▃▃▃▃▃▃▃▂
+[grid] d=0.20 α=0.05 wd=1.0e-04 bn=128 → acc 0.917 f1 0.910 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▄▄▃▄▃▄▄▄▃▃▂
+[grid] d=0.20 α=0.05 wd=5.0e-04 bn=64  → acc 0.920 f1 0.913 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▃▄▃▃▃▃▃▃▃▃▂
+[grid] d=0.20 α=0.05 wd=5.0e-04 bn=128 → acc 0.917 f1 0.908 layers:▁▁▁▁▁▁▁▁▁▁▁▂▃▃▆▇▇▆▄▅▄▄▄▄▃▄▃▄▄▄▃▃▂
+
+=== Best hyper‑parameters ===
+{
+  "dropout_p": 0.0,
+  "alpha": 0.0,
+  "weight_decay": 0.0005,
+  "bottleneck": 64
+}
+
+JOB STATISTICS
+==============
+Job ID: 12343284
+Cluster: snellius
+User/Group: ibrink/ibrink
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 13:12:54 core-walltime
+Job Wall-clock time: 00:44:03
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.

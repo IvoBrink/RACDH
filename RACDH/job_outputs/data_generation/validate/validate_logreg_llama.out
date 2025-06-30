@@ -1,0 +1,235 @@
+============================================================================================== 
+Warning! Mixing Conda and module environments may lead to corruption of the
+user environment. 
+We do not recommend users mixing those two environments unless absolutely
+necessary. Note that 
+SURF does not provide any support for Conda environment.
+For more information, please refer to our software policy page:
+https://servicedesk.surf.nl/wiki/display/WIKI/Software+policy+Snellius#SoftwarepolicySnellius-UseofAnacondaandMinicondaenvironmentsonSnellius 
+
+Remember that many packages have already been installed on the system and can
+be loaded using 
+the 'module load <package__name>' command. If you are uncertain if a package is
+already available 
+on the system, please use 'module avail' or 'module spider' to search for it.
+============================================================================================== 
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_core_web_trf' (3.6.1) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.3). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy_transformers/layers/hf_shim.py:137: UserWarning: Error loading saved torch state_dict with strict=True, likely due to differences between 'transformers' versions. Attempting to load with strict=False as a fallback...
+
+If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current 'transformers' and 'spacy-transformers' versions. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  5.61it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  5.84it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  5.99it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.45it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  6.21it/s]
+• Loaded model /home/ibrink/RACDH/RACDH/RACDH/data/models/Llama-3.1-8B/weighted_agg_logreg_first_token_generation.joblib
+• Loaded records RACDH/data/squad/Llama-3.1-8B/infer_first_token_generation_balanced_2000.json
+                                               question  ...                                          hidden_np
+0     What does the roof stomp tradition signify in ...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1     After one year when To Kill a Mockingbird firs...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+2     What percentage of Anglicans were in the UK in...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3                     What river is south of Kathmandu?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+4     when EIC become more like a regularised subsid...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+...                                                 ...  ...                                                ...
+3995  What did European colonists destroy on their p...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3996  Who advised Vicotria to begin appaering in pub...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3997  Where in Jerusalem did Kardashian and West hav...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3998      Why did American Baptist congregations split?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3999  What was the political party arrangement of th...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+
+[4000 rows x 7 columns]
+                                               question  ... p_contextual
+0     What does the roof stomp tradition signify in ...  ...     0.808563
+1     After one year when To Kill a Mockingbird firs...  ...     0.980268
+2     What percentage of Anglicans were in the UK in...  ...     0.989470
+3                     What river is south of Kathmandu?  ...     0.948297
+4     when EIC become more like a regularised subsid...  ...     0.808152
+...                                                 ...  ...          ...
+3995  What did European colonists destroy on their p...  ...     0.882079
+3996  Who advised Vicotria to begin appaering in pub...  ...     0.965382
+3997  Where in Jerusalem did Kardashian and West hav...  ...     0.945730
+3998      Why did American Baptist congregations split?  ...     0.935457
+3999  What was the political party arrangement of th...  ...     0.965303
+
+[4000 rows x 8 columns]
+Correct (2000): 	 97.7% Contextual 	 | 2.3% Parametric
+Incorrect (2000): 	 96.1% Contextual 	 | 3.9% Parametric
+• Plot saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/probability_density_squad_logreg__normal.png
+• Results JSON saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/results_squad_logreg__normal.json
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_core_web_trf' (3.6.1) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.3). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy_transformers/layers/hf_shim.py:137: UserWarning: Error loading saved torch state_dict with strict=True, likely due to differences between 'transformers' versions. Attempting to load with strict=False as a fallback...
+
+If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current 'transformers' and 'spacy-transformers' versions. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  6.33it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  6.84it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  6.99it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.36it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.14it/s]
+• Loaded model /home/ibrink/RACDH/RACDH/RACDH/data/models/Llama-3.1-8B/weighted_agg_logreg_first_token_generation.joblib
+• Loaded records RACDH/data/webq/Llama-3.1-8B/infer_first_token_generation_balanced_2000.json
+                                              question  ...                                          hidden_np
+0              what is the president of france's name?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1                          where does nick diaz fight?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+2                   where do the abenaki indians live?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3                   who is martin luther king jr wife?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+4     who is the current coach of the new york knicks?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+...                                                ...  ...                                                ...
+3378               what country does dubai come under?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3379                     who do derek fisher play for?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3380        what continent does the bahamas belong to?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3381              what is the money currency in italy?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3382            where does spencer pratt go to school?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+
+[3383 rows x 7 columns]
+                                              question  ... p_contextual
+0              what is the president of france's name?  ...     0.004359
+1                          where does nick diaz fight?  ...     0.089425
+2                   where do the abenaki indians live?  ...     0.315075
+3                   who is martin luther king jr wife?  ...     0.046838
+4     who is the current coach of the new york knicks?  ...     0.020615
+...                                                ...  ...          ...
+3378               what country does dubai come under?  ...     0.003563
+3379                     who do derek fisher play for?  ...     0.216679
+3380        what continent does the bahamas belong to?  ...     0.008092
+3381              what is the money currency in italy?  ...     0.015690
+3382            where does spencer pratt go to school?  ...     0.098601
+
+[3383 rows x 8 columns]
+Correct (1383): 	 3.3% Contextual 	 | 96.7% Parametric
+Incorrect (2000): 	 5.3% Contextual 	 | 94.7% Parametric
+• Plot saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/probability_density_webq_logreg__normal.png
+• Results JSON saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/results_webq_logreg__normal.json
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_core_web_trf' (3.6.1) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.3). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy_transformers/layers/hf_shim.py:137: UserWarning: Error loading saved torch state_dict with strict=True, likely due to differences between 'transformers' versions. Attempting to load with strict=False as a fallback...
+
+If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current 'transformers' and 'spacy-transformers' versions. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  6.45it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  6.93it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.02it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.42it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.20it/s]
+• Loaded model /home/ibrink/RACDH/RACDH/RACDH/data/models/Llama-3.1-8B/weighted_agg_logreg_first_token_generation.joblib
+• Loaded records RACDH/data/squad/Llama-3.1-8B/infer_first_token_generation_balanced_2000_parametric.json
+                                               question  ...                                          hidden_np
+0     What does the roof stomp tradition signify in ...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1     After one year when To Kill a Mockingbird firs...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+2     Which continent was considered to be at the ce...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3     What percentage of Anglicans were in the UK in...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+4                     What river is south of Kathmandu?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+...                                                 ...  ...                                                ...
+3995  How many US citizens were killed in the attack...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3996  What is the Latin for Avicenna's psychology pa...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3997  When did the League of Nations grant Britain a...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3998  What document defines how much money is transf...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3999  Birth control was prohibited in most countries...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+
+[4000 rows x 7 columns]
+                                               question  ... p_contextual
+0     What does the roof stomp tradition signify in ...  ...     0.366265
+1     After one year when To Kill a Mockingbird firs...  ...     0.428908
+2     Which continent was considered to be at the ce...  ...     0.017315
+3     What percentage of Anglicans were in the UK in...  ...     0.606975
+4                     What river is south of Kathmandu?  ...     0.033472
+...                                                 ...  ...          ...
+3995  How many US citizens were killed in the attack...  ...     0.105670
+3996  What is the Latin for Avicenna's psychology pa...  ...     0.296199
+3997  When did the League of Nations grant Britain a...  ...     0.136487
+3998  What document defines how much money is transf...  ...     0.044674
+3999  Birth control was prohibited in most countries...  ...     0.032120
+
+[4000 rows x 8 columns]
+Correct (2000): 	 8.0% Contextual 	 | 92.0% Parametric
+Incorrect (2000): 	 25.0% Contextual 	 | 75.0% Parametric
+• Plot saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/probability_density_squad_logreg__parametric.png
+• Results JSON saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/results_squad_logreg__parametric.json
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_core_web_trf' (3.6.1) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.3). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy_transformers/layers/hf_shim.py:137: UserWarning: Error loading saved torch state_dict with strict=True, likely due to differences between 'transformers' versions. Attempting to load with strict=False as a fallback...
+
+If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current 'transformers' and 'spacy-transformers' versions. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  6.34it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  6.91it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.15it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.40it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.20it/s]
+• Loaded model /home/ibrink/RACDH/RACDH/RACDH/data/models/Llama-3.1-8B/weighted_agg_logreg_first_token_generation.joblib
+• Loaded records RACDH/data/squad/Llama-3.1-8B/infer_first_token_generation_balanced_2000_prior_no_switch.json
+                                               question  ...                                          hidden_np
+0     Which continent was considered to be at the ce...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1                     What river is south of Kathmandu?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+2                 What party in Yugoslavia did he join?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3       How many local newspapers does the island have?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+4     What was Sumerians one of the first societies ...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+...                                                 ...  ...                                                ...
+1995  What year did the Carolina Courage win the Fou...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1996      Which Nigerian leader received power in 1979?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1997            Name a film role that Madonna acted in.  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1998   What two types of forests can be found in Geres?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1999                  What does Mizrach mean in Hebrew?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+
+[2000 rows x 7 columns]
+                                               question  ... p_contextual
+0     Which continent was considered to be at the ce...  ...     0.030520
+1                     What river is south of Kathmandu?  ...     0.948297
+2                 What party in Yugoslavia did he join?  ...     0.968143
+3       How many local newspapers does the island have?  ...     0.870827
+4     What was Sumerians one of the first societies ...  ...     0.817780
+...                                                 ...  ...          ...
+1995  What year did the Carolina Courage win the Fou...  ...     0.909553
+1996      Which Nigerian leader received power in 1979?  ...     0.969189
+1997            Name a film role that Madonna acted in.  ...     0.990797
+1998   What two types of forests can be found in Geres?  ...     0.956341
+1999                  What does Mizrach mean in Hebrew?  ...     0.913615
+
+[2000 rows x 8 columns]
+Correct (1763): 	 93.1% Contextual 	 | 6.9% Parametric
+Incorrect (237): 	 93.7% Contextual 	 | 6.3% Parametric
+• Plot saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/probability_density_squad_logreg__prior_no_switch.png
+• Results JSON saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/results_squad_logreg__prior_no_switch.json
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy/util.py:910: UserWarning: [W095] Model 'en_core_web_trf' (3.6.1) was trained with spaCy v3.6.0 and may not be 100% compatible with the current version (3.8.3). If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current spaCy version. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+/home/ibrink/.conda/envs/RACDH/lib/python3.9/site-packages/spacy_transformers/layers/hf_shim.py:137: UserWarning: Error loading saved torch state_dict with strict=True, likely due to differences between 'transformers' versions. Attempting to load with strict=False as a fallback...
+
+If you see errors or degraded performance, download a newer compatible model or retrain your custom model with the current 'transformers' and 'spacy-transformers' versions. For more details and available updates, run: python -m spacy validate
+  warnings.warn(warn_msg)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  6.31it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  6.82it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  7.03it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.42it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  7.17it/s]
+• Loaded model /home/ibrink/RACDH/RACDH/RACDH/data/models/Llama-3.1-8B/weighted_agg_logreg_first_token_generation.joblib
+• Loaded records RACDH/data/squad/Llama-3.1-8B/infer_first_token_generation_balanced_2000_prior_entity_decoy.json
+                                               question  ...                                          hidden_np
+0     Which continent was considered to be at the ce...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1                     What river is south of Kathmandu?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+2                 What party in Yugoslavia did he join?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+3     What was Sumerians one of the first societies ...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+4     Chopin composed several songs to lyrics of wha...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+...                                                 ...  ...                                                ...
+1995   Was René Descartes an idealist or a materialist?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1996  Who wrote the Preliminary Discourse to the Enc...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1997     When was Bertie Mee become manager of Arsenal?  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1998  Which city besides Ravenna served as the capit...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+1999  Which President decided to intervene after rea...  ...  [[0.0036773682, -0.0033721924, -0.00030899048,...
+
+[2000 rows x 7 columns]
+                                               question  ... p_contextual
+0     Which continent was considered to be at the ce...  ...     0.048549
+1                     What river is south of Kathmandu?  ...     0.887471
+2                 What party in Yugoslavia did he join?  ...     0.521900
+3     What was Sumerians one of the first societies ...  ...     0.163263
+4     Chopin composed several songs to lyrics of wha...  ...     0.141264
+...                                                 ...  ...          ...
+1995   Was René Descartes an idealist or a materialist?  ...     0.754957
+1996  Who wrote the Preliminary Discourse to the Enc...  ...     0.239120
+1997     When was Bertie Mee become manager of Arsenal?  ...     0.876215
+1998  Which city besides Ravenna served as the capit...  ...     0.107755
+1999  Which President decided to intervene after rea...  ...     0.187612
+
+[2000 rows x 8 columns]
+Correct (1471): 	 31.7% Contextual 	 | 68.3% Parametric
+Incorrect (529): 	 34.0% Contextual 	 | 66.0% Parametric
+• Plot saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/probability_density_squad_logreg__prior_entity_decoy.png
+• Results JSON saved to /home/ibrink/RACDH/RACDH/RACDH/data/plots/Llama-3.1-8B/results_squad_logreg__prior_entity_decoy.json
+
+JOB STATISTICS
+==============
+Job ID: 12530861
+Cluster: snellius
+User/Group: ibrink/ibrink
+State: RUNNING
+Nodes: 1
+Cores per node: 18
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 03:13:30 core-walltime
+Job Wall-clock time: 00:10:45
+Memory Utilized: 0.00 MB
+Memory Efficiency: 0.00% of 120.00 GB (120.00 GB/node)
+WARNING: Efficiency statistics can only be obtained after the job has ended as seff tool is based on the accounting database data.

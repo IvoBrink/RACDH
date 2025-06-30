@@ -40,16 +40,18 @@ pip install -r requirements.txt
 
 Below is the recommended order for running the main components of this project:
 
-### 1. Data Generation (4 steps)
+### 1. Data Generation (5 steps)
 The data generation pipeline creates the datasets for probing LLM knowledge sources. **Run these scripts in the following order:**
 
 1. **Entity Extraction**: Extract entities from Wikipedia or your corpus.
    - `python RACDH/data_generation/entity_recognition/extract_entities.py`
 2. **Know Labeling**: Determine which entities a model already knows (before generating completions).
    - `python RACDH/data_generation/know_labeling/know_labeling.py`
-3. **Completions Generation**: Generate LLM completions for the entities.
+3. **Removal**: Remove known entities from the dataset.
+   - `python RACDH/data_generation/removing/remove_known_entities.py`
+4. **Completions Generation**: Generate LLM completions for the entities.
    - `python RACDH/data_generation/completions/add_completions.py`
-4. **Hidden State Extraction**: Extract hidden states from the LLM for each completion.
+5. **Hidden State Extraction**: Extract hidden states from the LLM for each completion.
    - `python RACDH/data_generation/inference/extract_hiddens.py`
 
 ### 2. Classification (Model Training)
