@@ -1,5 +1,4 @@
 # Probing for Knowledge Attribution in Large Language Models
-## RACDH: Real-time Attribution Classification to Detect Hallucinations.
 
 This repo implements a lightweight, probing-based framework to detect where large language models source their generated content: from the prompt context or from internal weights. It combines self-supervised data generation, hidden-state classifiers, and attribution-driven hallucination signals.
 
