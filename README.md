@@ -86,14 +86,6 @@ Analyze how attribution mismatches correlate with hallucination:
 - For major changes that affect multiple scripts (e.g., model selection, data paths), edit the central configuration file: `RACDH/config.py`.
 - For changes specific to a single script (e.g., input/output files, batch size), use the command-line arguments provided by that script (see `--help` for options).
 
-## Papers & citation
-
-This project is based on the MSc thesis:
-
-> Ivo Brink (2025). *Real-time Knowledge Attribution as an Early-Warning Signal for LLM Hallucinations*. University of Amsterdam.
-
-If you use this work, please cite the thesis.
-
 ## Codebase Summary
 
 - Total *.py files: 53
