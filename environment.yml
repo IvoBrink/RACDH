@@ -225,4 +225,4 @@ dependencies:
       - weasel==0.4.1
       - xxhash==3.5.0
       - yarl==1.18.3
-prefix: /home/ibrink/.conda/envs/RACDH
+prefix: /path/to/conda/envs/RACDH

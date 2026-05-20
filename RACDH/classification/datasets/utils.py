@@ -7,7 +7,7 @@ import joblib, matplotlib.pyplot as plt, numpy as np, torch
 from scipy.stats import gaussian_kde
 from tqdm import tqdm
 
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.classification.weighted_agg_predictor import StackHiddenStateClassifier
 from RACDH.config import params
 from RACDH.data_generation.inference.entity_tokens_find import _reconstruct_text, _sort_tokens, get_entity_span_text_align

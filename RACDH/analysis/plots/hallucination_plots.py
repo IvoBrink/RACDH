@@ -24,7 +24,7 @@ import numpy as np
 import pandas as pd
 from scipy.ndimage import gaussian_filter1d
 
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.config import params  # noqa: E402
 
 plt.rcParams.update({

@@ -2,7 +2,7 @@ import sys, os, torch
 from collections import defaultdict      ### NEW
 from tqdm import tqdm
 
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.data_generation.know_labeling.design_completions.all_completion_types import generate_all_knowledge_tests
 from RACDH.data_generation.know_labeling.generate_completions.target_completion_knowing import evaluate_knowledge
 from RACDH.data_generation.utils.reading_data import load_json

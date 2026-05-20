@@ -2,7 +2,7 @@ import sys
 import os
 import random
 from tqdm import tqdm
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 
 from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.config import params

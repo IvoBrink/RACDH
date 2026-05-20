@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import fisher_exact, chi2_contingency, norm
 from tqdm import tqdm
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 import warnings
 
 # Ignore all FutureWarnings

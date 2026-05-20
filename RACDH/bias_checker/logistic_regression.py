@@ -7,8 +7,9 @@ from imblearn.under_sampling import RandomUnderSampler
 from transformers import AutoTokenizer, AutoModel
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import StratifiedKFold, cross_val_predict, train_test_split
-from sklearn.metrics import classification_report
+from sklearn.base import clone
+from sklearn.model_selection import StratifiedKFold
+from sklearn.metrics import precision_recall_fscore_support, accuracy_score
 from sklearn.decomposition import PCA
 from RACDH.config import params
 
@@ -67,18 +68,52 @@ def classify_texts(texts: List[str], labels: List[Union[str,int]],
 
 
 def _run_cv_and_split(pipe, X, y):
-    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=2)
-    y_pred_cv = cross_val_predict(pipe, X, y, cv=skf)
-    print("\n[5-Fold Cross-Validation]")
-    print(classification_report(y, y_pred_cv, digits=3))
+    X_arr = np.array(X) if not isinstance(X, np.ndarray) else X
+    y_arr = np.array(y)
+    classes = sorted(set(y))
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=2, stratify=y
-    )
-    pipe.fit(X_train, y_train)
-    y_pred_test = pipe.predict(X_test)
-    print("\n[Single Train/Test Split]")
-    print(classification_report(y_test, y_pred_test, digits=3))
+    skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=2)
+    per_class = {c: {"precision": [], "recall": [], "f1": []} for c in classes}
+    macro = {"precision": [], "recall": [], "f1": []}
+    accuracies = []
+
+    for train_idx, test_idx in skf.split(X_arr, y_arr):
+        p_clone = clone(pipe)
+        p_clone.fit(X_arr[train_idx], y_arr[train_idx])
+        y_pred = p_clone.predict(X_arr[test_idx])
+        y_te = y_arr[test_idx]
+
+        accuracies.append(accuracy_score(y_te, y_pred))
+        prec, rec, f1, _ = precision_recall_fscore_support(
+            y_te, y_pred, labels=classes, zero_division=0
+        )
+        for i, c in enumerate(classes):
+            per_class[c]["precision"].append(prec[i])
+            per_class[c]["recall"].append(rec[i])
+            per_class[c]["f1"].append(f1[i])
+        pm, rm, fm, _ = precision_recall_fscore_support(
+            y_te, y_pred, average="macro", zero_division=0
+        )
+        macro["precision"].append(pm)
+        macro["recall"].append(rm)
+        macro["f1"].append(fm)
+
+    print("\n[5-Fold Cross-Validation (mean ± std)]")
+    print(f"{'':>16}  {'precision':>14}  {'recall':>14}  {'f1-score':>14}")
+    for c in classes:
+        p = np.array(per_class[c]["precision"])
+        r = np.array(per_class[c]["recall"])
+        f = np.array(per_class[c]["f1"])
+        print(f"{str(c):>16}  {p.mean():.3f} ± {p.std():.3f}  {r.mean():.3f} ± {r.std():.3f}  {f.mean():.3f} ± {f.std():.3f}")
+    pm = np.array(macro["precision"])
+    rm = np.array(macro["recall"])
+    fm = np.array(macro["f1"])
+    acc = np.array(accuracies)
+    print(f"{'macro avg':>16}  {pm.mean():.3f} ± {pm.std():.3f}  {rm.mean():.3f} ± {rm.std():.3f}  {fm.mean():.3f} ± {fm.std():.3f}")
+    print(f"{'accuracy':>16}  {acc.mean():.3f} ± {acc.std():.3f}")
+
+    # Fit on full data so _print_top_bow_features_and_counts can inspect coefficients
+    pipe.fit(X_arr, y_arr)
 
     # Show top BOW features + token frequency stats if this is a TF-IDF pipeline
     _print_top_bow_features_and_counts(pipe, X, y, n=20)

@@ -16,7 +16,7 @@ from sklearn.metrics import accuracy_score, f1_score
 from torch.utils.data import DataLoader, TensorDataset
 
 # Project imports
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 from RACDH.config import params
 from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.classification.utils import (

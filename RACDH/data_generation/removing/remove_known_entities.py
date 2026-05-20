@@ -1,7 +1,7 @@
 import sys
 import os
 from tqdm import tqdm
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.data_generation.utils.reading_data import load_json
 from RACDH.data_generation.utils.print import *
 from RACDH.config import params
@@ -28,8 +28,11 @@ if __name__ == "__main__":
     existing_titles = [s["title"] for s in samples_existing]
 
 
-    samples_different_target = load_json(f"Llama-3.1-8B/{params.instruct_name}/rewritten_known_2.json") 
-    dict_different_target = map_to_dict_passage(samples_different_target)
+    samples_different_target_llama = load_json(f"Llama-3.1-8B/{params.instruct_name}/rewritten_known_2.json") 
+    samples_different_target_mistral = load_json(f"Mistral-7B-v0.1/{params.instruct_name}/rewritten_known_2.json") 
+    dict_different_target_llama = map_to_dict_passage(samples_different_target_llama)
+    dict_different_target_mistral  = map_to_dict_passage(samples_different_target_mistral)
+    dict_different_target = dict_different_target_llama | dict_different_target_mistral
 
     data_to_save = []
     total, faulty = 0, 0

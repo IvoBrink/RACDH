@@ -32,7 +32,7 @@ from utils import (
 )
 
 # Add project root for RACDH config
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.config import params
 
 #  Constants                                                                   #
@@ -44,18 +44,28 @@ TAG_SUFFIX = {
 }
 
 #  CLI                                                                        
-def parse_args() > argparse.Namespace:
+def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
         description="Generate a balanced (2 k/2 k) evaluation set (SQuAD / WebQ)."
     )
-    p.add_argument("dataset", default="squad", help="'squad', 'webq', or a JSON file")
+
+    # dataset as positional is fine
+    p.add_argument("--dataset", nargs="?", default="squad",
+                   help="'squad', 'webq', or a JSON file")
+
+    # mutually exclusive MUST be optional flags
     grp = p.add_mutually_exclusive_group()
-    grp.add_argument("allcontextswitched", action="store_true")
-    grp.add_argument("onlypriornoswitch", action="store_true")
-    grp.add_argument("onlypriorentitydecoy", action="store_true")
-    p.add_argument("seed", type=int, default=0)
+    grp.add_argument("--all-context-switched", action="store_true",
+                     help="Randomly swap contexts across samples (parametric)")
+    grp.add_argument("--only-prior-no-switch", action="store_true",
+                     help="Keep only prior-knowledge-hit questions; don't swap context (SQuAD only)")
+    grp.add_argument("--only-prior-entity-decoy", action="store_true",
+                     help="Keep only prior-knowledge-hit questions; swap in entity-matched decoy context (SQuAD only)")
+
+    # these should be optional flags too
+    p.add_argument("--seed", type=int, default=0)
     p.add_argument(
-        "tokenkey",
+        "--token-key",
         choices=[
             "first_token_entity",
             "last_token_entity",
@@ -68,13 +78,14 @@ def parse_args() > argparse.Namespace:
     return p.parse_args()
 
 
+
 def load_dataset(src: str, cli: argparse.Namespace):
     """Return (iterator, canonical dataset name)."""
     std_names = {"squad", "webq", "webquestions"}
     if src.lower() in std_names:
         name = "webq" if "webq" in src.lower() else "squad"
         loader = load_webq if name == "webq" else load_squad
-        file_name = "train.json" if name == "webq" else "trainv2.0.json"
+        file_name = "train.json" if name == "webq" else "train-v2.0.json"
         path = Path(params.output_path) / name / file_name
         return loader(path, cli), name
 
@@ -110,7 +121,7 @@ def record_sample(
     counts: Dict[str, int],
     results: List[Dict[str, Any]],
     context_keep: str | None = None,
-) > bool:
+) -> bool:
     """Store a sample iff its class bucket isn’t full."""
     if counts[label] >= TARGET_PER_CLASS:
         return False
@@ -129,7 +140,7 @@ def record_sample(
     return True
 
 
-def main() > None:
+def main() -> None:
     cli = parse_args()
     random.seed(cli.seed)
 

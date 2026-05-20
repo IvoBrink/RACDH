@@ -45,7 +45,7 @@ from utils import (
     kde_line,
     apply_kpmg_theme,
 )
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.config import params
 
 Dataset = Literal["squad", "webq"]

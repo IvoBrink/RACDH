@@ -1,5 +1,11 @@
 secret
+
+# Claude Code
+CLAUDE.md
+.claude/
 RACDH/jobs
+RACDH/job_outputs
+RACDH/__pycache__
 # RACDH/data/Llama-3.1-8B
 # RACDH/data/Mistral-7B-v0.1
 RACDH/data/squad

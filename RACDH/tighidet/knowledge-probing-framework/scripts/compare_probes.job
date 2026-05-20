@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#SBATCH --partition=gpu_a100
+#SBATCH --gpus=1
+#SBATCH --job-name=comparison_qwen
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=18
+#SBATCH --mem=120G
+#SBATCH --time=02:00:00
+#SBATCH --output=RACDH/tighidet/knowledge-probing-framework/scripts/comparison_llama.out
+
+module purge
+module load 2023
+module load Anaconda3/2023.07-2
+source activate RACDH
+
+cd RACDH/tighidet/knowledge-probing-framework
+
+# PYTHONPATH=. python scripts/main.py --model_name Mistral-7B-v0.1  --device cuda   --nb_counter_parametric_knowledge 3  --include_mlps --token_position relation_query
+# PYTHONPATH=. python scripts/main.py --model_name Qwen2.5-7B   --device cuda   --nb_counter_parametric_knowledge 3  --include_mlps --token_position relation_query
+PYTHONPATH=. python scripts/main.py --model_name Llama-3.1-8B   --device cuda   --nb_counter_parametric_knowledge 3  --include_mlps --token_position relation_query

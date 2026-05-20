@@ -2,7 +2,7 @@ import sys
 import os
 import json
 from tqdm import tqdm
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.data_generation.utils.reading_data import load_samples_wiki, load_samples_new_wiki, load_json
 from RACDH.data_generation.entity_recognition.spaCy import get_entities
 from RACDH.data_generation.utils.print import highlight_entities

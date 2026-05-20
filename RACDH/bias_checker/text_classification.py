@@ -1,7 +1,7 @@
 import sys
 import os
 from tqdm import tqdm
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 import warnings
 
 # Ignore all FutureWarnings
@@ -45,6 +45,14 @@ def remove_last_sentence(text):
 
 
 if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, default=None,
+                        choices=["Llama-3.1-8B", "Mistral-7B-v0.1", "Qwen2.5-7B"])
+    args = parser.parse_args()
+    if args.model:
+        params.target_name = args.model
+
     samples = load_json(f"{params.target_name}/{params.instruct_name}/hiddens_metadata_all_2.json")
 
     n_synonym = len([x for x in samples if x["similar_entity"]])

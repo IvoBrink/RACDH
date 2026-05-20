@@ -15,7 +15,7 @@ To get started, clone this repository and install the required dependencies.
 First, clone the repository:
 
 ```bash
-git clone https://github.com/IvoBrink/RACDH.git
+git clone https://github.com/[anonymous]/RACDH.git
 cd RACDH
 ```
 
@@ -85,11 +85,40 @@ Analyze how attribution mismatches correlate with hallucination:
 - For major changes that affect multiple scripts (e.g., model selection, data paths), edit the central configuration file: `RACDH/config.py`.
 - For changes specific to a single script (e.g., input/output files, batch size), use the command-line arguments provided by that script (see `--help` for options).
 
+## Reference: Tighidet et al. Knowledge-Probing Framework
+
+The `tighidet/` directory contains a reference implementation of the knowledge-probing framework from the EMNLP BlackboxNLP 2024 paper:
+
+> Zineddine Tighidet, Andrea Mogini, Jiali Mei, Benjamin Piwowarski, Patrick Gallinari (2024). *Probing Language Models on Their Knowledge Source*. arXiv:2410.05817.
+
+This framework probes LLMs on the conflict between **parametric knowledge (PK)** (stored in model weights) and **contextual knowledge (CK)** (provided at inference time) using controlled counter-factual prompts. It trains per-layer linear classifiers via leave-one-relation-group-out cross-validation to predict the knowledge source from hidden-state activations.
+
+**It is not part of the main RACDH pipeline**—it is included for direct comparison. The RACDH approach differs in that it targets real-time hallucination detection from a self-supervised dataset (AttriWiki), while Tighidet et al. focus on controlled knowledge-conflict scenarios using the ParaRel dataset.
+
+The original Tighidet code was extended to load the RACDH probe directly into their evaluation framework:
+- `attriwiki_probe/` was added, containing the `WeightedAggLogReg` model definition and pre-trained `.joblib` probes (Llama-3.1-8B, Mistral-7B-v0.1, Qwen2.5-7B) trained on the AttriWiki dataset.
+- `scripts/main.py` was extended with a step 7 that runs the RACDH probe on the Tighidet counter-parametric knowledge scenarios, producing `WeightedAgg` metrics alongside the original per-layer results.
+- `scripts/bootstrap_results.py` was added to compare macro-F1 ± std of the Tighidet best-layer classifier against the RACDH probe on the same data.
+
+Key differences:
+
+| | RACDH | Tighidet et al. |
+|---|---|---|
+| Dataset | AttriWiki (self-supervised) | ParaRel (reformatted) |
+| Prompt design | Withheld entities from Wikipedia | Counter-factual knowledge conflicts |
+| Classifier | Weighted-aggregation logistic regression | Per-layer logistic regression |
+| Token positions | First/last entity & generation tokens | relation_query, object, subject_query, first |
+| Goal | Real-time hallucination detection | Understanding knowledge source selection |
+
+To run the Tighidet framework independently, see `tighidet/knowledge-probing-framework/README.md`.
+
+---
+
 ## Papers & citation
 
 This project is based on the MSc thesis:
 
-> Ivo Brink (2025). *Real-time Knowledge Attribution as an Early-Warning Signal for LLM Hallucinations*. University of Amsterdam.
+> Anonymous (2025). *Probing for Knowledge Attribution in Large Language Models*.
 
 If you use this work, please cite the thesis.
 

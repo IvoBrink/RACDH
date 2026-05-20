@@ -5,7 +5,7 @@ import numpy as np
 import torch
 import matplotlib.pyplot as plt
 
-sys.path.append(os.path.abspath("/home/ibrink/RACDH/RACDH/"))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "..")))
 from RACDH.config import params
 from RACDH.data_generation.utils.reading_data import load_json
 
@@ -38,7 +38,8 @@ L2_NORMALIZE = True
 
 # Choose how to pick the 8 layers (global, shared across all models)
 LAYER_PICK_MODE = "custom"  # {"even", "last", "first", "custom"}
-CUSTOM_LAYERS = [4, 8, 12, 16, 20, 24, 28, 32]  # global columns
+# CUSTOM_LAYERS = [4, 8, 12, 16, 20, 24, 28, 32]  # global columns
+CUSTOM_LAYERS = np.linspace(0, 32, num=8).astype(int).tolist()  # alternative
 
 
 def stratified_indices(labels, n, seed=0):
